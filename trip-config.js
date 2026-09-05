@@ -188,7 +188,10 @@ const days = [
         note: 'Opcional — el Palacio Imperial no merece mucho la pena, es más para rellenar tiempo antes del Shinkansen. Alternativa: aprovechar para ir de compras a lo que no hayáis podido comprar todavía.',
       },
       { name: 'Estación de Tokio (Marunouchi)', kind: 'visit', durOverride: 20, transit: 'Shinkansen Hokuriku "Kagayaki" Tokio → Kanazawa, ~2h30.', transitMin: 150 },
-      { name: 'Kanazawa Station', kind: 'visit', durOverride: 15 },
+      {
+        name: 'Estación de Kanazawa', kind: 'visit', durOverride: 15,
+        note: 'Ver antes de seguir: la puerta Tsuzumi (torii de madera gigante) y la cúpula de cristal Motenashi, justo a la salida.',
+      },
       { name: 'Tsuzumi-mon Gate', kind: 'visit', durOverride: 10, transit: 'Bus turístico Kanazawa Loop Bus, parada Kōrinbō/Nagamachi, ~10 min desde la estación.', transitMin: 12 },
       { name: 'Nagamachi', kind: 'visit', durOverride: 45, mealAfter: 'lunch' },
       { name: 'Kenrokuen', kind: 'visit', durOverride: 75, note: 'Uno de los tres jardines más bonitos de Japón — con más razón en temporada de momiji (otoño).' },
