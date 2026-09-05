@@ -161,6 +161,26 @@
     padding-left: 11px;
   }
 
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    box-shadow: 0 1px 2px var(--shadow);
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 1;
+    padding: 0;
+    margin-left: auto;
+    flex-shrink: 0;
+    transition: background .15s, border-color .15s;
+  }
+  .theme-toggle:hover { background: var(--paper-sunk); border-color: var(--ink-faint); }
+
   /* ---------- Day picker (full-width list, shown in place of the day view) ---------- */
   .day-picker {
     display: flex;
@@ -498,6 +518,7 @@
     <button class="tab-btn" data-mode="shopping">Shopping</button>
     <button class="tab-btn" data-mode="food">Comer</button>
     <button class="tab-btn" data-mode="extras">Extra &amp; alternativas</button>
+    <button class="theme-toggle" id="themeToggle" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema claro/oscuro">☀️</button>
   </div>
 
   <div id="viewItinerary">
@@ -512,6 +533,18 @@
 </div>
 
 <script>
+// ---------- theme (light/dark toggle, defaults to light) ----------
+const THEME_KEY = 'jp-honeymoon-theme';
+function loadTheme() { try { return localStorage.getItem(THEME_KEY); } catch(e) { return null; } }
+function saveTheme(t) { try { localStorage.setItem(THEME_KEY, t); } catch(e) {} }
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const btn = document.getElementById('themeToggle');
+  if (btn) btn.textContent = theme === 'dark' ? '🌙' : '☀️';
+}
+let currentTheme = loadTheme() || 'light';
+applyTheme(currentTheme);
+
 const TRIP = /*__TRIP_JSON__*/;
 
 const CITY_SLUG = {
@@ -990,6 +1023,12 @@ function renderAll() {
   else if (currentMode === 'extras') renderExtras();
   renderDayTabLabel();
 }
+
+document.getElementById('themeToggle').addEventListener('click', () => {
+  currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  saveTheme(currentTheme);
+  applyTheme(currentTheme);
+});
 
 document.getElementById('dayTabBtn').addEventListener('click', () => {
   dayPickerOpen = currentMode === 'itinerary' ? !dayPickerOpen : false;
