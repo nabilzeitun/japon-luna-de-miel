@@ -68,7 +68,7 @@ const CITY_COLORS = {
 const days = [
   // ---------------- TOKIO ----------------
   {
-    date: '2026-10-28', city: 'Tokio', title: 'Llegada, Asakusa y Sumida',
+    date: '2026-10-28', city: 'Tokio', locationLabel: 'Tokyo', title: 'Llegada, Asakusa y Sumida',
     kind: 'city', dayStartTime: '12:50',
     stops: [
       { name: 'Haneda airport', kind: 'info', transit: 'Keikyu Airport Line + Toei Asakusa Line (servicio directo, sin trasbordo) Haneda → Asakusa, ~45 min.', transitMin: 45 },
@@ -87,7 +87,7 @@ const days = [
     ],
   },
   {
-    date: '2026-10-29', city: 'Tokio', title: 'Ueno, Yanaka y Akihabara',
+    date: '2026-10-29', city: 'Tokio', locationLabel: 'Tokyo', title: 'Ueno, Yanaka y Akihabara',
     kind: 'city', dayStartTime: '07:30',
     stops: [
       { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'Metro Toei Asakusa Oshiage → Asakusa (~5 min) + Ginza Line Asakusa → Ueno (~5 min).', transitMin: 20 },
@@ -109,7 +109,7 @@ const days = [
     ],
   },
   {
-    date: '2026-10-30', city: 'Tokio', title: 'Shibuya, Shinjuku, Kabukichō y Okubo',
+    date: '2026-10-30', city: 'Tokio', locationLabel: 'Tokyo', title: 'Shibuya, Shinjuku, Kabukichō y Okubo',
     kind: 'city', dayStartTime: '07:00',
     stops: [
       { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'Metro Hanzomon Line Oshiage → Omotesando (~25 min) + 5 min andando a Meiji Jingū.', transitMin: 30 },
@@ -137,7 +137,7 @@ const days = [
     ],
   },
   {
-    date: '2026-10-31', city: 'Tokio', title: 'Excursión a Kamakura',
+    date: '2026-10-31', city: 'Tokio', locationLabel: 'Tokyo', title: 'Excursión a Kamakura',
     kind: 'daytrip', dayStartTime: '07:00',
     optional: true, altGroup: 'day4', altLabel: 'A',
     altNote: 'Elegid <b>4A (Kamakura)</b> o <b>4B (Hakone)</b> la mañana de antes, según el tiempo — Kamakura (templos y costa) funciona con cualquier tiempo; Hakone (montaña y volcán) solo compensa con cielo despejado para ver el Fuji.',
@@ -153,7 +153,7 @@ const days = [
     ],
   },
   {
-    date: '2026-10-31', city: 'Tokio', title: 'Excursión a Hakone',
+    date: '2026-10-31', city: 'Tokio', locationLabel: 'Tokyo', title: 'Excursión a Hakone',
     kind: 'daytrip', dayStartTime: '07:00',
     optional: true, altGroup: 'day4', altLabel: 'B',
     altNote: 'Elegid <b>4B (Hakone)</b> o <b>4A (Kamakura)</b> la mañana de antes, según el tiempo — Hakone solo compensa con cielo despejado, para ver el Fuji desde el teleférico y el lago Ashi. Si está nublado, mejor Kamakura.',
@@ -169,7 +169,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-01', city: 'Tokio', title: 'Ginza',
+    date: '2026-11-01', city: 'Tokio', locationLabel: 'Tokyo', title: 'Ginza',
     kind: 'city', dayStartTime: '10:00',
     travelNote: 'Domingo: la Avenida Chuo-dori (la calle principal de Ginza) se corta al tráfico de 12:00 a 17:00 (hokosha tengoku) y se convierte en un paseo peatonal gigante — por eso esta ruta encaja mejor en domingo que en otro día.',
     stops: [
@@ -186,7 +186,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-02', city: 'Tokio', title: 'Tokyo → Kanazawa',
+    date: '2026-11-02', city: 'Tokio', locationLabel: 'Kanazawa', title: 'Tokyo → Kanazawa',
     kind: 'travel', dayStartTime: '07:30',
     travelNote: 'Tokio tiene mucho más que ver que Kanazawa, así que aprovechamos la mañana antes del Shinkansen. Hokuriku "Kagayaki" Tokio → Kanazawa (~2h30, asiento reservado recomendado). Dejad el equipaje facturado o en consigna antes de salir del hotel.',
     stops: [
@@ -216,7 +216,7 @@ const days = [
   },
   // ---------------- KANAZAWA / TAKAYAMA ----------------
   {
-    date: '2026-11-03', city: 'Kanazawa-Takayama', title: 'Kanazawa → Shirakawa-go → Takayama',
+    date: '2026-11-03', city: 'Kanazawa-Takayama', locationLabel: 'Shirakawa-go', title: 'Kanazawa → Shirakawa-go → Takayama',
     kind: 'travel', dayStartTime: '07:00',
     travelNote: 'Salida del hotel con maletas ~08:00. Bus Hokutetsu Kanazawa → Shirakawa-go (75-85 min) y después bus Nohi Shirakawa-go → Takayama (~50 min). Reservad plaza online con antelación (Hokutetsu / Nohi Bus), se llenan sobre todo en temporada de otoño.',
     stops: [
@@ -234,7 +234,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-04', city: 'Kanazawa-Takayama', title: 'Takayama: casco antiguo y museos',
+    date: '2026-11-04', city: 'Kanazawa-Takayama', locationLabel: 'Takayama', title: 'Takayama: casco antiguo y museos',
     kind: 'city', dayStartTime: '07:00',
     stops: [
       { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.' },
@@ -260,19 +260,35 @@ const days = [
     ],
   },
   {
-    date: '2026-11-05', city: 'Kanazawa-Takayama', title: 'Takayama → Kioto (Magome-juku opcional)',
+    date: '2026-11-05', city: 'Kanazawa-Takayama', locationLabel: 'Takayama', title: 'Takayama → Kioto (Magome-juku)',
     kind: 'travel', dayStartTime: '07:30',
-    travelNote: 'Ruta directa y sin estrés: Limited Express "Hida" Takayama→Nagoya (~2h20) + Shinkansen Nagoya→Kioto (~35-45 min), total ~3h. El desvío a Nakatsugawa/Magome-juku es 100% opcional y añade ~2h de trenes/bus extra ese mismo día (no hay bus directo Takayama-Nakatsugawa, hay que bajar hasta Nagoya y volver a subir en la línea JR Chuo). Si vais cansados del viaje, saltároslo sin remordimientos — o cambiadlo por una parada corta en el Castillo de Nagoya (ver Extra y alternativas), que sí queda de camino sin desvío.',
+    optional: true, altGroup: 'day9', altLabel: 'A',
+    altNote: 'Elegid <b>9A (Magome-juku)</b> o <b>9B (directo)</b> — 9A añade ~2h de trenes/bus para ver el pueblo postal de Magome-juku de camino; 9B llega a Kioto sobre el mediodía con toda la tarde libre para más turismo.',
+    travelNote: 'Limited Express "Hida" Takayama → Nagoya (~2h20) + JR línea Chūō a Nakatsugawa (~50 min) + bus a Magome-juku (~30 min); a la vuelta, bus a Nakatsugawa (~30 min) + JR línea Chūō a Nagoya (~50 min) + Shinkansen Tōkaidō a Kioto (~35-45 min). No hay bus directo Takayama-Nakatsugawa, hay que bajar hasta Nagoya y volver a subir en la línea JR Chūō.',
     stops: [
       { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel, con maletas listas.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + JR línea Chūō a Nakatsugawa (~50 min).', transitMin: 200 },
-      { name: 'Nakatsugawa Station', kind: 'visit', durOverride: 10, optional: true, note: 'Parada opcional del desvío a Magome-juku (+~2h ida y vuelta desde Nagoya).', transit: 'Bus local Nakatsugawa → Magome-juku, ~30 min.', transitMin: 30 },
-      { name: 'Magome-juku', kind: 'visit', durOverride: 90, optional: true, note: 'Opcional — comer soba en Yoshimura Soba. Saltadlo si preferís llegar antes y con más calma a Kioto.', transit: 'Bus de vuelta a Nakatsugawa (~30 min) + JR línea Chūō a Nagoya (~50 min) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 125 },
+      { name: 'Nakatsugawa Station', kind: 'visit', durOverride: 10, transit: 'Bus local Nakatsugawa → Magome-juku, ~30 min.', transitMin: 30 },
+      { name: 'Magome-juku', kind: 'visit', durOverride: 90, note: 'Comer soba en Yoshimura Soba.', transit: 'Bus de vuelta a Nakatsugawa (~30 min) + JR línea Chūō a Nagoya (~50 min) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 125 },
+      { name: 'Hotel Kyoto', kind: 'info' },
+    ],
+  },
+  {
+    date: '2026-11-05', city: 'Kanazawa-Takayama', locationLabel: 'Takayama', title: 'Takayama → Kioto (directo)',
+    kind: 'travel', dayStartTime: '07:30',
+    optional: true, altGroup: 'day9', altLabel: 'B',
+    altNote: 'Elegid <b>9B (directo)</b> o <b>9A (Magome-juku)</b> — 9B llega a Kioto sobre el mediodía con toda la tarde libre para más turismo; 9A añade ~2h de trenes/bus para ver el pueblo postal de Magome-juku de camino.',
+    travelNote: 'Limited Express "Hida" Takayama → Nagoya (~2h20) + Shinkansen Tōkaidō Nagoya → Kioto (~35-45 min), sin desvíos — el tramo más rápido posible. Llegada a Kioto sobre las 11:00, con toda la tarde libre: aprovechada aquí para Higashi Hongan-ji y Nishi Hongan-ji (junto a la estación) y el Castillo Nijō.',
+    stops: [
+      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel, con maletas listas.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 200 },
+      { name: 'Templo Higashi Hongan-ji', kind: 'visit', durOverride: 30, note: 'El más grande de los dos, justo enfrente de la estación — ideal nada más llegar.', mealAfter: 'lunch' },
+      { name: 'Templo Nishi Hongan-ji', kind: 'visit', durOverride: 30, transit: 'Bus Kioto City Bus, ~15-20 min.', transitMin: 18 },
+      { name: 'Castillo Nijō', kind: 'visit', durOverride: 75, note: 'El suelo "uguisubari" (de ruiseñor) chirría al pisarlo — un sistema antiguo para detectar intrusos.', transit: 'Metro Tozai Line Nijōjō-mae → Karasuma-Oike (~5 min) + Karasuma Line a Shijo (~3 min).', transitMin: 15 },
       { name: 'Hotel Kyoto', kind: 'info' },
     ],
   },
   // ---------------- KIOTO ----------------
   {
-    date: '2026-11-06', city: 'Kioto', title: 'Higashiyama: Kiyomizu y Gion',
+    date: '2026-11-06', city: 'Kioto', locationLabel: 'Kyoto', title: 'Higashiyama: Kiyomizu y Gion',
     kind: 'city', dayStartTime: '06:45',
     stops: [
       { name: 'Hotel Kyoto', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel (temprano, para llegar a Kiyomizu antes que los grupos).', transit: 'Bus Kioto City Bus Shijo Karasuma → Kiyomizu-michi, ~20 min.', transitMin: 20 },
@@ -293,7 +309,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-07', city: 'Kioto', title: 'Kinkaku-ji y Arashiyama',
+    date: '2026-11-07', city: 'Kioto', locationLabel: 'Kyoto', title: 'Kinkaku-ji y Arashiyama',
     kind: 'city', dayStartTime: '08:00',
     stops: [
       { name: 'Hotel Kyoto', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'Bus Kioto City Bus Karasuma → Kinkakuji-michi, ~30 min.', transitMin: 30 },
@@ -310,7 +326,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-08', city: 'Kioto', title: 'Fushimi Inari y el Camino del Filósofo (Ginkaku-ji)',
+    date: '2026-11-08', city: 'Kioto', locationLabel: 'Kyoto', title: 'Fushimi Inari y el Camino del Filósofo (Ginkaku-ji)',
     kind: 'city', dayStartTime: '06:15',
     travelNote: 'Fushimi Inari y Sanjusangen-dō están al sur (cerca de la estación de Kioto); Ginkaku-ji y el Camino del Filósofo están al norte.',
     stops: [
@@ -326,7 +342,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-09', city: 'Kioto', title: 'Nara → Osaka',
+    date: '2026-11-09', city: 'Kioto', locationLabel: 'Kyoto', title: 'Nara → Osaka',
     kind: 'travel', dayStartTime: '07:30',
     travelNote: 'Salida con maletas del hotel de Kioto (dejadlas en consigna de la estación). JR Nara Line (rápido "Miyakoji") o Kintetsu Kyoto Line hasta Nara, ~45 min. Por la tarde, Kintetsu Nara Line directo hasta Osaka-Namba (~35-40 min) — no hace falta volver a Kioto.',
     stops: [
@@ -340,7 +356,7 @@ const days = [
   },
   // ---------------- OSAKA ----------------
   {
-    date: '2026-11-10', city: 'Osaka', title: 'Universal Studios Japan',
+    date: '2026-11-10', city: 'Osaka', locationLabel: 'Osaka', title: 'Universal Studios Japan',
     kind: 'daytrip', dayStartTime: '08:00',
     travelNote: 'JR Kanjo Line o Nankai/metro directo Namba/Osaka → Universal City (~20-25 min). Recomendado ir entre semana con pase express para 4 atracciones — planificad las atracciones en la app antes de entrar.',
     stops: [
@@ -350,7 +366,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-11', city: 'Osaka', title: 'Excursión a Hiroshima y Miyajima',
+    date: '2026-11-11', city: 'Osaka', locationLabel: 'Osaka', title: 'Excursión a Hiroshima y Miyajima',
     kind: 'daytrip', dayStartTime: '06:00',
     travelNote: 'Salida muy temprano: Shinkansen Sanyo (Nozomi/Sakura) Shin-Osaka → Hiroshima, ~1h20-1h35. Es un día largo — salir con el primer tren que podáis y volved directos al hotel a descansar.',
     stops: [
@@ -369,7 +385,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-12', city: 'Osaka', title: 'Castillo, Umeda Sky, Dōtonbori y Shinsekai → Aeropuerto',
+    date: '2026-11-12', city: 'Osaka', locationLabel: 'Osaka', title: 'Castillo, Umeda Sky, Dōtonbori y Shinsekai → Aeropuerto',
     kind: 'city', dayStartTime: '08:30',
     travelNote: 'Salida del hotel con equipaje por la mañana (dejar maletas en consigna de la estación). Vuelo OSAKA KANSAI 23:20 → Singapur 05:00 (+1) — al ser el último día, toda la ruta de hoy es dentro de Osaka, sin trenes de larga distancia, para llegar con margen al aeropuerto.',
     stops: [
@@ -401,7 +417,7 @@ const extras = {
     'Heian Jingū', 'Santuario Shirakumo', 'Munakata Shrine', 'Santuario Itsukushima (interior del Parque del Palacio Imperial de Kioto)',
     'Reikan-ji', 'Kumano Nyakuōji Shrine', 'Anraku-ji Temple', 'Mirokuin Temple',
     'Daigo-ji', 'Byōdō-in',
-    'Castillo Nijō', 'Templo Nishi Hongan-ji', 'Templo Higashi Hongan-ji', 'Palacio Imperial Sento de Kioto',
+    'Palacio Imperial Sento de Kioto',
   ],
   Osaka: [
     'Sumiyoshi Taisha', 'Templo Katsuo-ji', 'Takimikoji',

@@ -220,7 +220,12 @@
     display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
     overflow: hidden;
   }
-  .day-chip .ring { margin-left: auto; flex-shrink: 0; color: var(--good); font-size: 17px; font-weight: 700; }
+  .day-chip .ring { margin-left: 8px; flex-shrink: 0; color: var(--good); font-size: 17px; font-weight: 700; }
+  .day-chip .day-loc {
+    margin-left: auto; flex-shrink: 0; padding-left: 10px;
+    font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .04em;
+    white-space: nowrap;
+  }
   .day-chip.complete { opacity: .6; }
   .day-chip.complete .title { text-decoration: line-through; text-decoration-color: var(--ink-faint); }
 
@@ -705,7 +710,7 @@ function renderDayPicker() {
     const { day, month, weekday } = fmtDate(d.date);
     const complete = d.stops.length > 0 && d.stops.every(s => isChecked(d.date, s.name));
     const btn = document.createElement('button');
-    btn.className = 'day-chip city-' + slug + (i === currentDayIdx ? ' active' : '') + (complete ? ' complete' : '');
+    btn.className = 'day-chip city-' + slug + (complete ? ' complete' : '');
     btn.style.setProperty('--chip-color', complete ? 'var(--ink-faint)' : 'var(--city-color)');
     const optFlag = d.altLabel ? `Opción ${d.altLabel}` : (d.optional ? 'opc.' : '');
     btn.innerHTML = `
@@ -714,6 +719,7 @@ function renderDayPicker() {
         <span class="date tabular">${day} ${month} · ${weekday}${optFlag ? ` · <span class="opt-flag">${optFlag}</span>` : ''}${i === todayIdx ? ' <span class="today-tag">Hoy</span>' : ''}</span>
         <span class="title">${d.title}</span>
       </span>
+      <span class="day-loc">${d.locationLabel || d.city}</span>
       ${complete ? '<span class="ring">✓</span>' : ''}
     `;
     btn.addEventListener('click', () => jumpToDay(i));

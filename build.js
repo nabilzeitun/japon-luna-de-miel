@@ -203,6 +203,7 @@ const builtDays = days.map(d => {
     date: d.date,
     city: d.city,
     cityColor: CITY_COLORS[d.city] || '#666',
+    locationLabel: d.locationLabel || d.city,
     title: d.title,
     kind: d.kind,
     optional: !!d.optional,
