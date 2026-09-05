@@ -172,14 +172,14 @@
     border: 1px solid var(--line);
     box-shadow: 0 1px 2px var(--shadow);
     cursor: pointer;
-    font-size: 15px;
     line-height: 1;
     padding: 0;
     margin-left: auto;
     flex-shrink: 0;
-    transition: background .15s, border-color .15s;
+    color: var(--ink-faint);
+    transition: background .15s, border-color .15s, color .15s;
   }
-  .theme-toggle:hover { background: var(--paper-sunk); border-color: var(--ink-faint); }
+  .theme-toggle:hover { background: var(--paper-sunk); border-color: var(--ink-faint); color: var(--ink-soft); }
 
   /* ---------- Day picker (full-width list, shown in place of the day view) ---------- */
   .day-picker {
@@ -518,7 +518,7 @@
     <button class="tab-btn" data-mode="shopping">Shopping</button>
     <button class="tab-btn" data-mode="food">Comer</button>
     <button class="tab-btn" data-mode="extras">Extra &amp; alternativas</button>
-    <button class="theme-toggle" id="themeToggle" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema claro/oscuro">☀️</button>
+    <button class="theme-toggle" id="themeToggle" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema claro/oscuro"></button>
   </div>
 
   <div id="viewItinerary">
@@ -537,10 +537,12 @@
 const THEME_KEY = 'jp-honeymoon-theme';
 function loadTheme() { try { return localStorage.getItem(THEME_KEY); } catch(e) { return null; } }
 function saveTheme(t) { try { localStorage.setItem(THEME_KEY, t); } catch(e) {} }
+const SUN_ICON = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 12H1.8M22.2 12h-2.4M5.7 5.7l1.7 1.7M16.6 16.6l1.7 1.7M18.3 5.7l-1.7 1.7M7.4 16.6l-1.7 1.7"/></svg>';
+const MOON_ICON = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>';
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   const btn = document.getElementById('themeToggle');
-  if (btn) btn.textContent = theme === 'dark' ? '🌙' : '☀️';
+  if (btn) btn.innerHTML = theme === 'dark' ? MOON_ICON : SUN_ICON;
 }
 let currentTheme = loadTheme() || 'light';
 applyTheme(currentTheme);
