@@ -37,7 +37,8 @@ const manualPlaces = [
   { name: 'Puente Colgante Deai', desc: 'Puente colgante sobre el río Shogawa, la entrada peatonal clásica al pueblo.', lat: 36.2610, lon: 136.9038 },
   { name: 'Las Tres Casas de Shirakawago', desc: 'El mirador de las tres casas gasshō-zukuri alineadas frente al arrozal.', lat: 36.2580, lon: 136.9055 },
   // Takayama — no estaban en el KMZ, pedidos explícitamente
-  { name: 'Sanmachi Suji', desc: 'Las calles Ichino-machi, Ni-no-machi y San-no-machi: casas de comerciantes convertidas en museos, galerías, tiendas de artesanía y cafeterías.', lat: 36.1418, lon: 137.2533 },
+  { name: 'Sanmachi Suji (Casco Antiguo)', desc: 'Las calles Ichino-machi, Ni-no-machi y San-no-machi: casas de comerciantes convertidas en museos, galerías, tiendas de artesanía y cafeterías.', lat: 36.1418, lon: 137.2533 },
+  { name: 'Takayama Jinya', desc: 'Antigua sede del gobierno local en el periodo Edo, junto al río Miyagawa.', lat: 36.1404, lon: 137.2513 },
   { name: 'Kusakabe Mingeikan', desc: 'Casa-museo de la familia Kusakabe, mercaderes de sake y aceite en el periodo Edo.', lat: 36.1432, lon: 137.2531 },
   { name: 'Yoshijima-ke', desc: 'Casa histórica de la familia Yoshijima, ejemplo de arquitectura tradicional de comerciantes.', lat: 36.1431, lon: 137.2529 },
   { name: 'Hida Minzoku Kokokan', desc: 'Museo arqueológico de Hida, en una antigua residencia samurái junto al Shiroyama.', lat: 36.1394, lon: 137.2554 },
@@ -190,10 +191,14 @@ const days = [
     travelNote: 'Tokio tiene mucho más que ver que Kanazawa, así que aprovechamos la mañana antes del Shinkansen. Hokuriku "Kagayaki" Tokio → Kanazawa (~2h30, asiento reservado recomendado). Dejad el equipaje facturado o en consigna antes de salir del hotel.',
     stops: [
       { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno rápido en el hotel (o saltadlo si vais a comer en Toyosu).', transit: 'Metro Yurikamome/Toei Oedo a Toyosu, ~25-30 min.', transitMin: 30 },
-      { name: 'Toyosu Senkyaku Banrai', kind: 'visit', durOverride: 45, optional: true, note: 'Opcional — solo si salís al amanecer, os quita tiempo para el Palacio Imperial.', transit: 'Metro Yurikamome Toyosu → Tokyo Station, ~20 min.', transitMin: 20 },
+      {
+        name: 'Toyosu Senkyaku Banrai', kind: 'visit', durOverride: 45, optional: true,
+        note: 'Opcional — solo si salís al amanecer, os quita tiempo para el Palacio Imperial. Alternativa: ir directamente a la Estación de Tokio para llegar antes a Kanazawa — la mejor opción si ya habéis hecho las compras que queríais.',
+        transit: 'Metro Yurikamome Toyosu → Tokyo Station, ~20 min.', transitMin: 20,
+      },
       {
         name: 'Explanada y Puente Nijūbashi', kind: 'visit', durOverride: 35, optional: true,
-        note: 'Opcional — el Palacio Imperial no merece mucho la pena, es más para rellenar tiempo antes del Shinkansen. Alternativa: aprovechar para ir de compras a lo que no hayáis podido comprar todavía.',
+        note: 'Opcional — el Palacio Imperial no merece mucho la pena, es más para rellenar tiempo antes del Shinkansen. Alternativas: ir de compras a lo que no hayáis podido comprar todavía, o iros directos a la Estación de Tokio para llegar antes a Kanazawa si ya habéis comprado todo lo que queríais.',
       },
       { name: 'Estación de Tokio (Marunouchi)', kind: 'visit', durOverride: 20, transit: 'Shinkansen Hokuriku "Kagayaki" Tokio → Kanazawa, ~2h30.', transitMin: 150 },
       {
@@ -234,18 +239,23 @@ const days = [
     stops: [
       { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.' },
       { name: 'Asaichi', kind: 'visit', durOverride: 45, note: 'Mercados matinales junto al río — cierran sobre el mediodía, por eso van primero. Buen sitio para comprar un saru-bobo.' },
+      { name: 'Takayama Jinya', kind: 'visit', durOverride: 35, note: 'Es el único antiguo palacio de gobierno de la época Edo que queda en pie en todo Japón. Entrada: 440 yenes.' },
       { name: 'Santuario Sakurayama Hachimangu', kind: 'visit', durOverride: 25 },
       { name: 'Kusakabe Mingeikan', kind: 'visit', durOverride: 30 },
       { name: 'Yoshijima-ke', kind: 'visit', durOverride: 25 },
       { name: 'Fujii Bijutsu Mingeikan', kind: 'visit', durOverride: 20 },
-      { name: 'Sanmachi Suji', kind: 'visit', durOverride: 40, note: 'Ichino-machi, Ni-no-machi y San-no-machi. Aquí hay paseos en jinrikisha (rickshaw) y tiendas de saru-bobo. Probar hoba-miso o chuka soba, y catar sake en Funasaka Sake Brewery.' },
+      { name: 'Sanmachi Suji (Casco Antiguo)', kind: 'visit', durOverride: 40, note: 'Tres calles principales repletas de preciosas casas de madera oscurecida del período Edo, artesanía y destilerías de sake.' },
       { name: 'Hirata Kinenkan', kind: 'visit', durOverride: 20 },
       { name: 'Templo Hida Kokubunji', kind: 'visit', durOverride: 20, mealAfter: 'lunch' },
       { name: 'Teramachi', kind: 'visit', durOverride: 30 },
       { name: 'Parque Shiroyama', kind: 'visit', durOverride: 25 },
       { name: 'Hida Minzoku Kokokan', kind: 'visit', durOverride: 35 },
       { name: 'Takayama Shōwa-kan Museum', kind: 'visit', durOverride: 60, transit: 'Bus turístico Sarubobo, Takayama Station → Hida no Sato, ~10 min.', transitMin: 15 },
-      { name: 'Hida no Sato Folk Village Museum', kind: 'visit', durOverride: 90, transit: 'Bus Sarubobo de vuelta hacia el centro, parada cercana al hotel, ~10 min.', transitMin: 12 },
+      {
+        name: 'Hida no Sato Folk Village Museum', kind: 'visit', durOverride: 90, optional: true,
+        note: 'Opcional — réplica de pueblo con casas gasshō-zukuri; si ya habéis visto Shirakawa-go en persona, os la podéis saltar.',
+        transit: 'Bus Sarubobo de vuelta hacia el centro, parada cercana al hotel, ~10 min.', transitMin: 12,
+      },
       { name: 'Hotel Takayama', kind: 'info', mealAfter: 'dinner' },
     ],
   },
