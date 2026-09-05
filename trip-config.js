@@ -12,10 +12,11 @@
 // Lugares que NO estaban en el KMZ pero pidió el usuario explícitamente (destinos "ancla" confirmados
 // por los vuelos/reservas). Coordenadas aproximadas a partir de conocimiento general del lugar.
 const manualPlaces = [
-  { name: 'Kenrokuen', desc: 'Uno de los tres jardines más famosos de Japón, junto al Castillo de Kanazawa.', lat: 36.5613, lon: 136.6625 },
+  { name: 'Kenrokuen', desc: 'Uno de los tres jardines (Nihon Sanmei) más famosos de Japón, junto al Castillo de Kanazawa.', lat: 36.5613, lon: 136.6625 },
   { name: 'Nagamachi', desc: 'Antiguo barrio de samuráis, calles empedradas con muros de barro y canales.', lat: 36.5645, lon: 136.6536 },
   { name: 'Higashi Chaya', desc: 'El mayor de los distritos de casas de té (geishas) de Kanazawa, con pan de oro en las tiendas.', lat: 36.5716, lon: 136.6636 },
   { name: 'Kazuemachi', desc: 'Distrito de casas de té más pequeño y tranquilo, a orillas del río Asano.', lat: 36.5687, lon: 136.6597 },
+  { name: 'Mercado Omicho', desc: 'El mercado de abastos de Kanazawa, apodado "la cocina de la ciudad" — casi 300 años de historia.', lat: 36.5714, lon: 136.6547 },
   { name: 'Ginkaku-ji', desc: 'El "Pabellón de Plata", entrada norte del Camino del Filósofo. Unesco.', lat: 35.0270, lon: 135.7981 },
   { name: 'Sumida', desc: 'Barrio a orillas del río, justo al cruzar el Puente Azuma desde Asakusa, a los pies del Skytree.', lat: 35.7100, lon: 139.8050 },
   { name: 'Explanada y Puente Nijūbashi', desc: 'La vista más icónica del Palacio Imperial: el puente Nijūbashi y la Fushimi Yagura al fondo, desde la explanada Kōkyo Gaien (siempre accesible, sin horario). El Jardín Este del palacio cierra los lunes y viernes.', lat: 35.6825, lon: 139.7528 },
@@ -28,6 +29,13 @@ const manualPlaces = [
   { name: 'Itoya Ginza', desc: 'La papelería más famosa del mundo — varias plantas de material de escritura y papel de diseño.', lat: 35.6739, lon: 139.7651 },
   { name: 'Matsuya Ginza', desc: 'Grandes almacenes en plena Chuo-dori, muy cerca de Itoya.', lat: 35.6735, lon: 139.7655 },
   { name: 'Ginza Six', desc: 'El centro comercial más grande de Ginza, con marcas de lujo y una gran librería (Tsutaya).', lat: 35.6693, lon: 139.7627 },
+  // Shirakawa-go — no estaban en el KMZ, pedidos explícitamente
+  { name: 'Mirador Shiroyama', desc: 'Mirador en la colina sur del valle, con la vista panorámica más famosa de Shirakawa-go.', lat: 36.2543, lon: 136.9033 },
+  { name: 'Casa Museo Wada', desc: 'La casa gasshō-zukuri más grande y visitada del pueblo, Bien Cultural Importante de Japón.', lat: 36.2588, lon: 136.9064 },
+  { name: 'Kanda y Nagase', desc: 'Dos casas gasshō-zukuri más, abiertas como museo, muy cerca de la Casa Wada.', lat: 36.2566, lon: 136.9070 },
+  { name: 'Templo Myozenji y Santuario Shirakawa Hachiman', desc: 'El templo Myozen-ji (con museo etnográfico) y el santuario sintoísta que da nombre al Festival Doburoku del pueblo.', lat: 36.2560, lon: 136.9072 },
+  { name: 'Puente Colgante Deai', desc: 'Puente colgante sobre el río Shogawa, la entrada peatonal clásica al pueblo.', lat: 36.2610, lon: 136.9038 },
+  { name: 'Las Tres Casas de Shirakawago', desc: 'El mirador de las tres casas gasshō-zukuri alineadas frente al arrozal.', lat: 36.2580, lon: 136.9055 },
   // Takayama — no estaban en el KMZ, pedidos explícitamente
   { name: 'Sanmachi Suji', desc: 'Las calles Ichino-machi, Ni-no-machi y San-no-machi: casas de comerciantes convertidas en museos, galerías, tiendas de artesanía y cafeterías.', lat: 36.1418, lon: 137.2533 },
   { name: 'Kusakabe Mingeikan', desc: 'Casa-museo de la familia Kusakabe, mercaderes de sake y aceite en el periodo Edo.', lat: 36.1432, lon: 137.2531 },
@@ -177,7 +185,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-02', city: 'Tokio', title: 'Palacio Imperial → Kanazawa',
+    date: '2026-11-02', city: 'Tokio', title: 'Tokyo → Kanazawa',
     kind: 'travel', dayStartTime: '07:30',
     travelNote: 'Tokio tiene mucho más que ver que Kanazawa, así que aprovechamos la mañana antes del Shinkansen. Hokuriku "Kagayaki" Tokio → Kanazawa (~2h30, asiento reservado recomendado). Dejad el equipaje facturado o en consigna antes de salir del hotel.',
     stops: [
@@ -193,8 +201,9 @@ const days = [
         note: 'Ver antes de seguir: la puerta Tsuzumi (torii de madera gigante) y la cúpula de cristal Motenashi, justo a la salida.',
       },
       { name: 'Tsuzumi-mon Gate', kind: 'visit', durOverride: 10, transit: 'Bus turístico Kanazawa Loop Bus, parada Kōrinbō/Nagamachi, ~10 min desde la estación.', transitMin: 12 },
-      { name: 'Nagamachi', kind: 'visit', durOverride: 45, mealAfter: 'lunch' },
-      { name: 'Kenrokuen', kind: 'visit', durOverride: 75, note: 'Uno de los tres jardines más bonitos de Japón — con más razón en temporada de momiji (otoño).' },
+      { name: 'Mercado Omicho', kind: 'meal', mealType: 'lunch', durOverride: 45, note: '180 pequeños puestos de ostras, de sushi fresco local, de frutas, de pescado, de carne, de setas…' },
+      { name: 'Nagamachi', kind: 'visit', durOverride: 45 },
+      { name: 'Kenrokuen', kind: 'visit', durOverride: 75, note: 'En temporada de momiji (otoño), todo rojo.' },
       { name: 'Kazuemachi', kind: 'visit', durOverride: 30 },
       { name: 'Higashi Chaya', kind: 'visit', durOverride: 45, mealAfter: 'dinner' },
       { name: 'Hotel Kanazawa', kind: 'info' },
@@ -207,7 +216,13 @@ const days = [
     travelNote: 'Salida del hotel con maletas ~08:00. Bus Hokutetsu Kanazawa → Shirakawa-go (75-85 min) y después bus Nohi Shirakawa-go → Takayama (~50 min). Reservad plaza online con antelación (Hokutetsu / Nohi Bus), se llenan sobre todo en temporada de otoño.',
     stops: [
       { name: 'Hotel Kanazawa', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel, con maletas listas para el check-out.', transit: '10 min andando a la terminal de autobuses + Bus Hokutetsu Kanazawa → Shirakawa-go (75-85 min).', transitMin: 90 },
-      { name: 'Shirakawa', kind: 'visit', durOverride: 240, transit: 'Bus Nohi Shirakawa-go → Takayama, ~50 min.', transitMin: 50 },
+      { name: 'Shirakawa', kind: 'visit', durOverride: 5, note: '4 horas es más que suficiente para verlo.' },
+      { name: 'Mirador Shiroyama', kind: 'visit', durOverride: 25, transit: 'Shuttle Shiroyama Line hasta el mirador (ida, ¥200), ~5 min.', transitMin: 8 },
+      { name: 'Casa Museo Wada', kind: 'visit', durOverride: 30 },
+      { name: 'Kanda y Nagase', kind: 'visit', durOverride: 25 },
+      { name: 'Templo Myozenji y Santuario Shirakawa Hachiman', kind: 'visit', durOverride: 25 },
+      { name: 'Puente Colgante Deai', kind: 'visit', durOverride: 10 },
+      { name: 'Las Tres Casas de Shirakawago', kind: 'visit', durOverride: 15, note: 'La foto más famosa de Shirakawago.', transit: 'Bus Nohi Shirakawa-go → Takayama, ~50 min.', transitMin: 50 },
       { name: 'Hotel Takayama', kind: 'info' },
       { name: 'Takayama Old Town', kind: 'visit', durOverride: 75, note: 'Cenar carne Hida wagyu en Hidagyu Maruaki o Ajikura Tengoku (buñuelos, donburi o nigiri de Hida wagyu).' },
       { name: 'Hotel Takayama', kind: 'info' },
