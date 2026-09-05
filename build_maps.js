@@ -8,7 +8,11 @@ const trip = JSON.parse(fs.readFileSync(tripPath, 'utf-8'));
 const W = 640, H = 300;
 
 function computeBbox(stops) {
-  let pts = stops.filter(s => s.kind !== 'info' && typeof s.lat === 'number');
+  // El desayuno se modela como parada 'meal' en el hotel (no 'info'), pero en un día de excursión
+  // (ida y vuelta al mismo hotel) el hotel está lejos del área real a enmarcar — igual que un
+  // aeropuerto, es un punto de partida/vuelta, no parte de la ruta a mostrar.
+  const isHotelBookend = s => s.kind === 'info' || (s.kind === 'meal' && s.mealType === 'breakfast');
+  let pts = stops.filter(s => !isHotelBookend(s) && typeof s.lat === 'number');
   if (pts.length < 2) pts = stops.filter(s => typeof s.lat === 'number');
   if (!pts.length) return null;
   const lats = pts.map(p => p.lat), lons = pts.map(p => p.lon);

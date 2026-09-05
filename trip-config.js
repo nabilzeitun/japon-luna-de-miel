@@ -59,7 +59,7 @@ const CITY_COLORS = {
 const days = [
   // ---------------- TOKIO ----------------
   {
-    date: '2026-10-28', city: 'Tokio', title: 'Llegada · Asakusa · Sumida',
+    date: '2026-10-28', city: 'Tokio', title: 'Llegada, Asakusa y Sumida',
     kind: 'city', dayStartTime: '12:50',
     stops: [
       { name: 'Haneda airport', kind: 'info', transit: 'Keikyu Airport Line + Toei Asakusa Line (servicio directo, sin trasbordo) Haneda → Asakusa, ~45 min.', transitMin: 45 },
@@ -83,10 +83,16 @@ const days = [
     stops: [
       { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'Metro Toei Asakusa Oshiage → Asakusa (~5 min) + Ginza Line Asakusa → Ueno (~5 min).', transitMin: 20 },
       { name: 'Parque de Ueno', kind: 'visit' },
-      { name: 'Museo Nacional de Tokio', kind: 'visit', durOverride: 90 },
-      { name: 'Ueno Zoo', kind: 'visit', durOverride: 90, mealAfter: 'lunch' },
-      { name: 'Ameyoko market', kind: 'visit', transit: 'JR/Keisei Ueno → Nippori (~5 min) + 10 min andando a Yanaka.', transitMin: 15 },
-      { name: 'Yanaka', kind: 'visit', durOverride: 60, transit: 'JR Yamanote/Keihin-Tōhoku Nippori → Komagome (~10 min) + 7 min andando a Rikugien.', transitMin: 17 },
+      {
+        name: 'Museo Nacional de Tokio', kind: 'visit', durOverride: 90,
+        note: 'El museo más antiguo, grande e importante de Japón.<br>• Galería Honkan — arte japonés tradicional por orden cronológico<br>• Armaduras samurái<br>• Galería Tōyōkan<br>• Los jardines alrededor<br>Martes a domingo 09:30-17:00 (viernes y sábados hasta las 21:00). Lunes cerrado. 1.000 yenes.',
+      },
+      {
+        name: 'Ueno Zoo', kind: 'visit', durOverride: 90, optional: true,
+        note: 'Opcional — ya no tiene los pandas gigantes desde enero de 2026.',
+      },
+      { name: 'Ameyoko market', kind: 'visit', durOverride: 55, mealAfter: 'lunch', transit: 'JR/Keisei Ueno → Nippori (~5 min) + 10 min andando a Yanaka.', transitMin: 15 },
+      { name: 'Yanaka', kind: 'visit', durOverride: 75, note: 'Callejeo tranquilo de casas bajas y templos — dedicadle tiempo sin prisa, es de los rincones con más encanto de Tokio.', transit: 'JR Yamanote/Keihin-Tōhoku Nippori → Komagome (~10 min) + 7 min andando a Rikugien.', transitMin: 17 },
       { name: 'Jardín Rikugien', kind: 'visit', durOverride: 45, transit: 'JR Yamanote Line Komagome → Akihabara, ~15 min.', transitMin: 15 },
       { name: 'Akihabara', kind: 'visit', durOverride: 60 },
       { name: 'TAITO Station Akihabara', kind: 'visit', durOverride: 45, mealAfter: 'dinner', transit: 'Metro Hanzomon Line directo Akihabara → Oshiage, ~10 min.', transitMin: 15 },
@@ -101,10 +107,10 @@ const days = [
       { name: 'Santuario Meiji', kind: 'visit', durOverride: 45 },
       { name: 'Parque Yoyogi', kind: 'visit' },
       { name: 'Calle Takeshita', kind: 'visit' },
-      { name: 'Omote-Sando Avenue', kind: 'visit', mealAfter: 'lunch' },
+      { name: 'Omote-Sando Avenue', kind: 'visit', mealAfter: 'lunch', note: 'Si os sobran ~20 min: Paradise Vintage está a 2 min andando y AMORE Vintage Aoyama a 5 min — ropa vintage.' },
       { name: 'Shibuya Crossing', kind: 'visit', durOverride: 15 },
       { name: 'Hachiko Statue', kind: 'visit', durOverride: 10 },
-      { name: 'Calle Central de Shibuya', kind: 'visit' },
+      { name: 'Calle Central de Shibuya', kind: 'visit', note: 'Si os sobran ~20 min: BRAND OFF Shibuya está aquí mismo y MEGA Don Quijote a 3 min — vintage y outlet turístico.' },
       { name: 'Dogenzaka', kind: 'visit' },
       { name: 'Shibuya Nonbei Yokocho', kind: 'visit', transit: 'JR Yamanote Line Shibuya → Shinjuku, ~7 min.', transitMin: 15 },
       { name: 'Shinjuku', kind: 'visit', durOverride: 0 },
@@ -124,16 +130,33 @@ const days = [
   {
     date: '2026-10-31', city: 'Tokio', title: 'Excursión a Kamakura',
     kind: 'daytrip', dayStartTime: '07:00',
-    optional: true,
-    travelNote: 'JR Yokosuka Line directo Tokio/Shinagawa → Kamakura, ~55 min-1h (salida del hotel ~08:00). Dentro de Kamakura, el bus o el tren local Enoden conecta el Daibutsu con Hase y la costa si os sobra tiempo. Si preferís no hacer esta excursión, hay una alternativa de día completo a Hakone (ver Extra y alternativas).',
+    optional: true, altGroup: 'day4', altLabel: 'A',
+    altNote: 'Elegid <b>4A (Kamakura)</b> o <b>4B (Hakone)</b> la mañana de antes, según el tiempo — Kamakura (templos y costa) funciona con cualquier tiempo; Hakone (montaña y volcán) solo compensa con cielo despejado para ver el Fuji.',
+    travelNote: 'Desde el hotel, camino a Kinshichō Station (a pocos minutos). Sōbu Line (Rapid) dirección Zushi, que continúa automáticamente como Yokosuka Line (mismo tren, sin trasbordo) hasta Kamakura Station, ~1h en total. Dentro de Kamakura, el bus o el tren local Enoden conecta el Daibutsu con Hase y la costa si os sobra tiempo.',
     stops: [
-      { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'Camino a la estación (~15-20 min) + JR Yokosuka Line a Kamakura (~55 min-1h).', transitMin: 75 },
+      { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'Caminando a Kinshichō Station (pocos minutos) + Sōbu Line (Rapid) dirección Zushi, que continúa como Yokosuka Line (mismo tren, sin trasbordo) → Kamakura Station, ~1h en total.', transitMin: 70 },
       { name: 'Kamakura', kind: 'visit', durOverride: 0 },
       { name: 'Templo Kotoku-in', kind: 'visit', durOverride: 40, mealAfter: 'lunch', transit: 'Enoden Hase → Kamakura Station (~15 min) + bus/taxi a Hokoku-ji (~10 min).', transitMin: 25 },
       { name: 'Templo Hokoku-ji', kind: 'visit', durOverride: 40, transit: 'Bus Keikyu de vuelta a Kamakura Station (~10 min) + 10 min andando a Tsurugaoka.', transitMin: 18 },
       { name: 'Tsurugaoka Hachiman-gū', kind: 'visit', durOverride: 40 },
       { name: 'Komachi Street', kind: 'visit', durOverride: 45, mealAfter: 'dinner', transit: 'JR Yokosuka Line Kamakura → Tokio/Shinagawa (~55 min-1h) + metro Asakusa Line a Oshiage (~15 min).', transitMin: 75 },
       { name: 'Hotel Tokyo', kind: 'info' },
+    ],
+  },
+  {
+    date: '2026-10-31', city: 'Tokio', title: 'Excursión a Hakone',
+    kind: 'daytrip', dayStartTime: '07:00',
+    optional: true, altGroup: 'day4', altLabel: 'B',
+    altNote: 'Elegid <b>4B (Hakone)</b> o <b>4A (Kamakura)</b> la mañana de antes, según el tiempo — Hakone solo compensa con cielo despejado, para ver el Fuji desde el teleférico y el lago Ashi. Si está nublado, mejor Kamakura.',
+    travelNote: 'Odakyu Romancecar directo Shinjuku → Hakone-Yumoto (~1h25-1h35). Sacad el Hakone Freepass en la estación: incluye el tren de montaña, el cable car, el teleférico (ropeway) y el barco pirata del lago Ashi, todo lo necesario para el circuito del día.',
+    stops: [
+      { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel, con tiempo de sobra para el Romancecar.', transit: 'Metro Hanzomon Line Oshiage → Shinjuku-sanchōme (~30 min) + Odakyu Romancecar directo Shinjuku → Hakone-Yumoto (~1h25-1h35).', transitMin: 130 },
+      { name: 'Hakone', kind: 'visit', durOverride: 10, note: 'Sacad el Hakone Freepass en la estación antes de moveros — incluye todo el transporte del día.', transit: 'Hakone Tozan Railway Hakone-Yumoto → Gora, ~40 min.', transitMin: 40 },
+      { name: 'Museo al Aire Libre de Hakone', kind: 'visit', durOverride: 90, note: 'Esculturas al aire libre entre las montañas, con un pabellón de obras de Picasso.', transit: 'Cable car Gora → Sōunzan (~10 min) + teleférico (ropeway) Sōunzan → Owakudani, ~20 min en total.', transitMin: 20 },
+      { name: 'Teleférico de Hakone', kind: 'visit', durOverride: 15, note: 'El tramo por encima de Owakudani regala las mejores vistas al Fuji del día, si está despejado.' },
+      { name: 'Owakudani', kind: 'visit', durOverride: 45, note: 'Valle volcánico activo — probad un kuro-tamago (huevo cocido en aguas termales; dicen que alarga la vida 7 años). Hay soba/curry si no habéis comido.', transit: 'Teleférico Owakudani → Togendai (~15 min) + barco pirata cruzando el lago Ashi a Hakone-machi (~30 min).', transitMin: 45 },
+      { name: 'Santuario Hakone', kind: 'visit', durOverride: 40, note: 'El torii rojo se adentra en el lago Ashi, con el Fuji al fondo en días despejados.', transit: 'Bus Hakone Tozan Hakone-machi → Hakone-Yumoto (~30 min) + Odakyu Romancecar Hakone-Yumoto → Shinjuku (~1h25-1h35) + Metro Hanzomon Line a Oshiage (~30 min).', transitMin: 150 },
+      { name: 'Hotel Tokyo', kind: 'info', note: 'De camino, el shotengai de Hakone-Yumoto tiene puestos de soba y comida si preferís cenar antes de subir al tren.' },
     ],
   },
   {
@@ -154,7 +177,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-02', city: 'Tokio', title: 'Mañana en el Palacio Imperial · viaje a Kanazawa',
+    date: '2026-11-02', city: 'Tokio', title: 'Palacio Imperial → Kanazawa',
     kind: 'travel', dayStartTime: '07:30',
     travelNote: 'Tokio tiene mucho más que ver que Kanazawa, así que aprovechamos la mañana antes del Shinkansen. Hokuriku "Kagayaki" Tokio → Kanazawa (~2h30, asiento reservado recomendado). Dejad el equipaje facturado o en consigna antes de salir del hotel.',
     stops: [
@@ -272,7 +295,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-09', city: 'Kioto', title: 'Excursión a Nara · viaje a Osaka',
+    date: '2026-11-09', city: 'Kioto', title: 'Nara → Osaka',
     kind: 'travel', dayStartTime: '07:30',
     travelNote: 'Salida con maletas del hotel de Kioto (dejadlas en consigna de la estación). JR Nara Line (rápido "Miyakoji") o Kintetsu Kyoto Line hasta Nara, ~45 min. Por la tarde, Kintetsu Nara Line directo hasta Osaka-Namba (~35-40 min) — no hace falta volver a Kioto.',
     stops: [
@@ -315,7 +338,7 @@ const days = [
     ],
   },
   {
-    date: '2026-11-12', city: 'Osaka', title: 'Castillo, Umeda Sky, Dōtonbori y Shinsekai · vuelo nocturno',
+    date: '2026-11-12', city: 'Osaka', title: 'Castillo, Umeda Sky, Dōtonbori y Shinsekai → Aeropuerto',
     kind: 'city', dayStartTime: '08:30',
     travelNote: 'Salida del hotel con equipaje por la mañana (dejar maletas en consigna de la estación). Vuelo OSAKA KANSAI 23:20 → Singapur 05:00 (+1) — al ser el último día, toda la ruta de hoy es dentro de Osaka, sin trenes de larga distancia, para llegar con margen al aeropuerto.',
     stops: [
@@ -340,7 +363,7 @@ const days = [
 
 // Lugares del KMZ que no se han metido en ningún día (opcionales / por si sobra tiempo)
 const extras = {
-  Tokio: ['Chōfu', 'Jardín Botánico Jindaiji', '大正寺 山門(竜宮門)', 'Shibamata', 'Shibamata Taishakuten', 'Yamanote Line', 'Park Hyatt Tokyo', 'SUSHI Gompachi Nishi-Azabu'],
+  Tokio: ['Chōfu', 'Jardín Botánico Jindaiji', '大正寺 山門(竜宮門)', 'Shibamata', 'Shibamata Taishakuten', 'Yamanote Line', 'Park Hyatt Tokyo', 'SUSHI Gompachi Nishi-Azabu', 'Mount Fuji Fujinomiya 5th Station'],
   'Kanazawa-Takayama': ['Castillo de Nagoya'],
   Kioto: [
     "Philosopher's Path (Tetsugaku no Michi), North End", 'Tetsugaku No Michi',
@@ -361,11 +384,6 @@ const altDayTrips = [
     id: 'tsuruga', title: 'Tsuruga, Hikone y Fukui (alternativa, desde Kioto)',
     note: 'Kioto → Maibara (JR Biwako Line, ~50 min) → Castillo Hikone (JR ~10 min) → Tsuruga (limited express Hokuriku, ~30-40 min desde Maibara) → Fukui (JR ~20 min más). Los tres en un día realista solo si vais justos de tiempo en cada parada; con calma, recomendado quedarse en Hikone + Tsuruga.',
     stops: ['Tsuruga', 'Castillo Hikone', 'Fukui'],
-  },
-  {
-    id: 'hakone', title: 'Hakone (alternativa de día completo, desde Tokio)',
-    note: 'Odakyu Romancecar directo Shinjuku → Hakone-Yumoto (~1h25-1h35). Dentro de Hakone moveos con el Hakone Freepass: bus/tren de montaña → teleférico (ropeway) → barco pirata en el lago Ashi. Encaja como sustituto de Kamakura (31 oct) si preferís montaña y volcán a templos y costa — no da tiempo a hacer las dos excursiones el mismo viaje sin sacrificar otro día.',
-    stops: ['Hakone', 'Museo al Aire Libre de Hakone', 'Teleférico de Hakone', 'Owakudani', 'Santuario Hakone', 'Mount Fuji Fujinomiya 5th Station'],
   },
 ];
 

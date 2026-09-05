@@ -547,6 +547,26 @@ applyTheme(currentTheme);
 
 const TRIP = /*__TRIP_JSON__*/;
 
+// Números de día para mostrar: dos días que comparten altGroup (p.ej. 4A/4B, una excursión
+// alternativa a otra el mismo día del calendario) cuentan como un solo número con letra de sufijo,
+// en vez de desplazar la numeración de todos los días siguientes.
+function computeDayLabels(days) {
+  const labels = [];
+  let n = 0, i = 0;
+  while (i < days.length) {
+    const group = [i];
+    while (i + 1 < days.length && days[i + 1].altGroup && days[i + 1].altGroup === days[i].altGroup) {
+      group.push(i + 1);
+      i++;
+    }
+    n++;
+    group.forEach(idx => { labels[idx] = String(n) + (group.length > 1 ? (days[idx].altLabel || '') : ''); });
+    i++;
+  }
+  return labels;
+}
+const DAY_LABELS = computeDayLabels(TRIP.days);
+
 const CITY_SLUG = {
   'Tokio': 'tokio',
   'Kanazawa-Takayama': 'kanazawa',
@@ -657,7 +677,7 @@ function renderDayTabLabel() {
     const { day, month } = fmtDate(d.date);
     btn.className = 'tab-btn active has-day city-' + slug;
     btn.style.setProperty('--chip-color', 'var(--city-color)');
-    btn.textContent = `Día ${currentDayIdx + 1} · ${day} ${month}`;
+    btn.textContent = `Día ${DAY_LABELS[currentDayIdx]} · ${day} ${month}`;
   }
 }
 
@@ -686,7 +706,7 @@ function renderDayPicker() {
     btn.className = 'day-chip city-' + slug + (i === currentDayIdx ? ' active' : '') + (complete ? ' complete' : '');
     btn.style.setProperty('--chip-color', complete ? 'var(--ink-faint)' : 'var(--city-color)');
     btn.innerHTML = `
-      <span class="num tabular">${i+1}</span>
+      <span class="num tabular">${DAY_LABELS[i]}</span>
       <span class="meta">
         <span class="date tabular">${day} ${month} · ${weekday}${d.optional ? ' · <span class="opt-flag">opc.</span>' : ''}${i === todayIdx ? ' <span class="today-tag">Hoy</span>' : ''}</span>
         <span class="title">${d.title}</span>
@@ -793,8 +813,10 @@ function renderDayView() {
   </div>
   <div class="time-hint">Horas estimadas si seguís el orden propuesto desde el inicio del día — usadlas para ver si vais bien de tiempo, no como citas fijas.</div>`;
 
-  if (d.optional && d.altOf) {
-    html += `<div class="alt-note"><b>Es opcional — </b>viene del mapa compartido con amigos/familia, no hace falta hacerla si no os apetece. Podéis elegir solo esta o la <b>${d.altOf}</b>, en vez de las dos, y usar el día libre para ir con más calma, hacer shopping o descansar.</div>`;
+  if (d.optional && d.altNote) {
+    html += `<div class="alt-note"><b>Es una alternativa — </b>${d.altNote}</div>`;
+  } else if (d.optional) {
+    html += `<div class="alt-note"><b>Es opcional — </b>viene del mapa compartido con amigos/familia, no hace falta hacerla si no os apetece.</div>`;
   }
 
   if (d.travelNote) {
@@ -918,7 +940,7 @@ function renderFlatView(elId, list) {
     items.sort((a,b) => a.nearestDayDist - b.nearestDayDist);
     const slug = CITY_SLUG[d.city] || '';
     const { day, month, weekday } = fmtDate(d.date);
-    html += `<div class="group-heading city-${slug}"><span class="dot" style="background:var(--city-color)"></span>Día ${di+1} · ${d.title} <span class="group-date">${weekday} ${day} ${month} · ${items.length}</span></div>`;
+    html += `<div class="group-heading city-${slug}"><span class="dot" style="background:var(--city-color)"></span>Día ${DAY_LABELS[di]} · ${d.title} <span class="group-date">${weekday} ${day} ${month} · ${items.length}</span></div>`;
     html += `<div class="flat-list">` + items.map(item => `
       <div class="flat-item">
         <div><div class="name">${item.name}</div>${item.desc ? `<div class="desc">${item.desc}</div>` : ''}</div>
@@ -941,7 +963,7 @@ function renderExtras() {
   const el = document.getElementById('viewExtras');
   let html = `<div style="max-width:780px">`;
   html += `<h2 class="display" style="font-size:19px; margin-bottom:4px;">Lugares guardados sin día asignado</h2>
-  <p style="color:var(--ink-soft); font-size:13px; margin-bottom:20px;">Todo lo que teníais marcado en el mapa pero no encajaba en los ${TRIP.days.length} días del itinerario. Usadlos para sustituir algo si os sobra tiempo o cambia el plan.</p>`;
+  <p style="color:var(--ink-soft); font-size:13px; margin-bottom:20px;">Todo lo que teníais marcado en el mapa pero no encajaba en los ${new Set(TRIP.days.map(d => d.date)).size} días del itinerario. Usadlos para sustituir algo si os sobra tiempo o cambia el plan.</p>`;
 
   Object.entries(TRIP.extras).forEach(([city, items]) => {
     if (!items.length) return;
@@ -971,7 +993,7 @@ function renderExtras() {
 function buildSearchIndex() {
   const idx = [];
   TRIP.days.forEach((d, di) => d.stops.forEach(s => {
-    idx.push({ name: s.name, desc: s.desc, where: `Día ${di+1} · ${d.title}`, go: () => jumpToDay(di) });
+    idx.push({ name: s.name, desc: s.desc, where: `Día ${DAY_LABELS[di]} · ${d.title}`, go: () => jumpToDay(di) });
   }));
   Object.entries(TRIP.extras).forEach(([city, items]) => items.forEach(it => {
     idx.push({ name: it.name, desc: it.desc, where: `Extra · ${CITY_LABEL[city]||city}`, go: () => { setMode('extras'); renderAll(); } });
