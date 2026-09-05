@@ -124,6 +124,7 @@ const days = [
       { name: 'Shibuya Nonbei Yokocho', kind: 'visit', transit: 'JR Yamanote Line Shibuya → Shinjuku, ~7 min.', transitMin: 15 },
       { name: 'Shinjuku', kind: 'visit', durOverride: 0 },
       { name: 'Mirador del Gobierno Metropolitano de Tokio', kind: 'visit', durOverride: 40 },
+      { name: 'Park Hyatt Tokyo', kind: 'visit', durOverride: 15, note: 'A 5 min andando del mirador — el hotel donde se rodó "Lost in Translation".' },
       { name: 'Omoide Yokochō', kind: 'visit', durOverride: 60 },
       { name: 'Shinjuku Ni-chōme', kind: 'visit', durOverride: 30 },
       { name: 'Kabukichō', kind: 'visit' },
@@ -282,7 +283,7 @@ const days = [
       { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel, con maletas listas.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 200 },
       { name: 'Templo Higashi Hongan-ji', kind: 'visit', durOverride: 30, note: 'El más grande de los dos, justo enfrente de la estación — ideal nada más llegar.', mealAfter: 'lunch' },
       { name: 'Templo Nishi Hongan-ji', kind: 'visit', durOverride: 30, transit: 'Bus Kioto City Bus, ~15-20 min.', transitMin: 18 },
-      { name: 'Castillo Nijō', kind: 'visit', durOverride: 75, note: 'El suelo "uguisubari" (de ruiseñor) chirría al pisarlo — un sistema antiguo para detectar intrusos.', transit: 'Metro Tozai Line Nijōjō-mae → Karasuma-Oike (~5 min) + Karasuma Line a Shijo (~3 min).', transitMin: 15 },
+      { name: 'Castillo Nijō', kind: 'visit', durOverride: 75, mealAfter: 'dinner', note: 'El suelo "uguisubari" (de ruiseñor) chirría al pisarlo — un sistema antiguo para detectar intrusos.', transit: 'Metro Tozai Line Nijōjō-mae → Karasuma-Oike (~5 min) + Karasuma Line a Shijo (~3 min).', transitMin: 15 },
       { name: 'Hotel Kyoto', kind: 'info' },
     ],
   },
@@ -379,7 +380,9 @@ const days = [
       { name: 'Miyahima', kind: 'visit', durOverride: 0, note: 'El paseo por la orilla hasta el torii es parte del atractivo — se recorre andando.' },
       { name: 'Torii Flotante del Santuario Itsukushima', kind: 'visit', durOverride: 30 },
       { name: 'Santuario Itsukushima', kind: 'visit', durOverride: 30 },
-      { name: 'Calle Comercial Miyajima Omotesando', kind: 'visit', durOverride: 30, transit: 'Bus gratuito a la estación del ropeway + telesférico Miyajima, ~15 min en total.', transitMin: 20 },
+      { name: 'Santuario Toyokuni (Senjokaku)', kind: 'visit', durOverride: 20, note: 'El pabellón de madera más grande de Miyajima — Toyotomi Hideyoshi lo encargó en 1587 y nunca se terminó de construir. La pagoda de cinco pisos de al lado es del mismo conjunto.' },
+      { name: 'Calle Comercial Miyajima Omotesando', kind: 'visit', durOverride: 30 },
+      { name: 'Parque Momijidani', kind: 'visit', durOverride: 20, note: 'El valle de los arces — a principios de noviembre es buena época para verlos en pleno color.', transit: 'Bus gratuito a la estación del ropeway + telesférico Miyajima, ~15 min en total.', transitMin: 20 },
       { name: 'Monte Misen', kind: 'visit', durOverride: 90, note: 'Teleférico + un poco de subida a pie para las vistas.', transit: 'Teleférico de bajada (~15 min) + ferry a Miyajimaguchi (~10 min) + JR a Hiroshima (~25 min) + Shinkansen Sanyo a Shin-Osaka (~1h20-1h35) + metro al hotel (~20 min).', transitMin: 160 },
       { name: 'Hotel Osaka', kind: 'info' },
     ],
@@ -410,7 +413,7 @@ const days = [
 
 // Lugares del KMZ que no se han metido en ningún día (opcionales / por si sobra tiempo)
 const extras = {
-  Tokio: ['Chōfu', 'Jardín Botánico Jindaiji', '大正寺 山門(竜宮門)', 'Shibamata', 'Shibamata Taishakuten', 'Yamanote Line', 'Park Hyatt Tokyo', 'SUSHI Gompachi Nishi-Azabu', 'Mount Fuji Fujinomiya 5th Station'],
+  Tokio: ['Chōfu', 'Jardín Botánico Jindaiji', '大正寺 山門(竜宮門)', 'Shibamata', 'Shibamata Taishakuten', 'Yamanote Line', 'SUSHI Gompachi Nishi-Azabu', 'Mount Fuji Fujinomiya 5th Station'],
   'Kanazawa-Takayama': ['Castillo de Nagoya'],
   Kioto: [
     "Philosopher's Path (Tetsugaku no Michi), North End", 'Tetsugaku No Michi',
@@ -421,7 +424,7 @@ const extras = {
   ],
   Osaka: [
     'Sumiyoshi Taisha', 'Templo Katsuo-ji', 'Takimikoji',
-    'Jardín Shukkeien', 'Santuario Toyokuni (Senjokaku)', 'Parque Momijidani', 'Teleférico de Miyajima',
+    'Jardín Shukkeien', 'Teleférico de Miyajima',
   ],
 };
 
