@@ -183,7 +183,10 @@ const days = [
     stops: [
       { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno rápido en el hotel (o saltadlo si vais a comer en Toyosu).', transit: 'Metro Yurikamome/Toei Oedo a Toyosu, ~25-30 min.', transitMin: 30 },
       { name: 'Toyosu Senkyaku Banrai', kind: 'visit', durOverride: 45, optional: true, note: 'Opcional — solo si salís al amanecer, os quita tiempo para el Palacio Imperial.', transit: 'Metro Yurikamome Toyosu → Tokyo Station, ~20 min.', transitMin: 20 },
-      { name: 'Explanada y Puente Nijūbashi', kind: 'visit', durOverride: 35 },
+      {
+        name: 'Explanada y Puente Nijūbashi', kind: 'visit', durOverride: 35, optional: true,
+        note: 'Opcional — el Palacio Imperial no merece mucho la pena, es más para rellenar tiempo antes del Shinkansen. Alternativa: aprovechar para ir de compras a lo que no hayáis podido comprar todavía.',
+      },
       { name: 'Estación de Tokio (Marunouchi)', kind: 'visit', durOverride: 20, transit: 'Shinkansen Hokuriku "Kagayaki" Tokio → Kanazawa, ~2h30.', transitMin: 150 },
       { name: 'Kanazawa Station', kind: 'visit', durOverride: 15 },
       { name: 'Tsuzumi-mon Gate', kind: 'visit', durOverride: 10, transit: 'Bus turístico Kanazawa Loop Bus, parada Kōrinbō/Nagamachi, ~10 min desde la estación.', transitMin: 12 },
