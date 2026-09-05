@@ -1,0 +1,3410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Japón</name>
+    <description/>
+    <Style id="icon-1504-FF5252-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1504-FF5252-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1504-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1504-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1504-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1532-0288D1-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-14.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1532-0288D1-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-14.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1532-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1532-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1532-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1532-3949AB-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-17.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1532-3949AB-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-17.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1532-3949AB">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1532-3949AB-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1532-3949AB-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1535-0288D1-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1535-0288D1-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1535-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1535-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1535-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1567-0F9D58-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-23.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1567-0F9D58-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-23.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1567-0F9D58-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1567-0F9D58-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1567-0F9D58-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1577-0288D1-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-11.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1577-0288D1-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-11.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1577-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1577-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1577-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1577-0F9D58-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-24.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1577-0F9D58-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-24.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1577-0F9D58">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1577-0F9D58-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1577-0F9D58-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1577-0F9D58-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-24.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1577-0F9D58-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-24.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1577-0F9D58-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1577-0F9D58-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1577-0F9D58-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1596-0288D1-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-7.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1596-0288D1-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-7.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1596-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1596-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1596-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-000000-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1603-000000-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1603-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1604-0288D1-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-19.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1604-0288D1-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-19.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1604-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1604-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1604-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1604-3949AB-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1604-3949AB-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1604-3949AB">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1604-3949AB-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1604-3949AB-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1604-3949AB-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1604-3949AB-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1604-3949AB-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1604-3949AB-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1604-3949AB-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1613-9C27B0-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-21.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1613-9C27B0-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-21.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1613-9C27B0">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1613-9C27B0-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1613-9C27B0-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1613-9C27B0-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-21.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1613-9C27B0-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-21.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1613-9C27B0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1613-9C27B0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1613-9C27B0-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1626-3949AB-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-10.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1626-3949AB-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-10.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1626-3949AB">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1626-3949AB-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1626-3949AB-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1634-000000-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-13.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1634-000000-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-13.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1634-000000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1634-000000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1634-000000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1636-0288D1-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-16.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1636-0288D1-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-16.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1636-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1636-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1636-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1636-3949AB-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1636-3949AB-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1636-3949AB">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1636-3949AB-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1636-3949AB-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1636-3949AB-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1636-3949AB-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1636-3949AB-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1636-3949AB-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1636-3949AB-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1684-9C27B0-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-22.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1684-9C27B0-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-22.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1684-9C27B0">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1684-9C27B0-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1684-9C27B0-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1684-9C27B0-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-22.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1684-9C27B0-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-22.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1684-9C27B0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1684-9C27B0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1684-9C27B0-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1706-0288D1-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1706-0288D1-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1706-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1706-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1706-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1706-0288D1-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1706-0288D1-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1706-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1706-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1706-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1706-3949AB-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-12.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1706-3949AB-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-12.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1706-3949AB">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1706-3949AB-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1706-3949AB-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1706-3949AB-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-12.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1706-3949AB-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-12.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1706-3949AB-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1706-3949AB-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1706-3949AB-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1709-000000-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-20.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1709-000000-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-20.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1709-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1709-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1709-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1716-FF5252-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-15.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1716-FF5252-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-15.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1716-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1716-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1716-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1731-0288D1-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1731-0288D1-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1731-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1731-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1731-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1731-0288D1-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1731-0288D1-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1731-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1731-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1731-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1743-3949AB-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-9.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1743-3949AB-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-9.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1743-3949AB">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1743-3949AB-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1743-3949AB-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-18.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-18.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Tokio</name>
+      <Placemark>
+        <name>Haneda airport</name>
+        <description>HND-TOKYO 28OCT WED12:50</description>
+        <styleUrl>#icon-1504-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            139.7779951,35.5482964,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hotel Tokyo</name>
+        <description>5 noches de alojamiento y desayuno en HOTEL TOBU LEVANT (TOKYO) Twin Room Skytree View</description>
+        <styleUrl>#icon-1603-000000</styleUrl>
+        <Point>
+          <coordinates>
+            139.810939,35.6972128,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yanaka</name>
+        <description>lentitud y tradición, shopping tradicional y artesano</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.7690417,35.7250389,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shibamata</name>
+        <description>barrio tradicional típico, ambiente noventero 0 turístico. mucha comida callejera</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.8777675,35.7559398,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shibamata Taishakuten</name>
+        <description>templo shibamata</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.8784378,35.7584061,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Toyosu Senkyaku Banrai</name>
+        <description>mercado aire libre</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.7836383,35.6457275,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ginza</name>
+        <description>ppal barrio comercial</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.7664859,35.6712228,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chōfu</name>
+        <description>ppal zona verde de tokio, ambiente tradicional.</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.5407215,35.6506111,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jardín Botánico Jindaiji</name>
+        <description><![CDATA["jardín del retiro" de tokyo]]></description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.5483481,35.6712808,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>大正寺 山門(竜宮門)</name>
+        <description>templo ppal de chofu</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.5452642,35.6554394,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Adashino Nenbutsuji Temple</name>
+        <description>3€ pero mucho más tranquilo.</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.6656131,35.0269596,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Asakusa</name>
+        <description>barrio</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.7958849,35.7185858,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sensō-ji</name>
+        <description>calle comercial Nakamise Dori</description>
+        <styleUrl>#icon-1706-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.7966553,35.7147651,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Calle Comercial Nakamise</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7964542,35.7118413,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hoppy Street</name>
+        <description>Izakayas en los que pedir hoppy. japo tardicional </description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.794291,35.7125724,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuramae</name>
+        <description>brooklyn de tokio, artesanía y tranquilidad, tiendas pequeñas de todo.</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.7920494,35.7021284,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centro de Información Turística y Cultural de Asakusa</name>
+        <description>vistas desde oficina de turismo gratis</description>
+        <styleUrl>#icon-1535-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.7965461,35.7107074,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TAITO Station Akihabara</name>
+        <description>gaming arcade viral famosísimo, de los más grandes del mundo</description>
+        <styleUrl>#icon-1596-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.771697,35.700244,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Calle Comercial Shin-Nakamise</name>
+        <description>Galería comercial Shin-Nakamise en Asakusa subway station</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.7944908,35.7121273,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Puente Azuma</name>
+        <description>Cruzar puente Azuma desde parque sumida</description>
+        <styleUrl>#icon-1706-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.79885,35.710155,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tokyo Skytree</name>
+        <description>Subir tokyo skytree</description>
+        <styleUrl>#icon-1706-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.8107004,35.7100627,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Akihabara</name>
+        <description>mucha tienda y de segunda mano</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.7744733,35.7022589,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parque de Ueno</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7734312,35.7147557,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Museo Nacional de Tokio</name>
+        <description>Horario: 9:30 a 17:00 (620 yenes)</description>
+        <styleUrl>#icon-1636-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.7765215,35.7188351,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ueno Zoo</name>
+        <description>Horario 9:30 - 17:00, cierra los lunes</description>
+        <styleUrl>#icon-1743-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.772882,35.7160153,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jardín Rikugien</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7457335,35.7331005,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ameyoko market</name>
+        <description>mercado de todo</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.7746259,35.7090028,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yamanote Line</name>
+        <description>línea circular ppal de tokio</description>
+        <styleUrl>#icon-1626-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.7596327,35.6713581,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shibuya Crossing</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7005596,35.659482,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hachiko Statue</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7006288,35.6590552,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shibuya Nonbei Yokocho</name>
+        <description>callejón con bares y comercios, japos borrachos</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.701533,35.6599499,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Calle Central de Shibuya</name>
+        <description>calle comercial</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.6997833,35.6600456,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SUSHI Gompachi Nishi-Azabu</name>
+        <description>posible restaurante top, reservar</description>
+        <styleUrl>#icon-1577-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.7235128,35.6602253,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dogenzaka</name>
+        <description>avenidas y áreas comerciales más famosas del barrio de Shibuya</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.6981574,35.6581518,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Calle Takeshita</name>
+        <description>emblemática calle peatonal de unos 350 a 400 metros. moda, domingos mediodía más frikis</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.7051821,35.6710335,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Omote-Sando Avenue</name>
+        <description>calle comercial paralela a Takeshita Dori (Kiddy Land tienda de muñecos, oriental bazar)</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.7072283,35.6677001,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parque Yoyogi</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.6949656,35.6700649,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santuario Meiji</name>
+        <description>Horario 5am a 18:00</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.6993259,35.6763976,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shinjuku</name>
+        <styleUrl>#icon-1604-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7033559,35.6938253,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mirador del Gobierno Metropolitano de Tokio</name>
+        <description>Park Hyatt, famoso por la película Lost in Translation,Tocho y su mirador gratuito</description>
+        <styleUrl>#icon-1535-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.6916563,35.689733,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Park Hyatt Tokyo</name>
+        <description>famoso por la película Lost in Translation, mirador gratuito</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.6904828,35.6862131,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kabukichō</name>
+        <styleUrl>#icon-1604-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7026251,35.6960834,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tokyu Kabukicho Tower</name>
+        <description>tokyo kabukicho tower, restaurantes y maquinas dentro</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.7005894,35.6957513,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Okubo</name>
+        <description>barrio coreano</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.7051782,35.703991,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shinjuku Ni-chōme</name>
+        <description>zona LGTB</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.7083697,35.6897887,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Omoide Yokochō</name>
+        <description>pequeños restaurantes, yakitori</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.6995778,35.6927037,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kamakura</name>
+        <description>zona parques y templos</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.5466731,35.3192128,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Templo Kotoku-in</name>
+        <description>Kamakura daibutsu</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.5357442,35.3168145,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tsurugaoka Hachiman-gū</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.5563462,35.3259856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Templo Hokoku-ji</name>
+        <description>templo del bambú</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            139.5692379,35.3199921,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Komachi Street</name>
+        <description>calle comercial, Curry bread croqueta</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.553733,35.3242776,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hakone</name>
+        <styleUrl>#icon-1604-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.1088454,35.2337691,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Museo al Aire Libre de Hakone</name>
+        <styleUrl>#icon-1636-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.0507271,35.2451601,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santuario Hakone</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.0253782,35.2048263,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Teleférico de Hakone</name>
+        <description>se puede ver el Fuji</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.0198459,35.2444656,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Owakudani</name>
+        <description>zona volcánica, azufres, típicos huevos negros</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            139.0216292,35.2429781,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mount Fuji Fujinomiya 5th Station</name>
+        <styleUrl>#icon-1634-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            138.7341277,35.336617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Kanazawa-Takayama</name>
+      <Placemark>
+        <name>Hotel Kanazawa</name>
+        <description>1 noche de alojamiento y desayuno en HOTEL TOKYU STAY KANAZAWA (KANAZAWA) Moderate Double Room</description>
+        <styleUrl>#icon-1603-000000</styleUrl>
+        <Point>
+          <coordinates>
+            136.6539198,36.567514,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shirakawa</name>
+        <description>Con una mañana tenéis suficiente, no cometáis el error de ir todo el día... Nosotros con 4 horas nos valió</description>
+        <styleUrl>#icon-1532-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            136.8985744,36.2710289,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hotel Takayama </name>
+        <description>2 noches de alojamiento y desayuno en HOTEL HIDA TAKAYAMA GREEN (TAKAYAMA) Japanese Style Room</description>
+        <styleUrl>#icon-1603-000000</styleUrl>
+        <Point>
+          <coordinates>
+            137.2480352,36.1373669,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kanazawa Station</name>
+        <description>hay un tori muy chulo cerca</description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            136.6496669,36.5775481,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tsuzumi-mon Gate</name>
+        <styleUrl>#icon-1706-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            136.6491445,36.5778025,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Takayama Old Town</name>
+        <description>carne hida wagyu </description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            137.2594717,36.1429901,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Takayama Shōwa-kan Museum</name>
+        <description>museo años 60</description>
+        <styleUrl>#icon-1636-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            137.2599215,36.1439748,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hida no Sato Folk Village Museum</name>
+        <styleUrl>#icon-1604-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            137.2350898,36.1324902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Nagoya</name>
+      <Placemark>
+        <name>Castillo de Nagoya</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            136.8996883,35.1847501,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nakatsugawa Station</name>
+        <description>buses a Nagome</description>
+        <styleUrl>#icon-1532-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            137.5031352,35.5004945,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Magome-juku</name>
+        <description>Pueblo rústico en una ruta postal de la era feudal. Yoshimura Soba, para cenar</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            137.5717516,35.5315174,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Kioto</name>
+      <Placemark>
+        <name>Hotel Kyoto</name>
+        <description>4 noches de alojamiento y desayuno en HOTEL RESOL SHIJO MUROMACHI (KYOTO) Hollywood Twin Room</description>
+        <styleUrl>#icon-1603-000000</styleUrl>
+        <Point>
+          <coordinates>
+            135.7578639,35.0006295,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nagoya</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            136.9054486,35.1820124,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fushimi Inari-taisha</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7791876,34.9676945,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sanjusangendomawari</name>
+        <description>1001 estatuas de Kannon, la diosa buda de la misericordia, todas hechas a mano de madera y cubiertas con hojas de oro, guardadas en el interior del salón de madera más largo de Japón</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.7728336,34.9882626,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Templo Nishi Hongan-ji</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7516549,34.991777,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Templo Higashi Hongan-ji</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7595597,34.9904465,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arashiyama Nakaoshitacho</name>
+        <description>bambú,Tenryuji temple,Iwatayama Monkey park</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.6784141,35.0102696,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Templo Tenryu-ji</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.6737654,35.0158379,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bosque de Bambú de Arashiyama</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.6713013,35.0168187,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arashiyama Monkey Park Iwatayama</name>
+        <description>vistas panorámicas de ciudad</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.6766245,35.011395,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Taishogun Shopping Street - Ichijo Yokai Street</name>
+        <description>calle de los monstruos, algo curioso pero no importante</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.7339724,35.0261546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Castillo Nijō</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7484258,35.0140379,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pabellon Dorado</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7292431,35.03937,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ryōan-ji</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7182634,35.0344943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ninna-ji</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7138198,35.0310937,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Templo Hokan-ji (Pagoda Yasaka)</name>
+        <description>y calles de alrededor, foto cojonuda de noche</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.7791783,34.9985591,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kiyomizu-dera</name>
+        <description>Ir a primera hora, antes de la llegada de los grupos. Casas tradicionales de madera que albergan numerosas tiendas de souvenirs y cafeterías</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.784661,34.9946662,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sannenzaka</name>
+        <description>recorrer antes o después de visitar el Templo de Kiyomizudera (antes, tiendas cerradas, después ya abiertas y con mucha gente; mucho más vacío a las 19-19.30)</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.781008,34.9966644,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ninenzaka</name>
+        <description>recorrer antes o después de visitar el Templo de Kiyomizudera (antes, tiendas cerradas, después ya abiertas y con mucha gente; mucho más vacío a las 19-19.30)</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.7808431,34.9983989,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Koyasu-no-to Pagoda</name>
+        <description>caminar por este sendero para mejores vistas</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.7849612,34.9929197,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gion</name>
+        <description><![CDATA[barrio de las casas de té, donde trabajan geishas y maikos.<br><br>hay freetour en español (https://www.civitatis.com/es/kioto/free-tour-barrio-gion/?aid=1051)]]></description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.777245,35.0037816,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hanamikoji-dori</name>
+        <description>calle recomendada</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.7752337,35.0054485,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gionmachi Minamigawa</name>
+        <description>calle recomendada</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.7752039,35.0026835,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Miyakawa-cho Dori</name>
+        <description>calle recomendada, más apartada y con menos turistas normalmente</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.7712131,35.0006393,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hanamikoji Street</name>
+        <description>pasear entre el río Kamo y la calle Hanamiko-ji</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.7746403,35.0014922,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santuario Yasaka</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7785534,35.0036559,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santuario Yasui Konpira</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7758058,35.0001126,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Palacio Imperial Sento de Kioto</name>
+        <description>hay freetour y visita privada de grupo en español (https://www.civitatis.com/es/kioto/tour-privado-kioto/?aid=1051)</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.7651343,35.0223399,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Philosopher's Path (Tetsugaku no Michi), North End]]></name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.795457,35.0266194,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tetsugaku No Michi</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7943593,35.021665,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Heian Jingū</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7824263,35.0159823,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santuario Shirakumo</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.761177,35.0215099,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Munakata Shrine</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7612756,35.0189695,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santuario Itsukushima (interior del Parque del Palacio Imperial de Kioto)</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7620661,35.0181276,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Reikan-ji</name>
+        <description>templo flores</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.796504,35.0207558,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santuario Otoyo</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7964378,35.0182042,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kumano Nyakuōji Shrine</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7963131,35.015647,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Anraku-ji Temple</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7966367,35.0216167,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hōnenin Temple</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7973229,35.0240638,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mirokuin Temple</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7959431,35.0257387,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Templo Eikando</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7941588,35.0148543,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nanzen-ji</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7944841,35.0114138,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Monumentos de piedra y encantos de Pontocho</name>
+        <description><![CDATA[bares, ohmi beef (Wagyu). zona tradicional, casas de té y restaurantes.<br>al atardecer y de noche tienen los farolillos encendidos, si vamos sobre las 22 habrá mucha menos gente porque los restaurantes ya están cerrados]]></description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.7710439,35.0039339,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Daigo-ji</name>
+        <description><![CDATA[Perteneciente a la secta Shingon del budismo, este templo en entorno natural con jardines, estanques y más de 80 edificios entre los que destaca el salón principal y una pagoda de cinco pisos, considerada la estructura de madera más antigua de la ciudad de Kioto.<br><br>ver Sala Bentendo.<br><br>Unesco, must see Kioto.]]></description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.8193543,34.9511172,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Byōdō-in</name>
+        <description>Unesco, must see Kioto.</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.8076783,34.8892908,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nara</name>
+        <description>comer un yomogi mochi</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.8048019,34.685109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parque de Nara</name>
+        <description>ciervos mansos</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.843012,34.685047,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tōdai-ji</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.8398158,34.6889851,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santuario Kasuga Taisha</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.8484719,34.6815454,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Tsuruga</name>
+      <Placemark>
+        <name>Tsuruga</name>
+        <description>puerto costero histórico, excursión de 1 día desde Kioto</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            136.0556972,35.6459465,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Castillo Hikone</name>
+        <description>uno de los 12 del período Edo.</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            136.251846,35.276452,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fukui</name>
+        <styleUrl>#icon-1604-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            136.219623,36.0641386,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Osaka</name>
+      <Placemark>
+        <name>Hotel Osaka</name>
+        <description>3 noches de alojamiento y desayuno en HOTEL KEIHAN TENMABASHI EKIMAE (OSAKA) Double Room</description>
+        <styleUrl>#icon-1603-000000</styleUrl>
+        <Point>
+          <coordinates>
+            135.5162672,34.6896197,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Universal Studios Japan</name>
+        <description>Recomendado ir entre semana y pase express para 4 atracciones. Tiene app. planificar las atracciones que queremos Entrada normal 48€, express 101€ el más caro para 4 atracciones. </description>
+        <styleUrl>#icon-1709-000000</styleUrl>
+        <Point>
+          <coordinates>
+            135.4323185,34.6656768,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Aeropuerto Internacional de Kansai</name>
+        <description>12/11/2026 OSAKA KANSAI 23.20 – SINGAPUR 05.00 (+1)</description>
+        <styleUrl>#icon-1504-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            135.2366019,34.4319994,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Castillo Osaka</name>
+        <description>9h a 17h, tiene ascensor con vistas, interesante exterior, interior no mucho</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.5258546,34.6872571,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Umeda Sky Building (osaka)</name>
+        <description>10h a 22:30h, Rascacielos (puesta de sol)</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.4896527,34.7052872,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Takimikoji</name>
+        <description><![CDATA[callejón para cenar: <br>takoyaki (buñuelos rellenos de pulpo), okonomiyaki (pizza japonesa), kushiage (brochetas japonesas)]]></description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.490637,34.7047075,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sumiyoshi Taisha</name>
+        <description>santuario sintoista de los más antiguos e importantes de japón. Torii de piedra, puente, camino de lámparas</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.4937612,34.6123945,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dōtonbori</name>
+        <description>barrio de ocio. Mejor de noche, restaurantes: Houzenji Sanpei y el Mizuno. Bordear el Canal Dotonbori hasta la tienda Don Quijote, que tiene una noria en su fachada</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.5012971,34.6687234,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Don Quijote Dotonbori Midosuji</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.499904,34.669254,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sennichimae</name>
+        <description>zona de compras</description>
+        <styleUrl>#icon-1604-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.5045713,34.6673782,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ebisu Bashi-Suji</name>
+        <description>calle comercial</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.5013801,34.6670129,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hozenji Yokocho</name>
+        <description>calle comercial</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.5026104,34.6681187,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shinsaibashisuji</name>
+        <description>calle cubierta, tienda daiso (todo a 100 más famoso de japón)</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.5010362,34.6724248,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>America-mura</name>
+        <description>calle estilo americano</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.4988498,34.6719318,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuromon Market</name>
+        <description>lunes a sábado de 8h a 18:00h, sushi o sashimi </description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.5070359,34.6662746,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nipponbashi</name>
+        <description>Barrio electrónico y de las tiendas de manga como Akihabara</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.5057497,34.6590233,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tower Slider (Tsutenkaku)</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.5064993,34.652455,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Magic Cafe & Bar Shinsekai]]></name>
+        <description>zona que rodea la torre Tsutenkaku, Restaurante y ocio, fachadas con figuras y carteles. </description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            135.5065119,34.6504792,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Templo Katsuo-ji</name>
+        <description>recomendado en otoño, llegar muy temprano. Templo budista al norte de la ciudad</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            135.491087,34.8657752,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Hiroshima-Miyajima</name>
+      <Placemark>
+        <name>Hiroshima</name>
+        <styleUrl>#icon-1604-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.4553055,34.3852894,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parque Memorial de la Paz de Hiroshima</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.4522012,34.3926867,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Castillo de Hiroshima</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.4591055,34.4027456,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Okonomimura</name>
+        <description>comer aquí, okonomiyaki</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            132.4619014,34.3914342,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hondori Shopping Street</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.4573627,34.3935158,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jardín Shukkeien</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.4677207,34.4004834,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Miyahima</name>
+        <styleUrl>#icon-1604-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.3052488,34.2732114,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Calle Comercial Miyajima Omotesando</name>
+        <description>18:00 horas casi todas las tiendas cierran</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            132.3218356,34.2989747,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Torii Flotante del Santuario Itsukushima</name>
+        <description>18:00 horas casi todas las tiendas cierran</description>
+        <styleUrl>#icon-1706-3949AB</styleUrl>
+        <Point>
+          <coordinates>
+            132.3199913,34.2958505,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santuario Itsukushima</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.3198285,34.2959896,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santuario Toyokuni (Senjokaku)</name>
+        <styleUrl>#icon-1706-3949AB-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.3202787,34.2973206,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parque Momijidani</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.324065,34.2942053,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Teleférico de Miyajima</name>
+        <styleUrl>#icon-1731-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.3267509,34.2932587,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Monte Misen</name>
+        <description>funicular</description>
+        <styleUrl>#icon-1731-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            132.3198084,34.2795127,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>shopping en japon</name>
+      <Placemark>
+        <name>Watch CTI - Vintage Seiko Watch</name>
+        <description>Vintage Seiko Watch. Tienen los baby manine master más baratos que he visto. Omega vintage por 600€</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7672546,35.6750376,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yodobashi Camera Multimedia Kinshicho</name>
+        <description>relojes y electrónica</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.8135979,35.6963591,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MEGA Don Quijote</name>
+        <description>tourist discount, mega sales, outlet de grandes marcas de segunda mano. tienen joker y explorer.</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.6978172,35.6603873,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yodobashi Camera Multimedia Shinjuku East</name>
+        <description>seiko buenos precios</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7018663,35.6916265,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mizutani Camera</name>
+        <description>Segunda mano relojes, king seiko y segunda mano</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7754816,35.7100431,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yodobashi Camera Shinjuku Nishiguchi Watch Pavilion</name>
+        <styleUrl>#icon-1613-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.6972256,35.6892787,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TAKEYA3（多慶屋 ファッション館）</name>
+        <description>outlet seiko y LVMH</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7765802,35.7067467,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tokyo City Flea Market</name>
+        <description>mercado pulgas tokio, de todo</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7430414,35.5949798,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KOMEHYO VINTAGE TOKYO</name>
+        <styleUrl>#icon-1684-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7096264,35.6656807,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nakano Broadway</name>
+        <description>paraíso de relojes de 2ª mano, grand seiko. Centro comercial enorme con todo</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.6656524,35.7092475,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oi Racecourse</name>
+        <description>flea market tokio, relojes vintage</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.740825,35.5922219,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yodobashi (Ltd.) building</name>
+        <description>centro comercial, electrónica y relojes, seiko no tiene tanto como otras marcas. precios estándar</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7745423,35.6987875,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TiCTAC 東京ソラマチ店</name>
+        <description>algunos relojes de colaboraciones especiales de Seiko.</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.8116207,35.7102559,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BB Amemura/ AMERICAN VILLAGE FREEMARKET</name>
+        <description>relojes y varios vintage. tienda MUY loca</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            135.497667,34.6727347,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BicCamera Ikebukuro Main Store</name>
+        <description>centro comercial con todo</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7128781,35.7317044,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LABI1 Yamada Denki Ikebukuro</name>
+        <description>centro comercial friki, con outlet</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7136359,35.7309455,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tokizaemon</name>
+        <description>relojes vintage</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.6670949,35.7126625,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>big camera 1-chōme-11-1 Yūrakuchō</name>
+        <description>tienda big camera. mega sale de seiko, etc</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7632464,35.6755004,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>3-chōme-17-12 Shinjuku</name>
+        <description>dealer de segunda mano, de grand seiko hasta patek</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7029814,35.6923919,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TIMEANAGRAM</name>
+        <description>relojes vintage top marcas, de las mejores tiendas</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7070332,35.6476054,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Motohashi Clock Shop</name>
+        <description>grandes marcas vintage, buena tienda</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.6987495,35.6448451,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mitsui Outlet Park Yokohama Bayside</name>
+        <description>outlet de todo, seikos.</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.6464076,35.3798991,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MITSUI OUTLET PARK Tama Minami-Osawa</name>
+        <description>outlet con todo, tambien de seiko</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.3783724,35.6150793,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BOOKOFF SUPER BAZAAR CainzMall-Nagoyaminato Store</name>
+        <description>segunda mano premium</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            136.8665547,35.0910798,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sunshine Sakae</name>
+        <description>outlet de todo, relojes</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            136.9062811,35.1694169,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BicCamera Nagoya Station West Store</name>
+        <description>outlet de todo, 2º piso relojes</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            136.8795872,35.1702659,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BOOKOFF SUPER BAZAAR Sakae-SKYLE Store</name>
+        <description>outlet de todo, relojes</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            136.9063214,35.1683756,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>bookoff bazar 1-chōme-2-50 Ikenomiya</name>
+        <description>outlet de todo, segundas manos relojes y marroquinería</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            135.6726267,34.8137603,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>大須岩田ビル</name>
+        <description>seiko con 20% descuento, outlet con todo</description>
+        <styleUrl>#icon-1613-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            136.902195,35.1592306,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>outlet - りんくうプレミアム・アウトレット</name>
+        <description>outlet seiko con descuentos del 50%</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            135.2954403,34.4064643,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Takayamashichiten Chikettoshoppumeinohamaten</name>
+        <description>pawnshop de todo, segunda mano pristine</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            130.3270367,33.5828011,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tosu Premium Outlets</name>
+        <description>outlet de todo, seiko top</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            130.5116369,33.4064854,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Aeon Mall Fukuoka</name>
+        <description>THE CLOCK HOUSE seikos raros</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            130.480909,33.5970724,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>pawnshop - 3-chōme-17-10 Imanoshō</name>
+        <description>segunda mano takayama</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            130.4742869,33.7231694,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KOMEHYO OSAKA SHINSAIBASHI</name>
+        <styleUrl>#icon-1684-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.5016071,34.6717483,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRAND OFF SHIBUYA</name>
+        <styleUrl>#icon-1684-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.699471,35.6599574,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vintage QOO</name>
+        <styleUrl>#icon-1684-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.5021113,34.6748707,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brand Jungle VINTAGE SHOPブランドジャングル心斎橋店</name>
+        <description>bolsos</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            135.5023066,34.6745204,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Paradise vintage</name>
+        <description>bolsos</description>
+        <styleUrl>#icon-1684-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            139.7057777,35.6672339,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AMORE Vintage AOYAMA</name>
+        <styleUrl>#icon-1684-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7100254,35.665805,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PurchaseShop RIZ心斎橋RED</name>
+        <styleUrl>#icon-1684-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.5022053,34.6728147,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vintage La Charme</name>
+        <styleUrl>#icon-1684-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.6863915,35.6905264,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>comer en japon</name>
+      <Placemark>
+        <name>A Happy Pancake Ginza</name>
+        <styleUrl>#icon-1567-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.76522,35.670621,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ginza Kagari</name>
+        <description>ramen</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.7613315,35.6712019,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SUSHIRO Ueno</name>
+        <description>Sushi rápido en cinta transportadora</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.7751464,35.7100577,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hakkoku</name>
+        <description>hakkoku sushi omakase en Ginza</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.7627103,35.6704471,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sushi Take</name>
+        <styleUrl>#icon-1577-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7619463,35.6697761,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sunamachi Ginza Shopping District</name>
+        <description>comida callejera</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.8312918,35.6797276,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fish Market Tsukiji Outer Market</name>
+        <description>Meecado de pescado, algo caro.</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.7702515,35.6647703,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tonkatsu Marushichi Ginza</name>
+        <styleUrl>#icon-1577-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7690948,35.6696389,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kisoji Ginza 5 Chōme</name>
+        <description>sukiyaki barato</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.7646233,35.6704045,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mimasu</name>
+        <description>Sushi japo viejo en mesa</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.7149935,35.6878112,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shinjuku Sushi Hatsume</name>
+        <description>Sushi top</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.6980158,35.6940502,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Uoshin</name>
+        <description>Sushi barato para locales</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.6693135,35.6473775,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kichi Kichi Omurice</name>
+        <description><![CDATA[cocinero personaje<br>ir súper pronto para poder reservar]]></description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.7708108,35.0072788,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KYOTO SUKIYAKI Kioku</name>
+        <styleUrl>#icon-1577-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7710096,35.0003052,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mugito Mensuke</name>
+        <description>Ramen michelin</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.5000027,34.7113526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tenma</name>
+        <description>Comer aquí, locales.</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.5193039,34.6936088,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1-chōme-1-6 Namba</name>
+        <description>Sandwitches de kobe</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.5026919,34.6680311,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Onigiri Gorichan Nankai Namba Station</name>
+        <styleUrl>#icon-1577-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.5013808,34.66411,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gyukatsu Motomura Coredo Muromachi Branch</name>
+        <description>restaurante de tonkatsu en Shibuya</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.7750904,35.6867856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ichiran Shimbashi</name>
+        <description>restaurante de ramen donde los sitios son individuales o no en base a una cortinilla, es famoso por eso</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.7560198,35.6675081,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tonkatsu Hajime Nihonbashi</name>
+        <description>llena muchísimo, restaurante must</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.7754729,35.6864255,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tsukiji Itadori Bekkan</name>
+        <description>sitio de sushi muy rico en Tsukiji, te ponen unos filetes de pescado enormes</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.7703541,35.665628,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gyukatsu Motomura Namba Branch</name>
+        <description>restaurante de tonkatsu muy rico</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.5019741,34.666617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tempura Makino Namba</name>
+        <description>restaurante de tempura muy rico</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.5019007,34.6664593,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fukutaro</name>
+        <description>restaurante de okonomiyaki</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.504538,34.6655916,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wagyu IDATEN</name>
+        <description>restaurante de wagyu bento</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.5010546,34.6677597,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>grenier Kitahama branch</name>
+        <description>sandwich frito relleno con creme brule u otras cosas dulces</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.5089982,34.6883296,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Udon Kyutaro</name>
+        <description>sukiyaki</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.5025605,34.6808688,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yakiniku Dining Kinoe</name>
+        <description>restaurante de carne donde te lo haces tú, la carne está brutal y os recomiendo que probéis la lengua</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.7641867,35.0123503,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sushitetsu</name>
+        <description>sitio de sushi donde destacan sus nigiris y relación calidad-precio muy bueno</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.7712893,35.0082234,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tai Sushi</name>
+        <description>MUST de sushi, sitio tradicional genuino</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.7697601,35.004262,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Men-ya Inoichi Hanare</name>
+        <description>sitio de ramen que 100% tenéis que ir, además venden camisetas del restaurante que están muy chulas por 20-30€</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.763261,34.9999817,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hidagyu Maruaki</name>
+        <description>wagyu</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            137.2541783,36.1425437,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hida Kotte Ushi</name>
+        <description>MUST nigiris de wagyu</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            137.2593308,36.142201,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>comer en general</name>
+        <description>En cuanto a comida los nigiris de los puestos están cojonudos y tenéis que probar un helado rollo el cono de mcdonalds que es de leche premium, lloráis</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            136.8984772,36.2708106,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kourin Sushi</name>
+        <styleUrl>#icon-1577-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            136.6585449,36.569456,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ramen Shirasagi</name>
+        <styleUrl>#icon-1577-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            136.6473921,36.5784213,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Micasadeco & Cafe Jingumae]]></name>
+        <styleUrl>#icon-1567-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.7054272,35.6665545,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Calle Comercial Nakamise</name>
+        <description>beef yakisoba – beef tender noodles</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            139.7964542,35.7118413,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tempura Endo Yasaka (West)</name>
+        <description>recomendado tempura top</description>
+        <styleUrl>#icon-1577-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            135.7736073,34.9988523,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

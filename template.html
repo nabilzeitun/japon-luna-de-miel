@@ -1,0 +1,1010 @@
+<title>Japón · Luna de Miel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f5f5f7;
+    --paper-raised: #ffffff;
+    --paper-sunk: #ececef;
+    --ink: #1d1d1f;
+    --ink-soft: #6e6e73;
+    --ink-faint: #a1a1a6;
+    --line: #d2d2d7;
+    --line-soft: #e5e5ea;
+    --momiji: #ff3b30;
+    --momiji-ink: #d70015;
+    --ginkgo: #ff9500;
+    --indigo: #5856d6;
+    --purple: #af52de;
+    --good: #34c759;
+    --tip: #ffcc00;
+    --tip-ink: #8a6d00;
+    --shadow: rgba(0, 0, 0, 0.08);
+    --accent: #0071e3;
+    --accent-ink: #0058b0;
+    --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #000000;
+      --paper-raised: #1c1c1e;
+      --paper-sunk: #2c2c2e;
+      --ink: #f5f5f7;
+      --ink-soft: #98989d;
+      --ink-faint: #6e6e73;
+      --line: #38383a;
+      --line-soft: #2c2c2e;
+      --momiji: #ff453a;
+      --momiji-ink: #ff8078;
+      --ginkgo: #ff9f0a;
+      --indigo: #5e5ce6;
+      --purple: #bf5af2;
+      --good: #30d158;
+      --tip: #ffd60a;
+      --tip-ink: #ffd60a;
+      --shadow: rgba(0, 0, 0, 0.55);
+      --accent: #0a84ff;
+      --accent-ink: #409cff;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #000000;
+    --paper-raised: #1c1c1e;
+    --paper-sunk: #2c2c2e;
+    --ink: #f5f5f7;
+    --ink-soft: #98989d;
+    --ink-faint: #6e6e73;
+    --line: #38383a;
+    --line-soft: #2c2c2e;
+    --momiji: #ff453a;
+    --momiji-ink: #ff8078;
+    --ginkgo: #ff9f0a;
+    --indigo: #5e5ce6;
+    --purple: #bf5af2;
+    --good: #30d158;
+    --shadow: rgba(0, 0, 0, 0.55);
+    --accent: #0a84ff;
+    --accent-ink: #409cff;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .display { font-family: var(--font-display); text-wrap: balance; }
+  ::selection { background: var(--accent); color: #fff; }
+  button { font-family: inherit; }
+  .tabular { font-variant-numeric: tabular-nums; }
+
+  a { color: var(--indigo); }
+
+  /* ---------- App shell ---------- */
+  .app {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px 16px 64px;
+  }
+
+  .search-controls { display: flex; gap: 10px; margin-bottom: 14px; }
+  .search-row { position: relative; flex: 1; min-width: 0; }
+  .search-input {
+    width: 100%;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 14px;
+    color: var(--ink);
+    font-size: 14px;
+    font-family: inherit;
+    box-shadow: 0 1px 2px var(--shadow);
+  }
+  .search-input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .search-results {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 6px);
+    left: 0; right: 0;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px var(--shadow);
+    max-height: 340px;
+    overflow-y: auto;
+    display: none;
+  }
+  .search-results.open { display: block; }
+  .search-result {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--line-soft);
+    cursor: pointer;
+    font-size: 13.5px;
+  }
+  .search-result:last-child { border-bottom: none; }
+  .search-result:hover { background: var(--paper-sunk); }
+  .search-result .where { color: var(--ink-faint); font-size: 12px; white-space: nowrap; }
+
+  .tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+  }
+  .tab-btn {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background .15s, color .15s, border-color .15s;
+  }
+  .tab-btn:hover { border-color: var(--ink-faint); color: var(--ink); }
+  .tab-btn.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .tab-btn.has-day.active {
+    border-left: 4px solid var(--chip-color, #fff);
+    padding-left: 11px;
+  }
+
+  /* ---------- Day picker (full-width list, shown in place of the day view) ---------- */
+  .day-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .day-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--chip-color, var(--accent));
+    border-radius: 12px;
+    padding: 10px 12px;
+    cursor: pointer;
+    color: var(--ink);
+    width: 100%;
+    box-shadow: 0 1px 2px var(--shadow);
+  }
+  .day-chip:hover { background: var(--paper-sunk); }
+  .day-chip.active {
+    background: var(--paper-sunk);
+    box-shadow: inset 0 0 0 2px var(--chip-color, var(--accent));
+  }
+  .day-chip .num { font-size: 19px; font-weight: 700; color: var(--chip-color, var(--accent)); min-width: 22px; }
+  .day-chip .meta { min-width: 0; }
+  .day-chip .date { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .04em; }
+  .today-tag {
+    font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
+    background: var(--accent); color: #fff; border-radius: 5px; padding: 1px 5px; margin-left: 4px;
+  }
+  .day-chip .title {
+    font-size: 12.5px; font-weight: 500;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .day-chip .ring { margin-left: auto; flex-shrink: 0; color: var(--good); font-size: 17px; font-weight: 700; }
+  .day-chip.complete { opacity: .6; }
+  .day-chip.complete .title { text-decoration: line-through; text-decoration-color: var(--ink-faint); }
+
+  /* ---------- Day view ---------- */
+  .day-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+  .day-head-left { display: flex; gap: 14px; align-items: baseline; }
+  .day-head h2 { font-size: 21px; font-weight: 700; margin: 0 0 2px; }
+  .day-head .cityline {
+    font-size: 12.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft);
+    display: flex; align-items: center; gap: 6px;
+  }
+  .day-head .cityline .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--city-color, var(--momiji)); }
+
+  .day-stats {
+    display: flex; gap: 16px; font-size: 12.5px; color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  .day-stats b { color: var(--ink); }
+  .time-hint { font-size: 11.5px; color: var(--ink-faint); margin: -10px 0 14px; }
+
+  .travel-note {
+    background: var(--paper-sunk);
+    border: 1px dashed var(--line);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+  }
+  .travel-note b { color: var(--ink); }
+
+  .kind-badge {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+  .optional-badge {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--momiji);
+    color: var(--momiji);
+    background: color-mix(in srgb, var(--momiji) 10%, transparent);
+  }
+  .alt-note {
+    background: color-mix(in srgb, var(--momiji) 8%, transparent);
+    border: 1px dashed var(--momiji);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+  }
+  .alt-note b { color: var(--momiji-ink); }
+  .day-chip .opt-flag { color: var(--momiji); font-size: 10px; text-transform: uppercase; letter-spacing: .04em; }
+
+  /* real route map (imagen de teselas + overlay SVG) */
+  .route-map {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px var(--shadow);
+  }
+  .real-map { position: relative; width: 100%; overflow: hidden; background: var(--paper-sunk); }
+  .real-map img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .real-map svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .real-map-credit { font-size: 9.5px; color: var(--ink-faint); text-align: right; padding: 3px 8px 0; }
+  .real-map-credit a { color: inherit; }
+  .route-map-footer {
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;
+    padding: 8px 14px 12px; border-top: 1px solid var(--line-soft);
+    font-size: 11.5px; color: var(--ink-faint);
+  }
+  .gmaps-link {
+    color: var(--accent); font-weight: 600; text-decoration: none; font-size: 12px; white-space: nowrap;
+  }
+  .gmaps-link:hover { text-decoration: underline; }
+  .gmaps-link-standalone { display: inline-block; margin-bottom: 16px; }
+
+  /* timeline */
+  .timeline { display: flex; flex-direction: column; }
+  .stop-row {
+    display: grid;
+    grid-template-columns: 44px 34px 1fr auto;
+    gap: 12px;
+    padding: 12px 4px;
+  }
+  .stop-row.info { opacity: .8; }
+  .stop-time {
+    font-size: 12.5px; font-weight: 700; color: var(--ink);
+    padding-top: 4px; text-align: right; white-space: nowrap;
+  }
+  .stop-row.done .stop-time { color: var(--ink-faint); font-weight: 500; }
+  .stop-marker {
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .stop-dot {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--paper-raised);
+    border: 2px solid var(--city-color, var(--momiji));
+    color: var(--city-color, var(--momiji));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700;
+    flex-shrink: 0;
+  }
+  .stop-row.info .stop-dot {
+    border-style: dashed;
+    color: var(--ink-faint);
+    border-color: var(--ink-faint);
+  }
+  .stop-dot.icon {
+    border-style: solid;
+    border-color: var(--line);
+    background: var(--paper-sunk);
+    font-size: 13px;
+  }
+  .stop-row.done .stop-dot { background: var(--good); border-color: var(--good); color: var(--paper-raised); }
+  .stop-connector {
+    flex: 1;
+    width: 2px;
+    background: var(--line);
+    margin-top: 2px;
+  }
+  .stop-body h3 {
+    font-size: 15px; font-weight: 700; margin: 0 0 3px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .stop-row.done .stop-body h3 { color: var(--ink-soft); text-decoration: line-through; text-decoration-color: var(--line); }
+  .stop-desc { font-size: 13px; color: var(--ink-soft); }
+  .stop-note {
+    font-size: 12.5px; color: var(--tip-ink); margin-top: 4px;
+    background: color-mix(in srgb, var(--tip) 18%, transparent);
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+  .stop-note.is-optional {
+    color: var(--momiji-ink);
+    background: color-mix(in srgb, var(--momiji) 10%, transparent);
+  }
+  .stop-side { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .stop-dur { font-size: 12px; color: var(--ink-faint); white-space: nowrap; }
+  .stop-check {
+    width: 20px; height: 20px; border-radius: 5px;
+    border: 1.5px solid var(--line);
+    cursor: pointer;
+    background: var(--paper-raised);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; color: transparent;
+  }
+  .stop-check.checked { background: var(--good); border-color: var(--good); color: var(--paper-raised); }
+  .walk-row {
+    display: grid;
+    grid-template-columns: 44px 34px 1fr;
+    gap: 12px;
+    font-size: 11.5px;
+    color: var(--ink-faint);
+    padding: 2px 4px 2px 4px;
+  }
+  .walk-row .stop-connector-wrap { display: flex; justify-content: center; height: 20px; }
+  .walk-row .stop-connector { flex: none; width: 2px; height: 100%; }
+  .walk-row span.label { padding-top: 2px; }
+  .walk-row.has-transit { color: var(--indigo); font-weight: 500; }
+  .walk-row.has-transit .stop-connector { background: var(--indigo); }
+
+  .suggest-block { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 18px; }
+  .suggest-card {
+    display: flex; gap: 10px; align-items: flex-start;
+    background: var(--paper-raised); border: 1px solid var(--line-soft); border-radius: 8px;
+    padding: 10px 12px; font-size: 12.5px;
+  }
+  .suggest-card .tag {
+    font-size: 10px; text-transform: uppercase; letter-spacing: .05em;
+    color: var(--ink-faint); white-space: nowrap; padding-top: 2px; min-width: 74px;
+  }
+  .suggest-card .name { font-weight: 600; }
+  .suggest-card .desc { color: var(--ink-soft); }
+  .suggest-card .meta { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; margin-left: auto; }
+  .suggest-card .dist { color: var(--ink-faint); font-size: 11px; white-space: nowrap; padding-top: 1px; }
+
+  .nearby-toggles { display: flex; gap: 8px; margin: 14px 0; flex-wrap: wrap; }
+  .nearby-btn {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    cursor: pointer;
+  }
+  .nearby-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .nearby-list { display: none; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .nearby-list.open { display: flex; }
+  .nearby-item {
+    display: flex; justify-content: space-between; gap: 10px;
+    background: var(--paper-raised); border: 1px solid var(--line-soft);
+    border-radius: 8px; padding: 8px 12px; font-size: 12.5px;
+  }
+  .nearby-item .name { font-weight: 600; }
+  .nearby-item .desc { color: var(--ink-soft); }
+  .nearby-item .dist { color: var(--ink-faint); white-space: nowrap; font-size: 11.5px; }
+  .nearby-item .meta { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+
+  /* extras */
+  .extra-section { margin-bottom: 22px; }
+  .extra-section h3 {
+    font-size: 15px; font-weight: 700; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .extra-section h3 .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .extra-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 8px; }
+  .extra-card {
+    background: var(--paper-raised); border: 1px solid var(--line-soft); border-radius: 8px;
+    padding: 9px 12px; font-size: 12.5px;
+  }
+  .extra-card .name { font-weight: 600; margin-bottom: 2px; }
+  .extra-card .desc { color: var(--ink-soft); }
+
+  .alt-card {
+    background: var(--paper-raised); border: 1px solid var(--line); border-radius: 10px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .alt-card h3 { font-size: 15.5px; margin-bottom: 4px; }
+  .alt-card .note { font-size: 12.5px; color: var(--ink-soft); margin-bottom: 8px; }
+  .alt-card .stops-inline { font-size: 12.5px; color: var(--ink); }
+  .alt-card .stops-inline b { font-weight: 600; }
+
+  /* shopping / food list */
+  .flat-list { display: flex; flex-direction: column; gap: 8px; }
+  .flat-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10px;
+    background: var(--paper-raised);
+    border: 1px solid var(--line-soft);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+  .flat-item .name { font-weight: 600; }
+  .flat-item .desc { color: var(--ink-soft); font-size: 12.5px; margin-top: 2px; }
+  .flat-item .gmaps-link { white-space: nowrap; }
+  .group-date { font-family: var(--font-body); font-weight: 400; font-size: 12px; color: var(--ink-faint); }
+
+  .group-heading {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 22px 0 8px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .group-heading:first-child { margin-top: 0; }
+  .group-heading .dot { width: 8px; height: 8px; border-radius: 50%; }
+
+  .city-tokio { --city-color: var(--accent); }
+  .city-kanazawa { --city-color: var(--indigo); }
+  .city-kioto { --city-color: var(--ginkgo); }
+  .city-osaka { --city-color: var(--purple); }
+
+  .footnote { color: var(--ink-faint); font-size: 12px; margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--line); }
+
+  .empty-hint { color: var(--ink-faint); font-size: 13px; padding: 20px 4px; }
+
+  ::-webkit-scrollbar { height: 8px; width: 8px; }
+  ::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<div class="app">
+  <div class="search-controls">
+    <div class="search-row">
+      <input class="search-input" id="searchInput" type="text" placeholder="Buscar un sitio guardado (p. ej. “Fushimi”, “sushi”, “Shibuya”)…" autocomplete="off">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <div class="tabs" id="modeTabs">
+    <button class="tab-btn active" id="dayTabBtn" data-mode="itinerary" title="Ver el día actual · toca de nuevo para ver todos los días">Itinerario</button>
+    <button class="tab-btn" data-mode="shopping">Shopping</button>
+    <button class="tab-btn" data-mode="food">Comer</button>
+    <button class="tab-btn" data-mode="extras">Extra &amp; alternativas</button>
+  </div>
+
+  <div id="viewItinerary">
+    <div class="day-picker" id="dayPicker" style="display:none"></div>
+    <div id="dayView"></div>
+  </div>
+
+  <div id="viewShopping" style="display:none"></div>
+  <div id="viewFood" style="display:none"></div>
+  <div id="viewExtras" style="display:none"></div>
+
+</div>
+
+<script>
+const TRIP = /*__TRIP_JSON__*/;
+
+const CITY_SLUG = {
+  'Tokio': 'tokio',
+  'Kanazawa-Takayama': 'kanazawa',
+  'Kioto': 'kioto',
+  'Osaka': 'osaka',
+};
+const CITY_LABEL = {
+  'Tokio': 'Tokio', 'Kanazawa-Takayama': 'Kanazawa · Takayama', 'Kioto': 'Kioto', 'Osaka': 'Osaka',
+};
+
+const WEEKDAYS = ['dom','lun','mar','mié','jué','vie','sáb'];
+const MONTHS = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+
+function fmtDate(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  return { day: d.getDate(), month: MONTHS[d.getMonth()], weekday: WEEKDAYS[d.getDay()], dateObj: d };
+}
+
+function haversine(lat1, lon1, lat2, lon2) {
+  const R = 6371000;
+  const toRad = x => x * Math.PI / 180;
+  const dLat = toRad(lat2 - lat1), dLon = toRad(lon2 - lon1);
+  const a = Math.sin(dLat/2)**2 + Math.cos(toRad(lat1))*Math.cos(toRad(lat2))*Math.sin(dLon/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+function fmtDist(m) {
+  return m >= 1000 ? (m/1000).toFixed(1) + ' km' : Math.round(m) + ' m';
+}
+function walkLabel(meters, walkMin) {
+  if (meters <= 1200) return `camina ${fmtMin(walkMin)} · ${fmtDist(meters)}`;
+  if (meters <= 6000) return `${fmtDist(meters)} — a pie (${fmtMin(walkMin)}) o trayecto corto`;
+  return `trayecto de ${fmtDist(meters)} — tren / bus / coche`;
+}
+function infoIcon(name) {
+  if (/aeropuerto|airport/i.test(name)) return '✈️';
+  if (/^hotel/i.test(name)) return '🏨';
+  return '📍';
+}
+function mealIcon(mealType) {
+  return mealType === 'breakfast' ? '☕' : '🍽️';
+}
+function transitIcon(text) {
+  if (!text) return '🚶';
+  if (/bus\b/i.test(text)) return '🚌';
+  if (/tranvía|tram/i.test(text)) return '🚊';
+  if (/ferry|barco/i.test(text)) return '⛴️';
+  if (/teleférico|ropeway|funicular|telesférico/i.test(text)) return '🚡';
+  if (/tren|jr\b|shinkansen|metro|kintetsu|odakyu|hokutetsu|nohi|nankai|hanzomon|romancecar|tozan|línea|line|hiden|hankyu|keihan|keikyu/i.test(text)) return '🚆';
+  return '🚶';
+}
+function fmtMin(min) {
+  if (min <= 0) return '';
+  if (min < 60) return min + ' min';
+  const h = Math.floor(min/60), m = min%60;
+  return h + 'h' + (m ? ' ' + m + 'min' : '');
+}
+
+// ---------- localStorage checklist ----------
+const CHECK_KEY = 'jp-honeymoon-checklist-v1';
+function loadChecks() { try { return JSON.parse(localStorage.getItem(CHECK_KEY) || '{}'); } catch(e) { return {}; } }
+function saveChecks(c) { try { localStorage.setItem(CHECK_KEY, JSON.stringify(c)); } catch(e) {} }
+let checks = loadChecks();
+function stopKey(date, name) { return date + '::' + name; }
+function isChecked(date, name) { return !!checks[stopKey(date, name)]; }
+function toggleCheck(date, name) {
+  const k = stopKey(date, name);
+  if (checks[k]) delete checks[k]; else checks[k] = true;
+  saveChecks(checks);
+}
+
+// ---------- hotel anchors for shopping/food city bucketing ----------
+const hotelAnchors = [];
+TRIP.days.forEach(d => d.stops.forEach(s => {
+  if (s.kind === 'info' && /^Hotel /.test(s.name)) hotelAnchors.push({ city: d.city, lat: s.lat, lon: s.lon });
+}));
+function nearestCity(lat, lon) {
+  let best = null, bestD = Infinity;
+  for (const h of hotelAnchors) {
+    const dd = haversine(lat, lon, h.lat, h.lon);
+    if (dd < bestD) { bestD = dd; best = h.city; }
+  }
+  return best;
+}
+
+// ---------- state ----------
+let currentMode = 'itinerary';
+let currentDayIdx = 0;
+let openNearby = {}; // dayIdx -> 'shopping'|'food'|null
+let dayPickerOpen = false; // true = showing the full day list in place of the day view
+
+function jumpToDay(i) {
+  currentDayIdx = i;
+  dayPickerOpen = false;
+  setMode('itinerary');
+  renderAll();
+  document.getElementById('dayView').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderDayTabLabel() {
+  const btn = document.getElementById('dayTabBtn');
+  if (currentMode !== 'itinerary' || dayPickerOpen) {
+    btn.className = 'tab-btn' + (currentMode === 'itinerary' ? ' active' : '');
+    btn.style.removeProperty('--chip-color');
+    btn.textContent = 'Itinerario';
+  } else {
+    const d = TRIP.days[currentDayIdx];
+    const slug = CITY_SLUG[d.city] || '';
+    const { day, month } = fmtDate(d.date);
+    btn.className = 'tab-btn active has-day city-' + slug;
+    btn.style.setProperty('--chip-color', 'var(--city-color)');
+    btn.textContent = `Día ${currentDayIdx + 1} · ${day} ${month}`;
+  }
+}
+
+function todayIso() { return new Date().toISOString().slice(0,10); }
+
+function findTodayIdx() {
+  const iso = todayIso();
+  return TRIP.days.findIndex(d => d.date === iso);
+}
+
+function pickInitialDay() {
+  const exact = findTodayIdx();
+  return exact >= 0 ? exact : 0;
+}
+
+// ---------- rendering: day picker (full list, replaces day view while open) ----------
+function renderDayPicker() {
+  const picker = document.getElementById('dayPicker');
+  picker.innerHTML = '';
+  const todayIdx = findTodayIdx();
+  TRIP.days.forEach((d, i) => {
+    const slug = CITY_SLUG[d.city] || '';
+    const { day, month, weekday } = fmtDate(d.date);
+    const complete = d.stops.length > 0 && d.stops.every(s => isChecked(d.date, s.name));
+    const btn = document.createElement('button');
+    btn.className = 'day-chip city-' + slug + (i === currentDayIdx ? ' active' : '') + (complete ? ' complete' : '');
+    btn.style.setProperty('--chip-color', complete ? 'var(--ink-faint)' : 'var(--city-color)');
+    btn.innerHTML = `
+      <span class="num tabular">${i+1}</span>
+      <span class="meta">
+        <span class="date tabular">${day} ${month} · ${weekday}${d.optional ? ' · <span class="opt-flag">opc.</span>' : ''}${i === todayIdx ? ' <span class="today-tag">Hoy</span>' : ''}</span>
+        <span class="title">${d.title}</span>
+      </span>
+      ${complete ? '<span class="ring">✓</span>' : ''}
+    `;
+    btn.addEventListener('click', () => jumpToDay(i));
+    picker.appendChild(btn);
+  });
+}
+
+// ---------- schematic route SVG ----------
+function singleMapsLink(lat, lon) {
+  return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}&travelmode=transit`;
+}
+function googleMapsLink(stops) {
+  const pts = stops.filter(s => s.kind !== 'info' && typeof s.lat === 'number');
+  if (pts.length < 2) return null;
+  const used = pts.length > 23 ? pts.slice(0, 23) : pts;
+  const coord = p => `${p.lat},${p.lon}`;
+  const origin = coord(used[0]);
+  const destination = coord(used[used.length - 1]);
+  const waypoints = used.slice(1, -1).map(coord).join('|');
+  let url = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=transit`;
+  if (waypoints) url += `&waypoints=${encodeURIComponent(waypoints)}`;
+  return { url, truncated: pts.length > used.length };
+}
+// proyección Web Mercator (la misma que usan las teselas de mapa reales) para alinear los marcadores con precisión
+function merc_x(lon, zoom) { return (lon + 180) / 360 * Math.pow(2, zoom) * 256; }
+function merc_y(lat, zoom) {
+  const latRad = lat * Math.PI / 180;
+  return (1 - Math.log(Math.tan(latRad) + 1 / Math.cos(latRad)) / Math.PI) / 2 * Math.pow(2, zoom) * 256;
+}
+
+// mapa real (imagen de teselas OpenStreetMap, generada al construir la página) + ruta y marcadores encima, alineados con precisión
+function realMapHtml(stops, date, mapImage, cityHexColor) {
+  if (!mapImage) return '';
+  const { data, zoom, originX, originY, w, h } = mapImage;
+  const pts = stops.filter(s => typeof s.lat === 'number');
+  if (!pts.length) return '';
+  const proj = pts.map(p => [merc_x(p.lon, zoom) - originX, merc_y(p.lat, zoom) - originY]);
+  const path = proj.map((p,i) => (i===0?'M':'L') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
+
+  const markers = proj.map((p, i) => {
+    const s = pts[i];
+    const hasIcon = s.kind === 'info' || s.kind === 'meal';
+    const icon = s.kind === 'info' ? infoIcon(s.name) : s.kind === 'meal' ? mealIcon(s.mealType) : null;
+    const done = date && isChecked(date, s.name);
+    const color = done ? '#2fa84f' : cityHexColor;
+    if (hasIcon) {
+      return `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="10" fill="${done ? '#eafaf0' : '#fff'}" stroke="${done ? '#2fa84f' : '#33383d'}" stroke-width="${done ? 3 : 1.4}"/>
+        <text x="${p[0].toFixed(1)}" y="${(p[1]+4).toFixed(1)}" text-anchor="middle" font-size="11">${icon}</text>`;
+    }
+    return `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="7.5" fill="${color}" stroke="#fff" stroke-width="2"/>
+      <text x="${p[0].toFixed(1)}" y="${(p[1]+3.2).toFixed(1)}" text-anchor="middle" font-size="9.5" font-weight="700" fill="#fff">${i+1}</text>`;
+  }).join('');
+
+  return `<div class="real-map" style="aspect-ratio:${w}/${h}">
+    <img src="data:image/jpeg;base64,${data}" width="${w}" height="${h}" alt="Mapa de la zona" loading="lazy">
+    <svg viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg">
+      <path d="${path}" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+      <path d="${path}" fill="none" stroke="#1a73e8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      ${markers}
+    </svg>
+  </div>
+  <div class="real-map-credit">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</div>`;
+}
+const CITY_HEX = { tokio: '#0071e3', kanazawa: '#5856d6', kioto: '#ff9500', osaka: '#af52de' };
+
+// ---------- nearby shopping/food for a day ----------
+function nearbyFor(day, kind, radiusM=1800, limit=8) {
+  const list = kind === 'shopping' ? TRIP.shopping : TRIP.food;
+  const sug = day.suggestions || {};
+  const already = new Set([sug.lunch && sug.lunch.name, sug.dinner && sug.dinner.name, ...(sug.shopping||[]).map(s=>s.name)].filter(Boolean));
+  const visitStops = day.stops.filter(s => s.kind !== 'info');
+  const scored = list.filter(item => !already.has(item.name)).map(item => {
+    let best = Infinity;
+    for (const s of visitStops) best = Math.min(best, haversine(item.lat, item.lon, s.lat, s.lon));
+    return { item, dist: best };
+  }).filter(x => x.dist <= radiusM).sort((a,b)=>a.dist-b.dist).slice(0, limit);
+  return scored;
+}
+
+// ---------- day view ----------
+function renderDayView() {
+  const container = document.getElementById('dayView');
+  const d = TRIP.days[currentDayIdx];
+  const slug = CITY_SLUG[d.city] || '';
+  const { day, month, weekday } = fmtDate(d.date);
+  const kindLabel = { city: 'En ciudad', daytrip: 'Excursión de día', travel: 'Día de viaje' }[d.kind] || '';
+
+  let html = `<div class="city-${slug}">`;
+  html += `<div class="day-head">
+    <div class="day-head-left">
+      <div>
+        <h2>${d.title}</h2>
+        <div class="cityline"><span class="dot"></span>${CITY_LABEL[d.city]} · ${weekday} ${day} ${month} <span class="kind-badge">${kindLabel}</span>${d.optional ? ' <span class="optional-badge">Opcional</span>' : ''}</div>
+      </div>
+    </div>
+    <div class="day-stats">
+      <div>👣 <b>${fmtMin(d.totalWalkMin) || '0 min'}</b> caminando</div>
+      <div>◷ <b>${fmtMin(d.totalVisitMin) || '0 min'}</b> visitando</div>
+    </div>
+  </div>
+  <div class="time-hint">Horas estimadas si seguís el orden propuesto desde el inicio del día — usadlas para ver si vais bien de tiempo, no como citas fijas.</div>`;
+
+  if (d.optional && d.altOf) {
+    html += `<div class="alt-note"><b>Es opcional — </b>viene del mapa compartido con amigos/familia, no hace falta hacerla si no os apetece. Podéis elegir solo esta o la <b>${d.altOf}</b>, en vez de las dos, y usar el día libre para ir con más calma, hacer shopping o descansar.</div>`;
+  }
+
+  if (d.travelNote) {
+    html += `<div class="travel-note"><b>Trayecto: </b>${d.travelNote}</div>`;
+  }
+
+  const gmaps = googleMapsLink(d.stops);
+  const realMap = realMapHtml(d.stops, d.date, d.mapImage, CITY_HEX[slug] || '#0071e3');
+  if (realMap) {
+    html += `<div class="route-map">
+      ${realMap}
+      <div class="route-map-footer">
+        <span>Mapa aproximado (OpenStreetMap) con el orden de la ruta</span>
+        ${gmaps ? `<a class="gmaps-link" href="${gmaps.url}" target="_blank" rel="noopener">Abrir ruta en Google Maps ↗</a>` : ''}
+      </div>
+    </div>`;
+  } else if (gmaps) {
+    html += `<a class="gmaps-link gmaps-link-standalone" href="${gmaps.url}" target="_blank" rel="noopener">Abrir ruta en Google Maps ↗</a>`;
+  }
+
+  html += `<div class="timeline">`;
+  d.stops.forEach((s, i) => {
+    const done = isChecked(d.date, s.name);
+    const isLast = i === d.stops.length - 1;
+    html += `<div class="stop-row ${s.kind}${done ? ' done' : ''}">
+      <div class="stop-time">${s.arrival ? `<span class="tabular">${s.arrival}</span>` : ''}</div>
+      <div class="stop-marker">
+        <div class="stop-dot${s.kind === 'info' || s.kind === 'meal' ? ' icon' : ''}">${s.kind === 'info' ? infoIcon(s.name) : s.kind === 'meal' ? mealIcon(s.mealType) : (i+1)}</div>
+      </div>
+      <div class="stop-body">
+        <h3>${s.name}${s.optional ? ' <span class="optional-badge">Opcional</span>' : ''}</h3>
+        ${s.desc ? `<div class="stop-desc">${s.desc}</div>` : ''}
+        ${s.note ? `<div class="stop-note${s.optional ? ' is-optional' : ''}">${s.note}</div>` : ''}
+      </div>
+      <div class="stop-side">
+        <button class="stop-check${done?' checked':''}" data-check="${i}">✓</button>
+        ${s.duration ? `<div class="stop-dur tabular">${fmtMin(s.duration)}</div>` : ''}
+      </div>
+    </div>`;
+    if (!isLast && s.toNextMeters) {
+      const modeIcon = s.transit ? transitIcon(s.transit) : '🚶';
+      html += `<div class="walk-row${s.transit ? ' has-transit' : ''}">
+        <div class="stop-time"></div>
+        <div class="stop-connector-wrap"><div class="stop-connector"></div></div>
+        <span class="label"><span class="mode-icon">${modeIcon}</span> ${s.transit || walkLabel(s.toNextMeters, s.toNextWalkMin)}</span>
+      </div>`;
+    }
+  });
+  html += `</div>`;
+
+  const hasVisits = d.stops.some(s => s.kind !== 'info');
+  if (hasVisits) {
+    const sug = d.suggestions || {};
+    const cards = [];
+    if (sug.lunch) cards.push({ tag: 'Comer · mediodía', item: sug.lunch });
+    if (sug.dinner) cards.push({ tag: 'Comer · noche', item: sug.dinner });
+    (sug.shopping || []).forEach(sh => cards.push({ tag: 'Shopping', item: sh }));
+    if (cards.length) {
+      html += `<div class="suggest-block">` + cards.map(c => `
+        <div class="suggest-card">
+          <span class="tag">${c.tag}</span>
+          <div><div class="name">${c.item.name}</div>${c.item.desc ? `<div class="desc">${c.item.desc}</div>` : ''}</div>
+          <div class="meta">
+            <span class="dist tabular">${fmtDist(c.item.dist)}</span>
+            <a class="gmaps-link" href="${singleMapsLink(c.item.lat, c.item.lon)}" target="_blank" rel="noopener">Cómo llegar ↗</a>
+          </div>
+        </div>`).join('') + `</div>`;
+    }
+    html += `<div class="nearby-toggles">
+      <button class="nearby-btn" data-nearby="shopping">+ Más shopping cerca de hoy</button>
+      <button class="nearby-btn" data-nearby="food">+ Más sitios para comer cerca de hoy</button>
+    </div>
+    <div class="nearby-list" id="nearbyShopping"></div>
+    <div class="nearby-list" id="nearbyFood"></div>`;
+  }
+
+  html += `</div>`;
+  container.innerHTML = html;
+
+  container.querySelectorAll('[data-check]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = +btn.dataset.check;
+      toggleCheck(d.date, d.stops[idx].name);
+      renderDayView();
+    });
+  });
+  container.querySelectorAll('[data-nearby]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const kind = btn.dataset.nearby;
+      const listEl = document.getElementById(kind === 'shopping' ? 'nearbyShopping' : 'nearbyFood');
+      const isOpen = listEl.classList.contains('open');
+      if (isOpen) { listEl.classList.remove('open'); btn.classList.remove('active'); return; }
+      btn.classList.add('active');
+      const results = nearbyFor(d, kind);
+      listEl.innerHTML = results.length ? results.map(r => `
+        <div class="nearby-item">
+          <div><div class="name">${r.item.name}</div>${r.item.desc ? `<div class="desc">${r.item.desc}</div>` : ''}</div>
+          <div class="meta">
+            <div class="dist tabular">${fmtDist(r.dist)}</div>
+            <a class="gmaps-link" href="${singleMapsLink(r.item.lat, r.item.lon)}" target="_blank" rel="noopener">Cómo llegar ↗</a>
+          </div>
+        </div>`).join('') : `<div class="empty-hint">Nada guardado a menos de ~1.8 km de las paradas de hoy.</div>`;
+      listEl.classList.add('open');
+    });
+  });
+}
+
+// ---------- shopping / food views ----------
+function renderFlatView(elId, list) {
+  const el = document.getElementById(elId);
+  const byDate = {};
+  const noDay = [];
+  list.forEach(item => {
+    if (item.nearestDay) (byDate[item.nearestDay] = byDate[item.nearestDay] || []).push(item);
+    else noDay.push(item);
+  });
+  let html = '';
+  TRIP.days.forEach((d, di) => {
+    const items = byDate[d.date];
+    if (!items || !items.length) return;
+    items.sort((a,b) => a.nearestDayDist - b.nearestDayDist);
+    const slug = CITY_SLUG[d.city] || '';
+    const { day, month, weekday } = fmtDate(d.date);
+    html += `<div class="group-heading city-${slug}"><span class="dot" style="background:var(--city-color)"></span>Día ${di+1} · ${d.title} <span class="group-date">${weekday} ${day} ${month} · ${items.length}</span></div>`;
+    html += `<div class="flat-list">` + items.map(item => `
+      <div class="flat-item">
+        <div><div class="name">${item.name}</div>${item.desc ? `<div class="desc">${item.desc}</div>` : ''}</div>
+        <a class="gmaps-link" href="${singleMapsLink(item.lat, item.lon)}" target="_blank" rel="noopener">Cómo llegar ↗</a>
+      </div>`).join('') + `</div>`;
+  });
+  if (noDay.length) {
+    html += `<div class="group-heading"><span class="dot" style="background:var(--ink-faint)"></span>Sin día cercano <span class="group-date">${noDay.length}</span></div>`;
+    html += `<div class="flat-list">` + noDay.map(item => `
+      <div class="flat-item">
+        <div><div class="name">${item.name}</div>${item.desc ? `<div class="desc">${item.desc}</div>` : ''}</div>
+        <a class="gmaps-link" href="${singleMapsLink(item.lat, item.lon)}" target="_blank" rel="noopener">Cómo llegar ↗</a>
+      </div>`).join('') + `</div>`;
+  }
+  el.innerHTML = html || `<div class="empty-hint">Nada guardado.</div>`;
+}
+
+// ---------- extras view ----------
+function renderExtras() {
+  const el = document.getElementById('viewExtras');
+  let html = `<div style="max-width:780px">`;
+  html += `<h2 class="display" style="font-size:19px; margin-bottom:4px;">Lugares guardados sin día asignado</h2>
+  <p style="color:var(--ink-soft); font-size:13px; margin-bottom:20px;">Todo lo que teníais marcado en el mapa pero no encajaba en los ${TRIP.days.length} días del itinerario. Usadlos para sustituir algo si os sobra tiempo o cambia el plan.</p>`;
+
+  Object.entries(TRIP.extras).forEach(([city, items]) => {
+    if (!items.length) return;
+    const slug = CITY_SLUG[city] || '';
+    html += `<div class="extra-section city-${slug}">
+      <h3><span class="dot" style="background:var(--city-color)"></span>${CITY_LABEL[city] || city}</h3>
+      <div class="extra-grid">${items.map(it => `
+        <div class="extra-card"><div class="name">${it.name}</div>${it.desc ? `<div class="desc">${it.desc}</div>` : ''}</div>
+      `).join('')}</div>
+    </div>`;
+  });
+
+  html += `<h2 class="display" style="font-size:19px; margin: 28px 0 4px;">Excursiones alternativas</h2>
+  <p style="color:var(--ink-soft); font-size:13px; margin-bottom:16px;">No están metidas en ningún día concreto porque tocaría cambiar el plan — considerarlas como sustitutas de otro día.</p>`;
+  TRIP.altDayTrips.forEach(alt => {
+    html += `<div class="alt-card">
+      <h3>${alt.title}</h3>
+      <div class="note">${alt.note}</div>
+      <div class="stops-inline">${alt.stops.map(s => s.name).join(' → ')}</div>
+    </div>`;
+  });
+  html += `</div>`;
+  el.innerHTML = html;
+}
+
+// ---------- search ----------
+function buildSearchIndex() {
+  const idx = [];
+  TRIP.days.forEach((d, di) => d.stops.forEach(s => {
+    idx.push({ name: s.name, desc: s.desc, where: `Día ${di+1} · ${d.title}`, go: () => jumpToDay(di) });
+  }));
+  Object.entries(TRIP.extras).forEach(([city, items]) => items.forEach(it => {
+    idx.push({ name: it.name, desc: it.desc, where: `Extra · ${CITY_LABEL[city]||city}`, go: () => { setMode('extras'); renderAll(); } });
+  }));
+  TRIP.shopping.forEach(it => idx.push({ name: it.name, desc: it.desc, where: 'Shopping', go: () => { setMode('shopping'); renderAll(); } }));
+  TRIP.food.forEach(it => idx.push({ name: it.name, desc: it.desc, where: 'Comer', go: () => { setMode('food'); renderAll(); } }));
+  return idx;
+}
+const searchIndex = buildSearchIndex();
+
+function setupSearch() {
+  const input = document.getElementById('searchInput');
+  const results = document.getElementById('searchResults');
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    if (q.length < 2) { results.classList.remove('open'); return; }
+    const matches = searchIndex.filter(it => it.name.toLowerCase().includes(q) || (it.desc && it.desc.toLowerCase().includes(q))).slice(0, 20);
+    results.innerHTML = matches.length ? matches.map((m, i) => `<div class="search-result" data-i="${i}"><span>${m.name}</span><span class="where">${m.where}</span></div>`).join('') : `<div class="search-result" style="cursor:default">Sin resultados</div>`;
+    results.querySelectorAll('[data-i]').forEach(row => {
+      row.addEventListener('click', () => {
+        matches[+row.dataset.i].go();
+        results.classList.remove('open');
+        input.value = '';
+      });
+    });
+    results.classList.add('open');
+  });
+  document.addEventListener('click', e => { if (!e.target.closest('.search-row')) results.classList.remove('open'); });
+}
+
+// ---------- mode switching ----------
+function setMode(mode) {
+  currentMode = mode;
+  document.querySelectorAll('.tab-btn').forEach(b => { if (b.id !== 'dayTabBtn') b.classList.toggle('active', b.dataset.mode === mode); });
+  document.getElementById('viewItinerary').style.display = mode === 'itinerary' ? 'block' : 'none';
+  document.getElementById('viewShopping').style.display = mode === 'shopping' ? 'block' : 'none';
+  document.getElementById('viewFood').style.display = mode === 'food' ? 'block' : 'none';
+  document.getElementById('viewExtras').style.display = mode === 'extras' ? 'block' : 'none';
+}
+
+function renderAll() {
+  if (currentMode === 'itinerary') {
+    document.getElementById('dayPicker').style.display = dayPickerOpen ? 'flex' : 'none';
+    document.getElementById('dayView').style.display = dayPickerOpen ? 'none' : 'block';
+    if (dayPickerOpen) renderDayPicker(); else renderDayView();
+  }
+  else if (currentMode === 'shopping') renderFlatView('viewShopping', TRIP.shopping);
+  else if (currentMode === 'food') renderFlatView('viewFood', TRIP.food);
+  else if (currentMode === 'extras') renderExtras();
+  renderDayTabLabel();
+}
+
+document.getElementById('dayTabBtn').addEventListener('click', () => {
+  dayPickerOpen = currentMode === 'itinerary' ? !dayPickerOpen : false;
+  setMode('itinerary');
+  renderAll();
+});
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  if (btn.id === 'dayTabBtn') return;
+  btn.addEventListener('click', () => { setMode(btn.dataset.mode); renderAll(); });
+});
+
+// ---------- init ----------
+currentDayIdx = pickInitialDay();
+setupSearch();
+setMode('itinerary');
+renderAll();
+</script>

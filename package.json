@@ -1,0 +1,8 @@
+{
+  "name": "japon-luna-de-miel",
+  "private": true,
+  "description": "Itinerario día a día de la luna de miel a Japón (28 oct - 12 nov 2026), publicado como página estática en GitHub Pages.",
+  "dependencies": {
+    "jimp": "^1.6.1"
+  }
+}
