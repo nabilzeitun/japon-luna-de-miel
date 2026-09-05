@@ -566,6 +566,8 @@ function computeDayLabels(days) {
   return labels;
 }
 const DAY_LABELS = computeDayLabels(TRIP.days);
+// El número puro (sin la letra de opción), para mostrarlo separado de "Opción A/B".
+function dayNumberOnly(i) { return DAY_LABELS[i].replace(/[A-Z]+$/, ''); }
 
 const CITY_SLUG = {
   'Tokio': 'tokio',
@@ -674,10 +676,12 @@ function renderDayTabLabel() {
   } else {
     const d = TRIP.days[currentDayIdx];
     const slug = CITY_SLUG[d.city] || '';
-    const { day, month } = fmtDate(d.date);
+    const { day, month, weekday } = fmtDate(d.date);
     btn.className = 'tab-btn active has-day city-' + slug;
     btn.style.setProperty('--chip-color', 'var(--city-color)');
-    btn.textContent = `Día ${DAY_LABELS[currentDayIdx]} · ${day} ${month}`;
+    btn.textContent = d.altLabel
+      ? `${weekday} ${day} ${month} · Opción ${d.altLabel}`
+      : `Día ${dayNumberOnly(currentDayIdx)} · ${day} ${month}`;
   }
 }
 
@@ -705,10 +709,11 @@ function renderDayPicker() {
     const btn = document.createElement('button');
     btn.className = 'day-chip city-' + slug + (i === currentDayIdx ? ' active' : '') + (complete ? ' complete' : '');
     btn.style.setProperty('--chip-color', complete ? 'var(--ink-faint)' : 'var(--city-color)');
+    const optFlag = d.altLabel ? `Opción ${d.altLabel}` : (d.optional ? 'opc.' : '');
     btn.innerHTML = `
-      <span class="num tabular">${DAY_LABELS[i]}</span>
+      <span class="num tabular">${dayNumberOnly(i)}</span>
       <span class="meta">
-        <span class="date tabular">${day} ${month} · ${weekday}${d.optional ? ' · <span class="opt-flag">opc.</span>' : ''}${i === todayIdx ? ' <span class="today-tag">Hoy</span>' : ''}</span>
+        <span class="date tabular">${day} ${month} · ${weekday}${optFlag ? ` · <span class="opt-flag">${optFlag}</span>` : ''}${i === todayIdx ? ' <span class="today-tag">Hoy</span>' : ''}</span>
         <span class="title">${d.title}</span>
       </span>
       ${complete ? '<span class="ring">✓</span>' : ''}
@@ -803,7 +808,7 @@ function renderDayView() {
     <div class="day-head-left">
       <div>
         <h2>${d.title}</h2>
-        <div class="cityline"><span class="dot"></span>${CITY_LABEL[d.city]} · ${weekday} ${day} ${month} <span class="kind-badge">${kindLabel}</span>${d.optional ? ' <span class="optional-badge">Opcional</span>' : ''}</div>
+        <div class="cityline"><span class="dot"></span>${CITY_LABEL[d.city]} · ${weekday} ${day} ${month} <span class="kind-badge">${kindLabel}</span>${d.altLabel ? ` <span class="optional-badge">Opción ${d.altLabel}</span>` : (d.optional ? ' <span class="optional-badge">Opcional</span>' : '')}</div>
       </div>
     </div>
     <div class="day-stats">
@@ -940,7 +945,8 @@ function renderFlatView(elId, list) {
     items.sort((a,b) => a.nearestDayDist - b.nearestDayDist);
     const slug = CITY_SLUG[d.city] || '';
     const { day, month, weekday } = fmtDate(d.date);
-    html += `<div class="group-heading city-${slug}"><span class="dot" style="background:var(--city-color)"></span>Día ${DAY_LABELS[di]} · ${d.title} <span class="group-date">${weekday} ${day} ${month} · ${items.length}</span></div>`;
+    const dayLabel = `Día ${dayNumberOnly(di)}` + (d.altLabel ? ` · Opción ${d.altLabel}` : '');
+    html += `<div class="group-heading city-${slug}"><span class="dot" style="background:var(--city-color)"></span>${dayLabel} · ${d.title} <span class="group-date">${weekday} ${day} ${month} · ${items.length}</span></div>`;
     html += `<div class="flat-list">` + items.map(item => `
       <div class="flat-item">
         <div><div class="name">${item.name}</div>${item.desc ? `<div class="desc">${item.desc}</div>` : ''}</div>
@@ -993,7 +999,8 @@ function renderExtras() {
 function buildSearchIndex() {
   const idx = [];
   TRIP.days.forEach((d, di) => d.stops.forEach(s => {
-    idx.push({ name: s.name, desc: s.desc, where: `Día ${DAY_LABELS[di]} · ${d.title}`, go: () => jumpToDay(di) });
+    const dayLabel = `Día ${dayNumberOnly(di)}` + (d.altLabel ? ` · Opción ${d.altLabel}` : '');
+    idx.push({ name: s.name, desc: s.desc, where: `${dayLabel} · ${d.title}`, go: () => jumpToDay(di) });
   }));
   Object.entries(TRIP.extras).forEach(([city, items]) => items.forEach(it => {
     idx.push({ name: it.name, desc: it.desc, where: `Extra · ${CITY_LABEL[city]||city}`, go: () => { setMode('extras'); renderAll(); } });
