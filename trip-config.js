@@ -345,6 +345,7 @@ const days = [
       { name: 'Hōnenin Temple', kind: 'visit', durOverride: 30 },
       { name: 'Anraku-ji Temple', kind: 'visit', durOverride: 20, note: 'Tejado de paja y jardín de musgo — como Reikan-ji, suele abrir solo unas semanas al año (comprobad fechas).' },
       { name: 'Reikan-ji', kind: 'visit', durOverride: 20, note: 'Antiguo convento imperial con motivos de hojas de arce por todas partes — abre solo unas semanas al año, a menudo en esta época de otoño (comprobad fechas).' },
+      { name: 'Tetsugaku No Michi', kind: 'visit', durOverride: 10, note: 'El propio canal Shirakawa junto al que discurre el paseo — llamado así por el filósofo Nishida Kitarō, que lo recorría a diario meditando.' },
       { name: 'Santuario Otoyo', kind: 'visit', durOverride: 25, note: 'Estatuas de zorros y ratones, muy fotogénico.' },
       { name: 'Kumano Nyakuōji Shrine', kind: 'visit', durOverride: 15, note: 'Santuario pequeño de paso, junto a Eikando.' },
       { name: 'Templo Eikando', kind: 'visit', durOverride: 45 },
@@ -436,7 +437,7 @@ const extras = {
   Tokio: ['Chōfu', 'Jardín Botánico Jindaiji', '大正寺 山門(竜宮門)', 'Shibamata', 'Shibamata Taishakuten', 'Yamanote Line', 'SUSHI Gompachi Nishi-Azabu', 'Mount Fuji Fujinomiya 5th Station'],
   'Kanazawa-Takayama': ['Castillo de Nagoya'],
   Kioto: [
-    "Philosopher's Path (Tetsugaku no Michi), North End", 'Tetsugaku No Michi',
+    "Philosopher's Path (Tetsugaku no Michi), North End",
   ],
   Osaka: [
     'Sumiyoshi Taisha', 'Templo Katsuo-ji', 'Takimikoji',
