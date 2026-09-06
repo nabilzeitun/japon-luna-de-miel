@@ -281,7 +281,7 @@ unused.forEach(u => console.log('  -', u));
 
 const trip = {
   meta: {
-    title: 'Japón · Luna de miel',
+    title: 'Asistente de viaje: C&N en Japón',
     start: '2026-10-28',
     end: '2026-11-12',
     cities: [...new Set(days.map(d => d.city))],
