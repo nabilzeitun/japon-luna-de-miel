@@ -27,6 +27,7 @@ const manualPlaces = [
   { name: 'Ginza Place', desc: 'Edificio de diseño en celosía blanca, frente a Wako, con Nissan y Canon.', lat: 35.6711, lon: 139.7658 },
   { name: 'Almacenes Mitsukoshi Ginza', desc: 'Grandes almacenes centenarios; en la azotea está la estatua Ginza Shusse Jizoson (da buena suerte), y en el sótano hay puestos de comida (depachika).', lat: 35.6714, lon: 139.7664 },
   { name: 'Itoya Ginza', desc: 'La papelería más famosa del mundo — varias plantas de material de escritura y papel de diseño.', lat: 35.6739, lon: 139.7651 },
+  { name: 'Pokémon Center Tokyo DX', desc: 'La tienda oficial de Pokémon más grande de Tokio, dentro del centro comercial Nihombashi Takashimaya S.C.', lat: 35.6835, lon: 139.7745 },
   { name: 'Matsuya Ginza', desc: 'Grandes almacenes en plena Chuo-dori, muy cerca de Itoya.', lat: 35.6735, lon: 139.7655 },
   { name: 'Ginza Six', desc: 'El centro comercial más grande de Ginza, con marcas de lujo y una gran librería (Tsutaya).', lat: 35.6693, lon: 139.7627 },
   // Shirakawa-go — no estaban en el KMZ, pedidos explícitamente
@@ -176,7 +177,8 @@ const days = [
     stops: [
       { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'Metro Toei Asakusa Line Oshiage → Higashi-Ginza (~20 min).', transitMin: 25 },
       { name: 'Matsuya Ginza', kind: 'visit', durOverride: 45 },
-      { name: 'Itoya Ginza', kind: 'visit', durOverride: 35, mealAfter: 'lunch' },
+      { name: 'Itoya Ginza', kind: 'visit', durOverride: 35, mealAfter: 'lunch', transit: 'Metro Ginza Line Ginza → Nihombashi, ~5 min en total.', transitMin: 10 },
+      { name: 'Pokémon Center Tokyo DX', kind: 'visit', durOverride: 30, transit: 'Metro Ginza Line Nihombashi → Ginza, ~5 min en total.', transitMin: 10 },
       { name: 'Avenida Chuo-dori', kind: 'visit', durOverride: 30 },
       { name: 'Seiko House Ginza (Wako)', kind: 'visit', durOverride: 20 },
       { name: 'Ginza Place', kind: 'visit', durOverride: 15 },
