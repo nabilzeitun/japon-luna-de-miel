@@ -380,17 +380,7 @@ const days = [
   },
   // ---------------- OSAKA ----------------
   {
-    date: '2026-11-10', city: 'Osaka', locationLabel: 'Osaka', title: 'Universal Studios Japan',
-    kind: 'daytrip', dayStartTime: '08:00',
-    travelNote: 'JR Kanjo Line o Nankai/metro directo Namba/Osaka → Universal City (~20-25 min). Recomendado ir entre semana con pase express para 4 atracciones — planificad las atracciones en la app antes de entrar.',
-    stops: [
-      { name: 'Hotel Osaka', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'JR Osaka Loop Line Temmabashi/Osaka → Nishikujo (~15 min) + JR Yumesaki Line a Universal City (~5 min).', transitMin: 25 },
-      { name: 'Universal Studios Japan', kind: 'visit', durOverride: 480, note: 'Comida dentro del parque.', transit: 'JR Yumesaki Line Universal City → Nishikujo (~4 min) + JR Osaka Loop Line a Osaka/Temmabashi (~20 min).', transitMin: 30 },
-      { name: 'Hotel Osaka', kind: 'info' },
-    ],
-  },
-  {
-    date: '2026-11-11', city: 'Osaka', locationLabel: 'Osaka', title: 'Excursión a Hiroshima y Miyajima',
+    date: '2026-11-10', city: 'Osaka', locationLabel: 'Osaka', title: 'Excursión a Hiroshima y Miyajima',
     kind: 'daytrip', dayStartTime: '06:00',
     travelNote: 'Salida muy temprano: Shinkansen Sanyo (Nozomi/Sakura) Shin-Osaka → Hiroshima, ~1h20-1h35. Es un día largo — salir con el primer tren que podáis y volved directos al hotel a descansar.',
     stops: [
@@ -408,6 +398,16 @@ const days = [
       { name: 'Calle Comercial Miyajima Omotesando', kind: 'visit', durOverride: 30 },
       { name: 'Parque Momijidani', kind: 'visit', durOverride: 20, note: 'El valle de los arces — a principios de noviembre es buena época para verlos en pleno color.', transit: 'Bus gratuito a la estación del ropeway + telesférico Miyajima, ~15 min en total.', transitMin: 20 },
       { name: 'Monte Misen', kind: 'visit', durOverride: 90, note: 'Teleférico + un poco de subida a pie para las vistas.', transit: 'Teleférico de bajada (~15 min) + ferry a Miyajimaguchi (~10 min) + JR a Hiroshima (~25 min) + Shinkansen Sanyo a Shin-Osaka (~1h20-1h35) + metro al hotel (~20 min).', transitMin: 160 },
+      { name: 'Hotel Osaka', kind: 'info' },
+    ],
+  },
+  {
+    date: '2026-11-11', city: 'Osaka', locationLabel: 'Osaka', title: 'Universal Studios Japan',
+    kind: 'daytrip', dayStartTime: '08:00',
+    travelNote: 'JR Kanjo Line o Nankai/metro directo Namba/Osaka → Universal City (~20-25 min). Recomendado ir entre semana con pase express para 4 atracciones — planificad las atracciones en la app antes de entrar.',
+    stops: [
+      { name: 'Hotel Osaka', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'JR Osaka Loop Line Temmabashi/Osaka → Nishikujo (~15 min) + JR Yumesaki Line a Universal City (~5 min).', transitMin: 25 },
+      { name: 'Universal Studios Japan', kind: 'visit', durOverride: 480, note: 'Comida dentro del parque.', transit: 'JR Yumesaki Line Universal City → Nishikujo (~4 min) + JR Osaka Loop Line a Osaka/Temmabashi (~20 min).', transitMin: 30 },
       { name: 'Hotel Osaka', kind: 'info' },
     ],
   },
