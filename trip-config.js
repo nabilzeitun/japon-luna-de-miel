@@ -13,7 +13,11 @@
 // por los vuelos/reservas). Coordenadas aproximadas a partir de conocimiento general del lugar.
 const manualPlaces = [
   { name: 'Shibuya Sky', desc: 'Mirador al aire libre en lo alto del Shibuya Scramble Square, justo encima de la estación — vistas de 360° sobre el cruce de Shibuya.', lat: 35.6590, lon: 139.7016 },
-  { name: 'Shugakuin Imperial Villa', desc: 'Villa imperial del siglo XVII en las colinas del noreste de Kioto: tres jardines (Alto, Medio y Bajo) que usan "shakkei" (paisaje prestado) para integrar las montañas de fondo. Visita guiada de ~1h20, solo con reserva previa en la Agencia de la Casa Imperial (como el Palacio Sento).', lat: 35.0429, lon: 135.8083 },
+  {
+    name: 'Shugakuin Imperial Villa',
+    desc: 'Villa imperial del siglo XVII en las colinas del noreste de Kioto: tres jardines (Alto, Medio y Bajo) que usan "shakkei" (paisaje prestado) para integrar las montañas de fondo. Visita guiada de ~1h20, solo con reserva previa en la Agencia de la Casa Imperial (como el Palacio Sento).<br>A favor:<br>• Estilo de jardín distinto a todo lo demás del viaje — ni estanque tipo Kinkaku-ji/Tenryū-ji ni jardín seco tipo Ryōan-ji, sino todo un paisaje de colina con "paisaje prestado".<br>• Famosa precisamente por el otoño — encaja de lleno con las fechas del viaje.<br>• La vista del estanque Yokuryū-chi desde el Jardín Alto está considerada una de las mejores panorámicas de Kioto.',
+    lat: 35.0429, lon: 135.8083,
+  },
   { name: 'Kenrokuen', desc: 'Uno de los tres jardines (Nihon Sanmei) más famosos de Japón, junto al Castillo de Kanazawa.', lat: 36.5613, lon: 136.6625 },
   { name: 'Nagamachi', desc: 'Antiguo barrio de samuráis, calles empedradas con muros de barro y canales.', lat: 36.5645, lon: 136.6536 },
   { name: 'Higashi Chaya', desc: 'El mayor de los distritos de casas de té (geishas) de Kanazawa, con pan de oro en las tiendas.', lat: 36.5716, lon: 136.6636 },
