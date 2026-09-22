@@ -13,6 +13,7 @@
 // por los vuelos/reservas). Coordenadas aproximadas a partir de conocimiento general del lugar.
 const manualPlaces = [
   { name: 'Shibuya Sky', desc: 'Mirador al aire libre en lo alto del Shibuya Scramble Square, justo encima de la estación — vistas de 360° sobre el cruce de Shibuya.', lat: 35.6590, lon: 139.7016 },
+  { name: 'Shugakuin Imperial Villa', desc: 'Villa imperial del siglo XVII en las colinas del noreste de Kioto: tres jardines (Alto, Medio y Bajo) que usan "shakkei" (paisaje prestado) para integrar las montañas de fondo. Visita guiada de ~1h20, solo con reserva previa en la Agencia de la Casa Imperial (como el Palacio Sento).', lat: 35.0429, lon: 135.8083 },
   { name: 'Kenrokuen', desc: 'Uno de los tres jardines (Nihon Sanmei) más famosos de Japón, junto al Castillo de Kanazawa.', lat: 36.5613, lon: 136.6625 },
   { name: 'Nagamachi', desc: 'Antiguo barrio de samuráis, calles empedradas con muros de barro y canales.', lat: 36.5645, lon: 136.6536 },
   { name: 'Higashi Chaya', desc: 'El mayor de los distritos de casas de té (geishas) de Kanazawa, con pan de oro en las tiendas.', lat: 36.5716, lon: 136.6636 },
@@ -456,7 +457,7 @@ const extras = {
   Tokio: ['Chōfu', 'Jardín Botánico Jindaiji', '大正寺 山門(竜宮門)', 'Shibamata', 'Shibamata Taishakuten', 'Yamanote Line', 'SUSHI Gompachi Nishi-Azabu', 'Mount Fuji Fujinomiya 5th Station', 'Tokyo Skytree'],
   'Kanazawa-Takayama': ['Castillo de Nagoya'],
   Kioto: [
-    "Philosopher's Path (Tetsugaku no Michi), North End",
+    "Philosopher's Path (Tetsugaku no Michi), North End", 'Shugakuin Imperial Villa',
   ],
   Osaka: [
     'Sumiyoshi Taisha', 'Templo Katsuo-ji',
