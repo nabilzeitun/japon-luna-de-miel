@@ -247,7 +247,7 @@ const days = [
     date: '2026-11-04', city: 'Kanazawa-Takayama', locationLabel: 'Takayama', title: 'Takayama: casco antiguo y museos',
     kind: 'city', dayStartTime: '07:00',
     stops: [
-      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.' },
+      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. Entregad hoy las maletas grandes en recepción para el envío por takkyubin a Kioto — el trayecto tarda 1 día, así que llegarían tarde si se envían mañana. Quedaos solo con una bolsa de mano para hoy, esta noche y el viaje de mañana.' },
       { name: 'Asaichi', kind: 'visit', durOverride: 45, note: 'Mercados matinales junto al río — cierran sobre el mediodía, por eso van primero. Buen sitio para comprar un saru-bobo.' },
       { name: 'Takayama Jinya', kind: 'visit', durOverride: 35, note: 'Es el único antiguo palacio de gobierno de la época Edo que queda en pie en todo Japón. Entrada: 440 yenes.' },
       { name: 'Santuario Sakurayama Hachimangu', kind: 'visit', durOverride: 25 },
@@ -276,10 +276,10 @@ const days = [
     altNote: 'Elegid <b>9A (Magome-juku)</b> o <b>9B (directo)</b> — 9A añade ~2h de trenes/bus para ver el pueblo postal de Magome-juku de camino; 9B llega a Kioto sobre el mediodía con toda la tarde libre para más turismo.',
     travelNote: 'Limited Express "Hida" Takayama → Nagoya (~2h20) + JR línea Chūō a Nakatsugawa (~50 min) + bus a Magome-juku (~30 min); a la vuelta, bus a Nakatsugawa (~30 min) + JR línea Chūō a Nagoya (~50 min) + Shinkansen Tōkaidō a Kioto (~35-45 min). No hay bus directo Takayama-Nakatsugawa, hay que bajar hasta Nagoya y volver a subir en la línea JR Chūō.',
     stops: [
-      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel, con maletas listas.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + JR línea Chūō a Nakatsugawa (~50 min).', transitMin: 200 },
+      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. Viajáis solo con la bolsa de mano — las maletas grandes ya van camino de Kioto, enviadas ayer por takkyubin.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + JR línea Chūō a Nakatsugawa (~50 min).', transitMin: 200 },
       { name: 'Nakatsugawa Station', kind: 'visit', durOverride: 10, transit: 'Bus local Nakatsugawa → Magome-juku, ~30 min.', transitMin: 30 },
       { name: 'Magome-juku', kind: 'visit', durOverride: 90, note: 'Comer soba en Yoshimura Soba.', transit: 'Bus de vuelta a Nakatsugawa (~30 min) + JR línea Chūō a Nagoya (~50 min) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 125 },
-      { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el HOTEL RESOL SHIJO MUROMACHI (KYOTO), recogiendo las maletas enviadas por takkyubin desde Takayama.' },
+      { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el HOTEL RESOL SHIJO MUROMACHI (KYOTO) — las maletas grandes, enviadas ayer por takkyubin desde Takayama, ya deberían estar esperando.' },
     ],
   },
   {
@@ -289,7 +289,7 @@ const days = [
     altNote: 'Elegid <b>9B (directo)</b> o <b>9A (Magome-juku)</b> — 9B llega a Kioto sobre el mediodía con toda la tarde libre para más turismo; 9A añade ~2h de trenes/bus para ver el pueblo postal de Magome-juku de camino.',
     travelNote: 'Limited Express "Hida" Takayama → Nagoya (~2h20) + Shinkansen Tōkaidō Nagoya → Kioto (~35-45 min), sin desvíos — el tramo más rápido posible. Llegada a Kioto sobre las 11:00, con toda la tarde libre: Higashi Hongan-ji y Nishi Hongan-ji nada más llegar, luego el Parque del Palacio Imperial de Kioto (con el tour guiado gratuito del Gosho a las 14:00) y por último el Castillo Nijō antes de cenar.',
     stops: [
-      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel, con maletas listas.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 200 },
+      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. Viajáis solo con la bolsa de mano — las maletas grandes ya van camino de Kioto, enviadas ayer por takkyubin.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 200 },
       { name: 'Templo Higashi Hongan-ji', kind: 'visit', durOverride: 30, note: 'El más grande de los dos, justo enfrente de la estación — ideal nada más llegar.', mealAfter: 'lunch' },
       { name: 'Templo Nishi Hongan-ji', kind: 'visit', durOverride: 22, transit: 'Metro Karasuma Line Kyoto → Imadegawa (~11 min) + 5 min andando a la Puerta Seishomon.', transitMin: 20 },
       { name: 'Palacio Imperial de Kioto (Gosho)', kind: 'visit', durOverride: 50, note: 'Entrada por la Puerta Seishomon, sin necesidad de reserva previa. Tour guiado gratuito en inglés a las 10:00 y a las 14:00 (~50 min) — vamos al de las 14:00; llegad unos minutos antes para la entrada.', transit: 'Paseo dentro del parque hasta el Sento (5 min), con margen hasta el turno reservado.', transitMin: 40 },
@@ -298,7 +298,7 @@ const days = [
       { name: 'Munakata Shrine', kind: 'visit', durOverride: 15 },
       { name: 'Santuario Itsukushima (interior del Parque del Palacio Imperial de Kioto)', kind: 'visit', durOverride: 15, note: 'Una réplica en miniatura del santuario de Miyajima que visitaréis más adelante — con su propio torii sobre un estanque.', transit: 'Metro Tozai Line Marutamachi → Nijōjō-mae (~10 min) + 5 min andando al castillo.', transitMin: 15 },
       { name: 'Castillo Nijō', kind: 'visit', durOverride: 75, mealAfter: 'dinner', note: 'El suelo "uguisubari" (de ruiseñor) chirría al pisarlo — un sistema antiguo para detectar intrusos.' },
-      { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el HOTEL RESOL SHIJO MUROMACHI (KYOTO), recogiendo las maletas enviadas por takkyubin desde Takayama.' },
+      { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el HOTEL RESOL SHIJO MUROMACHI (KYOTO) — las maletas grandes, enviadas ayer por takkyubin desde Takayama, ya deberían estar esperando.' },
     ],
   },
   // ---------------- KIOTO ----------------
@@ -346,7 +346,7 @@ const days = [
     kind: 'city', dayStartTime: '06:45',
     travelNote: 'Fushimi Inari y Sanjusangen-dō están al sur (cerca de la estación de Kioto); Ginkaku-ji y el Camino del Filósofo están al norte.',
     stops: [
-      { name: 'Hotel Kyoto', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno temprano en el hotel (o para llevar) — Fushimi Inari conviene cogerlo nada más abrir.', transit: 'JR Nara Line Kioto/Tōfukuji → Inari, ~5-10 min (+ 10-15 min hasta la estación desde el hotel).', transitMin: 20 },
+      { name: 'Hotel Kyoto', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno temprano en el hotel (o para llevar) — Fushimi Inari conviene cogerlo nada más abrir. Entregad hoy las maletas grandes en recepción para el envío por takkyubin a Osaka — el trayecto tarda 1 día, así que llegarían tarde si se envían mañana. Quedaos solo con una bolsa de mano para hoy, esta noche y el viaje de mañana.', transit: 'JR Nara Line Kioto/Tōfukuji → Inari, ~5-10 min (+ 10-15 min hasta la estación desde el hotel).', transitMin: 20 },
       { name: 'Fushimi Inari-taisha', kind: 'visit', durOverride: 140, note: 'Ir muy temprano. Subida completa 2-3h; con llegar al mirador Yotsutsuji (~1h ida y vuelta) ya merece la pena.', transit: 'JR Nara Line Inari → Kioto (~5 min) + JR/bus a Sanjūsangen-dō (~10 min), o taxi directo (~15 min).', transitMin: 20 },
       { name: 'Sanjusangendomawari', kind: 'visit', durOverride: 60, mealAfter: 'lunch', transit: 'Bus o taxi hasta Heian Jingū, ~15 min.', transitMin: 15 },
       { name: 'Heian Jingū', kind: 'visit', durOverride: 30, note: 'El torii es uno de los más grandes de Japón. El jardín trasero (de pago) es un buen contraste tranquilo antes del Camino del Filósofo.', transit: '15 min andando o en bus a Ginkaku-ji.', transitMin: 15 },
@@ -366,9 +366,9 @@ const days = [
   {
     date: '2026-11-09', city: 'Kioto', locationLabel: 'Kyoto', title: 'Daigo-ji, Uji y Nara → Osaka',
     kind: 'travel', dayStartTime: '07:30',
-    travelNote: 'Salida con maletas del hotel de Kioto (dejadlas en consigna de la estación). Desvío a Daigo-ji (metro Tozai Line) antes de coger la JR Nara Line hacia el sur — añade ~45 min de trenes respecto a ir directos, pero de camino hacia Nara igualmente se para en Uji (Byōdō-in). Por la tarde, Kintetsu Nara Line directo hasta Osaka-Namba (~35-40 min) — no hace falta volver a Kioto.',
+    travelNote: 'Las maletas grandes ya van camino de Osaka por takkyubin (enviadas ayer) — hoy viajáis solo con la bolsa de mano. Desvío a Daigo-ji (metro Tozai Line) antes de coger la JR Nara Line hacia el sur — añade ~45 min de trenes respecto a ir directos, pero de camino hacia Nara igualmente se para en Uji (Byōdō-in). Por la tarde, Kintetsu Nara Line directo hasta Osaka-Namba (~35-40 min) — no hace falta volver a Kioto.',
     stops: [
-      { name: 'Hotel Kyoto', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel, con maletas listas.', transit: 'Maletas en consigna de la estación de Kioto + Metro Tozai Line (vía Karasuma-Oike) a Daigo, ~35 min en total.', transitMin: 35 },
+      { name: 'Hotel Kyoto', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. Solo lleváis la bolsa de mano — las maletas grandes ya van camino de Osaka.', transit: 'Metro Tozai Line (vía Karasuma-Oike) a Daigo, ~25 min en total.', transitMin: 25 },
       {
         name: 'Daigo-ji', kind: 'visit', durOverride: 60,
         note: 'Añade ~45 min de trenes respecto a ir directos a Uji/Nara, pero merece la pena por la pagoda de cinco pisos, la estructura de madera más antigua de Kioto.',
@@ -383,7 +383,7 @@ const days = [
       { name: 'Parque de Nara', kind: 'visit', durOverride: 45 },
       { name: 'Tōdai-ji', kind: 'visit', durOverride: 45, mealAfter: 'lunch' },
       { name: 'Santuario Kasuga Taisha', kind: 'visit', durOverride: 40, transit: 'Kintetsu Nara Line directo Nara → Osaka-Namba, ~35-40 min.', transitMin: 40 },
-      { name: 'Hotel Osaka', kind: 'info', note: 'Check-in en el HOTEL KEIHAN TENMABASHI EKIMAE. Tarde libre para descansar tras el viaje — Takimikoji, junto a Umeda, es una opción para cenar (también pasáis cerca el último día).' },
+      { name: 'Hotel Osaka', kind: 'info', note: 'Check-in en el HOTEL KEIHAN TENMABASHI EKIMAE — las maletas grandes, enviadas ayer por takkyubin desde Kioto, ya deberían estar esperando. Tarde libre para descansar tras el viaje — Takimikoji, junto a Umeda, es una opción para cenar (también pasáis cerca el último día).' },
     ],
   },
   // ---------------- OSAKA ----------------
