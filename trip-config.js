@@ -80,7 +80,7 @@ const days = [
     kind: 'city', dayStartTime: '12:50',
     stops: [
       { name: 'Haneda airport', kind: 'info', transit: 'Keikyu Airport Line + Toei Asakusa Line (servicio directo, sin trasbordo) Haneda → Asakusa, ~45 min.', transitMin: 45 },
-      { name: 'Hotel Tokyo', kind: 'info', transit: 'Metro Toei Asakusa Line Oshiage → Asakusa, 1 parada (~5 min).', transitMin: 12 },
+      { name: 'Hotel Tokyo', kind: 'info', note: 'Dejar las maletas en el HOTEL TOBU LEVANT (TOKYO) — el check-in suele ser a partir de las 15:00, puede que solo os guarden el equipaje hasta la noche.', transit: 'Metro Toei Asakusa Line Oshiage → Asakusa, 1 parada (~5 min).', transitMin: 12 },
       { name: 'Kuramae', kind: 'visit', transit: 'Toei Asakusa Line Kuramae → Asakusa, 1 parada (~3 min).', transitMin: 10 },
       { name: 'Asakusa', kind: 'visit' },
       { name: 'Sensō-ji', kind: 'visit' },
@@ -221,7 +221,7 @@ const days = [
       { name: 'Kenrokuen', kind: 'visit', durOverride: 75, note: 'En temporada de momiji (otoño), todo rojo.' },
       { name: 'Kazuemachi', kind: 'visit', durOverride: 30 },
       { name: 'Higashi Chaya', kind: 'visit', durOverride: 45, mealAfter: 'dinner' },
-      { name: 'Hotel Kanazawa', kind: 'info' },
+      { name: 'Hotel Kanazawa', kind: 'info', note: 'Check-in en el HOTEL TOKYU STAY KANAZAWA.' },
     ],
   },
   // ---------------- KANAZAWA / TAKAYAMA ----------------
@@ -238,7 +238,7 @@ const days = [
       { name: 'Templo Myozenji y Santuario Shirakawa Hachiman', kind: 'visit', durOverride: 25 },
       { name: 'Puente Colgante Deai', kind: 'visit', durOverride: 10 },
       { name: 'Las Tres Casas de Shirakawago', kind: 'visit', durOverride: 15, note: 'La foto más famosa de Shirakawago.', transit: 'Bus Nohi Shirakawa-go → Takayama, ~50 min.', transitMin: 50 },
-      { name: 'Hotel Takayama', kind: 'info' },
+      { name: 'Hotel Takayama', kind: 'info', note: 'Check-in en el HOTEL HIDA TAKAYAMA GREEN, con las maletas.' },
       { name: 'Takayama Old Town', kind: 'visit', durOverride: 75, note: 'Cenar carne Hida wagyu en Hidagyu Maruaki o Ajikura Tengoku (buñuelos, donburi o nigiri de Hida wagyu).' },
       { name: 'Hotel Takayama', kind: 'info' },
     ],
@@ -279,7 +279,7 @@ const days = [
       { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel, con maletas listas.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + JR línea Chūō a Nakatsugawa (~50 min).', transitMin: 200 },
       { name: 'Nakatsugawa Station', kind: 'visit', durOverride: 10, transit: 'Bus local Nakatsugawa → Magome-juku, ~30 min.', transitMin: 30 },
       { name: 'Magome-juku', kind: 'visit', durOverride: 90, note: 'Comer soba en Yoshimura Soba.', transit: 'Bus de vuelta a Nakatsugawa (~30 min) + JR línea Chūō a Nagoya (~50 min) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 125 },
-      { name: 'Hotel Kyoto', kind: 'info' },
+      { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el HOTEL RESOL SHIJO MUROMACHI (KYOTO), recogiendo las maletas enviadas por takkyubin desde Takayama.' },
     ],
   },
   {
@@ -298,7 +298,7 @@ const days = [
       { name: 'Munakata Shrine', kind: 'visit', durOverride: 15 },
       { name: 'Santuario Itsukushima (interior del Parque del Palacio Imperial de Kioto)', kind: 'visit', durOverride: 15, note: 'Una réplica en miniatura del santuario de Miyajima que visitaréis más adelante — con su propio torii sobre un estanque.', transit: 'Metro Tozai Line Marutamachi → Nijōjō-mae (~10 min) + 5 min andando al castillo.', transitMin: 15 },
       { name: 'Castillo Nijō', kind: 'visit', durOverride: 75, mealAfter: 'dinner', note: 'El suelo "uguisubari" (de ruiseñor) chirría al pisarlo — un sistema antiguo para detectar intrusos.' },
-      { name: 'Hotel Kyoto', kind: 'info' },
+      { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el HOTEL RESOL SHIJO MUROMACHI (KYOTO), recogiendo las maletas enviadas por takkyubin desde Takayama.' },
     ],
   },
   // ---------------- KIOTO ----------------
@@ -383,7 +383,7 @@ const days = [
       { name: 'Parque de Nara', kind: 'visit', durOverride: 45 },
       { name: 'Tōdai-ji', kind: 'visit', durOverride: 45, mealAfter: 'lunch' },
       { name: 'Santuario Kasuga Taisha', kind: 'visit', durOverride: 40, transit: 'Kintetsu Nara Line directo Nara → Osaka-Namba, ~35-40 min.', transitMin: 40 },
-      { name: 'Hotel Osaka', kind: 'info', note: 'Tarde libre para descansar tras el viaje — Takimikoji, junto a Umeda, es una opción para cenar (también pasáis cerca el último día).' },
+      { name: 'Hotel Osaka', kind: 'info', note: 'Check-in en el HOTEL KEIHAN TENMABASHI EKIMAE. Tarde libre para descansar tras el viaje — Takimikoji, junto a Umeda, es una opción para cenar (también pasáis cerca el último día).' },
     ],
   },
   // ---------------- OSAKA ----------------
