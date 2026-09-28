@@ -22,13 +22,13 @@
       },
       {
         "name": "Shibamata",
-        "desc": "Barrio tradicional con ambiente de posguerra, poco turístico, con mucha comida callejera.",
+        "desc": "Barrio tradicional y poco turístico, con mucha comida callejera.",
         "lat": 35.7559398,
         "lon": 139.8777675
       },
       {
         "name": "Shibamata Taishakuten",
-        "desc": "Templo budista de 1629, famoso por los relieves de madera tallada sin pintar en sus muros, obra de artesanos que también trabajaron en el Tōshō-gū de Nikkō.",
+        "desc": "Templo del siglo XVII famoso por sus tallas de madera en los muros.",
         "lat": 35.7584061,
         "lon": 139.8784378
       },
@@ -46,19 +46,19 @@
       },
       {
         "name": "Chōfu",
-        "desc": "Principal zona verde del oeste de Tokio, con ambiente tradicional.",
+        "desc": "Zona verde tradicional al oeste de Tokio.",
         "lat": 35.6506111,
         "lon": 139.5407215
       },
       {
         "name": "Jardín Botánico Jindaiji",
-        "desc": "El \"jardín del retiro\" de Tokio, junto al templo Jindai-ji.",
+        "desc": "Jardín botánico de Tokio, junto al templo Jindai-ji.",
         "lat": 35.6712808,
         "lon": 139.5483481
       },
       {
         "name": "大正寺 山門(竜宮門)",
-        "desc": "Puerta principal del templo Taishō-ji de Chōfu, con forma de castillo-dragón (ryūgū-mon).",
+        "desc": "Puerta de entrada del templo Taishō-ji, en Chōfu.",
         "lat": 35.6554394,
         "lon": 139.5452642
       },
@@ -124,7 +124,7 @@
       },
       {
         "name": "Tokyo Skytree",
-        "desc": "La torre de telecomunicaciones más alta de Japón (634 m), con dos miradores — descartada la subida en este viaje (ver nota en Sumida).",
+        "desc": "La torre más alta de Japón, con miradores — descartada por precio y por ser de noche.",
         "lat": 35.7100627,
         "lon": 139.8107004
       },
@@ -166,7 +166,7 @@
       },
       {
         "name": "Yamanote Line",
-        "desc": "La línea circular principal de Tokio, que conecta las estaciones más importantes de la ciudad.",
+        "desc": "La línea de tren circular que rodea el centro de Tokio.",
         "lat": 35.6713581,
         "lon": 139.7596327
       },
@@ -196,7 +196,7 @@
       },
       {
         "name": "SUSHI Gompachi Nishi-Azabu",
-        "desc": "Restaurante de sushi de alta gama en Nishi-Azabu — conviene reservar.",
+        "desc": "Restaurante de sushi de alta gama — conviene reservar.",
         "lat": 35.6602253,
         "lon": 139.7235128
       },
@@ -340,7 +340,7 @@
       },
       {
         "name": "Mount Fuji Fujinomiya 5th Station",
-        "desc": "La más alta (2.400 m) de las cuatro \"quintas estaciones\" del Fuji, punto de partida de la ruta de ascenso más corta.",
+        "desc": "Punto de partida más alto para subir al Monte Fuji.",
         "lat": 35.336617,
         "lon": 138.7341277
       }
@@ -404,7 +404,7 @@
     "places": [
       {
         "name": "Castillo de Nagoya",
-        "desc": "Castillo completado en 1615 por Tokugawa Ieyasu; su palacio Hommaru, destruido en 1945, fue reconstruido fielmente en 2018.",
+        "desc": "Castillo de 1615, con su palacio interior reconstruido en 2018.",
         "lat": 35.1847501,
         "lon": 136.8996883
       },
@@ -595,7 +595,7 @@
       },
       {
         "name": "Philosopher's Path (Tetsugaku no Michi), North End",
-        "desc": "Extremo norte del Camino del Filósofo, junto al Pabellón de Plata (Ginkaku-ji).",
+        "desc": "El extremo norte del Camino del Filósofo, junto a Ginkaku-ji.",
         "lat": 35.0266194,
         "lon": 135.795457
       },
@@ -785,7 +785,7 @@
       },
       {
         "name": "Sumiyoshi Taisha",
-        "desc": "Uno de los santuarios sintoístas más antiguos e importantes de Japón, con un torii de piedra, un puente arqueado y un camino de linternas.",
+        "desc": "Uno de los santuarios sintoístas más antiguos de Japón.",
         "lat": 34.6123945,
         "lon": 135.4937612
       },
@@ -857,7 +857,7 @@
       },
       {
         "name": "Templo Katsuo-ji",
-        "desc": "Templo budista al norte de Osaka, recomendado en otoño — conviene llegar muy temprano.",
+        "desc": "Templo budista al norte de Osaka, muy fotogénico en otoño — conviene llegar temprano.",
         "lat": 34.8657752,
         "lon": 135.491087
       }
@@ -940,7 +940,7 @@
       },
       {
         "name": "Teleférico de Miyajima",
-        "desc": "Teleférico de dos tramos (~1,6 km) que sube desde Momijidani hasta cerca de la cima del Monte Misen.",
+        "desc": "Teleférico que sube hasta cerca de la cima del Monte Misen, en Miyajima.",
         "lat": 34.2932587,
         "lon": 132.3267509
       },

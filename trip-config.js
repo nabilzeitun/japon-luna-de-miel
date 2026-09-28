@@ -15,7 +15,7 @@ const manualPlaces = [
   { name: 'Shibuya Sky', desc: 'Mirador al aire libre en lo alto del Shibuya Scramble Square, justo encima de la estación — vistas de 360° sobre el cruce de Shibuya.', lat: 35.6590, lon: 139.7016 },
   {
     name: 'Shugakuin Imperial Villa',
-    desc: 'Villa imperial del siglo XVII en las colinas del noreste de Kioto: tres jardines (Alto, Medio y Bajo) que usan "shakkei" (paisaje prestado) para integrar las montañas de fondo. Visita guiada de ~1h20, solo con reserva previa en la Agencia de la Casa Imperial (como el Palacio Sento).<br>A favor:<br>• Estilo de jardín distinto a todo lo demás del viaje — ni estanque tipo Kinkaku-ji/Tenryū-ji ni jardín seco tipo Ryōan-ji, sino todo un paisaje de colina con "paisaje prestado".<br>• Famosa precisamente por el otoño — encaja de lleno con las fechas del viaje.<br>• La vista del estanque Yokuryū-chi desde el Jardín Alto está considerada una de las mejores panorámicas de Kioto.',
+    desc: 'Villa imperial del siglo XVII en las colinas de Kioto, con tres jardines de paseo y vistas a las montañas. Visita guiada de ~1h20, solo con reserva previa (como el Palacio Sento).<br>A favor:<br>• Un estilo de jardín distinto a todo lo demás del viaje.<br>• Famosa por el otoño — encaja con las fechas del viaje.<br>• Una de las mejores vistas de Kioto, desde el Jardín Alto.',
     lat: 35.0429, lon: 135.8083,
   },
   { name: 'Palacio Imperial de Kioto (Gosho)', desc: 'Antigua residencia oficial de la familia imperial hasta el traslado a Tokio en 1869, dentro del mismo Parque Imperial (Kyoto Gyoen) que el Palacio Sento, unos minutos al norte. Visita guiada, solo con reserva previa en la Agencia de la Casa Imperial (Kunaicho).', lat: 35.0254, lon: 135.7622 },
