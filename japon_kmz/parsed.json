@@ -28,19 +28,19 @@
       },
       {
         "name": "Shibamata Taishakuten",
-        "desc": "templo shibamata",
+        "desc": "Templo budista de 1629, famoso por los relieves de madera tallada sin pintar en sus muros, obra de artesanos que también trabajaron en el Tōshō-gū de Nikkō.",
         "lat": 35.7584061,
         "lon": 139.8784378
       },
       {
         "name": "Toyosu Senkyaku Banrai",
-        "desc": "mercado aire libre",
+        "desc": "Mercado cubierto de tres plantas junto al mercado mayorista de Toyosu, con puestos de marisco fresco, restaurantes y un baño termal.",
         "lat": 35.6457275,
         "lon": 139.7836383
       },
       {
         "name": "Ginza",
-        "desc": "ppal barrio comercial",
+        "desc": "El barrio comercial más elegante de Tokio, con grandes almacenes centenarios, boutiques de lujo y galerías de arte.",
         "lat": 35.6712228,
         "lon": 139.7664859
       },
@@ -58,7 +58,7 @@
       },
       {
         "name": "大正寺 山門(竜宮門)",
-        "desc": "templo ppal de chofu",
+        "desc": "Puerta principal del templo Taishō-ji de Chōfu, con forma de castillo-dragón (ryūgū-mon).",
         "lat": 35.6554394,
         "lon": 139.5452642
       },
@@ -70,7 +70,7 @@
       },
       {
         "name": "Asakusa",
-        "desc": "barrio",
+        "desc": "Barrio histórico alrededor del Sensō-ji, el templo más antiguo de Tokio, con calles comerciales tradicionales.",
         "lat": 35.7185858,
         "lon": 139.7958849
       },
@@ -82,7 +82,7 @@
       },
       {
         "name": "Calle Comercial Nakamise",
-        "desc": "",
+        "desc": "Calle comercial de 250 m entre la Puerta Kaminarimon y el Sensō-ji, con cerca de 90 puestos centenarios de dulces, abanicos y recuerdos.",
         "lat": 35.7118413,
         "lon": 139.7964542
       },
@@ -124,7 +124,7 @@
       },
       {
         "name": "Tokyo Skytree",
-        "desc": "Subir tokyo skytree",
+        "desc": "La torre de telecomunicaciones más alta de Japón (634 m), con dos miradores — descartada la subida en este viaje (ver nota en Sumida).",
         "lat": 35.7100627,
         "lon": 139.8107004
       },
@@ -136,7 +136,7 @@
       },
       {
         "name": "Parque de Ueno",
-        "desc": "",
+        "desc": "El parque más visitado de Tokio, con varios museos (Nacional de Tokio, de Arte Occidental), el zoo y más de 1.000 cerezos.",
         "lat": 35.7147557,
         "lon": 139.7734312
       },
@@ -154,13 +154,13 @@
       },
       {
         "name": "Jardín Rikugien",
-        "desc": "",
+        "desc": "Uno de los jardines paisajísticos más bellos de Tokio, construido hacia 1700 recreando en miniatura 88 escenas de poemas clásicos.",
         "lat": 35.7331005,
         "lon": 139.7457335
       },
       {
         "name": "Ameyoko market",
-        "desc": "mercado de todo",
+        "desc": "Mercado callejero bullicioso junto a las vías del tren entre Ueno y Okachimachi, con ropa, cosmética, pescado fresco y comida a buen precio.",
         "lat": 35.7090028,
         "lon": 139.7746259
       },
@@ -172,13 +172,13 @@
       },
       {
         "name": "Shibuya Crossing",
-        "desc": "",
+        "desc": "El cruce peatonal más transitado del mundo — hasta 3.000 personas cruzan en cada cambio de semáforo.",
         "lat": 35.659482,
         "lon": 139.7005596
       },
       {
         "name": "Hachiko Statue",
-        "desc": "",
+        "desc": "Estatua del Akita que esperó cada día a su dueño fallecido durante nueve años — punto de encuentro icónico de Shibuya.",
         "lat": 35.6590552,
         "lon": 139.7006288
       },
@@ -190,7 +190,7 @@
       },
       {
         "name": "Calle Central de Shibuya",
-        "desc": "calle comercial",
+        "desc": "Calle comercial principal que baja desde el cruce de Shibuya, llena de tiendas y moda juvenil.",
         "lat": 35.6600456,
         "lon": 139.6997833
       },
@@ -220,19 +220,19 @@
       },
       {
         "name": "Parque Yoyogi",
-        "desc": "",
+        "desc": "Uno de los parques más grandes de Tokio, con amplios céspedes, ideal para pícnic y paseos junto al Santuario Meiji.",
         "lat": 35.6700649,
         "lon": 139.6949656
       },
       {
         "name": "Santuario Meiji",
-        "desc": "Horario 5am a 18:00",
+        "desc": "Santuario sintoísta dedicado al emperador Meiji y la emperatriz Shōken, rodeado de un bosque de 100.000 árboles donados de todo Japón.",
         "lat": 35.6763976,
         "lon": 139.6993259
       },
       {
         "name": "Shinjuku",
-        "desc": "",
+        "desc": "Distrito de negocios y ocio con la estación más transitada del mundo — rascacielos al oeste, neones y bares al este.",
         "lat": 35.6938253,
         "lon": 139.7033559
       },
@@ -250,7 +250,7 @@
       },
       {
         "name": "Kabukichō",
-        "desc": "",
+        "desc": "El mayor distrito de ocio nocturno de Tokio, con neones, restaurantes, bares y clubes — conocido como \"la ciudad que nunca duerme\".",
         "lat": 35.6960834,
         "lon": 139.7026251
       },
@@ -280,25 +280,25 @@
       },
       {
         "name": "Kamakura",
-        "desc": "zona parques y templos",
+        "desc": "Antigua capital samurái a orillas del mar, con templos, playas y el Gran Buda, a menos de una hora de Tokio.",
         "lat": 35.3192128,
         "lon": 139.5466731
       },
       {
         "name": "Templo Kotoku-in",
-        "desc": "Kamakura daibutsu",
+        "desc": "Templo que alberga el Gran Buda de Kamakura (Daibutsu), una estatua de bronce de 11,4 m fundida en 1252.",
         "lat": 35.3168145,
         "lon": 139.5357442
       },
       {
         "name": "Tsurugaoka Hachiman-gū",
-        "desc": "",
+        "desc": "El santuario más importante de Kamakura, fundado en 1063 y dedicado a Hachiman, dios protector del clan Minamoto y de los samuráis.",
         "lat": 35.3259856,
         "lon": 139.5563462
       },
       {
         "name": "Templo Hokoku-ji",
-        "desc": "templo del bambú",
+        "desc": "Templo zen conocido como \"el templo del bambú\", por el precioso bosquecillo de bambú detrás del edificio principal.",
         "lat": 35.3199921,
         "lon": 139.5692379
       },
@@ -310,19 +310,19 @@
       },
       {
         "name": "Hakone",
-        "desc": "",
+        "desc": "Región montañosa junto al lago Ashi, famosa por sus vistas al Fuji, aguas termales y el circuito de transporte turístico (tren, funicular, teleférico y barco).",
         "lat": 35.2337691,
         "lon": 139.1088454
       },
       {
         "name": "Museo al Aire Libre de Hakone",
-        "desc": "",
+        "desc": "Primer museo al aire libre de Japón (1969): esculturas contemporáneas repartidas entre las montañas, incluido un pabellón con obras de Picasso.",
         "lat": 35.2451601,
         "lon": 139.0507271
       },
       {
         "name": "Santuario Hakone",
-        "desc": "",
+        "desc": "Santuario sintoísta a orillas del lago Ashi, famoso por su gran torii rojo que parece flotar sobre el agua, con el Fuji al fondo en días despejados.",
         "lat": 35.2048263,
         "lon": 139.0253782
       },
@@ -340,7 +340,7 @@
       },
       {
         "name": "Mount Fuji Fujinomiya 5th Station",
-        "desc": "",
+        "desc": "La más alta (2.400 m) de las cuatro \"quintas estaciones\" del Fuji, punto de partida de la ruta de ascenso más corta.",
         "lat": 35.336617,
         "lon": 138.7341277
       }
@@ -375,25 +375,25 @@
       },
       {
         "name": "Tsuzumi-mon Gate",
-        "desc": "",
+        "desc": "Puerta de madera de 13,7 m a la salida de la Estación de Kanazawa, inspirada en los tambores tsuzumi del teatro Noh — se ilumina de noche.",
         "lat": 36.5778025,
         "lon": 136.6491445
       },
       {
         "name": "Takayama Old Town",
-        "desc": "carne hida wagyu",
+        "desc": "Casco antiguo de Takayama, con calles de casas de madera oscurecida del periodo Edo tan bien conservadas que lo llaman \"la pequeña Kioto\".",
         "lat": 36.1429901,
         "lon": 137.2594717
       },
       {
         "name": "Takayama Shōwa-kan Museum",
-        "desc": "museo años 60",
+        "desc": "Museo que recrea dos calles de los años 60-70 con tiendas, carteles antiguos, recreativas retro y objetos que se pueden tocar.",
         "lat": 36.1439748,
         "lon": 137.2599215
       },
       {
         "name": "Hida no Sato Folk Village Museum",
-        "desc": "",
+        "desc": "Museo al aire libre con más de 30 casas tradicionales de la región de Hida, muchas con tejados gasshō-zukuri, trasladadas de sus emplazamientos originales.",
         "lat": 36.1324902,
         "lon": 137.2350898
       }
@@ -404,7 +404,7 @@
     "places": [
       {
         "name": "Castillo de Nagoya",
-        "desc": "",
+        "desc": "Castillo completado en 1615 por Tokugawa Ieyasu; su palacio Hommaru, destruido en 1945, fue reconstruido fielmente en 2018.",
         "lat": 35.1847501,
         "lon": 136.8996883
       },
@@ -439,7 +439,7 @@
       },
       {
         "name": "Fushimi Inari-taisha",
-        "desc": "",
+        "desc": "El santuario sintoísta más importante dedicado a Inari, dios del arroz — miles de torii vermellón forman un túnel que sube 233 m por el monte Inari.",
         "lat": 34.9676945,
         "lon": 135.7791876
       },
@@ -451,13 +451,13 @@
       },
       {
         "name": "Templo Nishi Hongan-ji",
-        "desc": "",
+        "desc": "Sede occidental de la secta budista Jōdo Shin, construida en 1591 por Toyotomi Hideyoshi. Patrimonio Unesco.",
         "lat": 34.991777,
         "lon": 135.7516549
       },
       {
         "name": "Templo Higashi Hongan-ji",
-        "desc": "",
+        "desc": "El templo de madera más grande de Kioto, sede oriental de la secta Jōdo Shin, justo enfrente de la estación.",
         "lat": 34.9904465,
         "lon": 135.7595597
       },
@@ -469,13 +469,13 @@
       },
       {
         "name": "Templo Tenryu-ji",
-        "desc": "",
+        "desc": "El más importante de los cinco grandes templos zen de Kioto, con un jardín de paseo de 700 años diseñado por su fundador. Patrimonio Unesco.",
         "lat": 35.0158379,
         "lon": 135.6737654
       },
       {
         "name": "Bosque de Bambú de Arashiyama",
-        "desc": "",
+        "desc": "Sendero de 400 m entre miles de tallos de bambú de hasta 30 m de altura, una de las imágenes más icónicas de Kioto.",
         "lat": 35.0168187,
         "lon": 135.6713013
       },
@@ -493,25 +493,25 @@
       },
       {
         "name": "Castillo Nijō",
-        "desc": "",
+        "desc": "Residencia de Kioto de los shogunes Tokugawa desde 1603, con el famoso \"suelo de ruiseñor\" que chirría para detectar intrusos. Patrimonio Unesco.",
         "lat": 35.0140379,
         "lon": 135.7484258
       },
       {
         "name": "Pabellon Dorado",
-        "desc": "",
+        "desc": "Pabellón zen del siglo XIV con las dos plantas superiores cubiertas de pan de oro, reflejado en el estanque Kyōko-chi. Patrimonio Unesco.",
         "lat": 35.03937,
         "lon": 135.7292431
       },
       {
         "name": "Ryōan-ji",
-        "desc": "",
+        "desc": "Templo zen famoso por su jardín seco de piedras: 15 rocas dispuestas sobre grava rastrillada, sin árboles ni plantas. Patrimonio Unesco.",
         "lat": 35.0344943,
         "lon": 135.7182634
       },
       {
         "name": "Ninna-ji",
-        "desc": "",
+        "desc": "Templo imperial fundado en 888, con una pagoda de cinco pisos y cerezos tardíos famosos en primavera. Patrimonio Unesco.",
         "lat": 35.0310937,
         "lon": 135.7138198
       },
@@ -553,13 +553,13 @@
       },
       {
         "name": "Hanamikoji-dori",
-        "desc": "calle recomendada",
+        "desc": "La calle principal de Gion, con casas de té (ochaya) y restaurantes tradicionales tras celosías de madera — la más \"kioto\" de todas las calles.",
         "lat": 35.0054485,
         "lon": 135.7752337
       },
       {
         "name": "Gionmachi Minamigawa",
-        "desc": "calle recomendada",
+        "desc": "Zona sur de Gion, el barrio de geishas y maiko mejor conservado de Kioto, con casas de madera tradicionales.",
         "lat": 35.0026835,
         "lon": 135.7752039
       },
@@ -577,103 +577,103 @@
       },
       {
         "name": "Santuario Yasaka",
-        "desc": "",
+        "desc": "Santuario sintoísta de más de 1.350 años en el corazón de Gion, escenario del Festival Gion — su escenario se llena de faroles cada noche.",
         "lat": 35.0036559,
         "lon": 135.7785534
       },
       {
         "name": "Santuario Yasui Konpira",
-        "desc": "",
+        "desc": "Pequeño santuario famoso por su piedra \"enkiri enmusubi\" — se cruza gateando para cortar malas relaciones o iniciar buenas.",
         "lat": 35.0001126,
         "lon": 135.7758058
       },
       {
         "name": "Palacio Imperial Sento de Kioto",
-        "desc": "",
+        "desc": "Antiguo palacio de retiro de los emperadores, construido en 1630; el edificio ardió en 1854 y hoy solo se visitan sus jardines paisajísticos.",
         "lat": 35.0223399,
         "lon": 135.7651343
       },
       {
         "name": "Philosopher's Path (Tetsugaku no Michi), North End",
-        "desc": "",
+        "desc": "Extremo norte del Camino del Filósofo, junto al Pabellón de Plata (Ginkaku-ji).",
         "lat": 35.0266194,
         "lon": 135.795457
       },
       {
         "name": "Tetsugaku No Michi",
-        "desc": "",
+        "desc": "Sendero de piedra de 2 km junto al canal Shirakawa, entre Ginkaku-ji y Nanzen-ji, llamado así por el filósofo Nishida Kitarō.",
         "lat": 35.021665,
         "lon": 135.7943593
       },
       {
         "name": "Heian Jingū",
-        "desc": "",
+        "desc": "Santuario de 1895 que recrea a escala el antiguo Palacio Imperial de la era Heian, con un gran torii rojo y un jardín trasero con estanques.",
         "lat": 35.0159823,
         "lon": 135.7824263
       },
       {
         "name": "Santuario Shirakumo",
-        "desc": "",
+        "desc": "Pequeño santuario del siglo XIII dentro del Parque Imperial, dedicado a Benzaiten, diosa de la música.",
         "lat": 35.0215099,
         "lon": 135.761177
       },
       {
         "name": "Munakata Shrine",
-        "desc": "",
+        "desc": "Santuario sintoísta del siglo VIII dentro del Parque Imperial, dedicado a las tres diosas de Munakata.",
         "lat": 35.0189695,
         "lon": 135.7612756
       },
       {
         "name": "Santuario Itsukushima (interior del Parque del Palacio Imperial de Kioto)",
-        "desc": "",
+        "desc": "Réplica en miniatura del santuario de Miyajima dentro del Parque Imperial, con su propio torii sobre un estanque.",
         "lat": 35.0181276,
         "lon": 135.7620661
       },
       {
         "name": "Reikan-ji",
-        "desc": "templo flores",
+        "desc": "Antiguo convento imperial con motivos de hojas de arce por todo el templo — abre solo unas semanas al año.",
         "lat": 35.0207558,
         "lon": 135.796504
       },
       {
         "name": "Santuario Otoyo",
-        "desc": "",
+        "desc": "Pequeño santuario famoso por sus estatuas guardianas de ratones (en vez de los habituales zorros o leones), junto al Camino del Filósofo.",
         "lat": 35.0182042,
         "lon": 135.7964378
       },
       {
         "name": "Kumano Nyakuōji Shrine",
-        "desc": "",
+        "desc": "Pequeño santuario del siglo XII en el extremo sur del Camino del Filósofo, filial de los santuarios Kumano.",
         "lat": 35.015647,
         "lon": 135.7963131
       },
       {
         "name": "Anraku-ji Temple",
-        "desc": "",
+        "desc": "Templo de tejado de paja con jardín de musgo, vinculado a dos damas de la corte imperial — abre solo unas semanas al año.",
         "lat": 35.0216167,
         "lon": 135.7966367
       },
       {
         "name": "Hōnenin Temple",
-        "desc": "",
+        "desc": "Templo de 1680 con un jardín de musgo y dos montículos de arena rastrillada junto a la entrada, que cambian de diseño con las estaciones.",
         "lat": 35.0240638,
         "lon": 135.7973229
       },
       {
         "name": "Mirokuin Temple",
-        "desc": "",
+        "desc": "Pequeño templo tranquilo y poco frecuentado por el turismo, justo al lado de Ginkaku-ji.",
         "lat": 35.0257387,
         "lon": 135.7959431
       },
       {
         "name": "Templo Eikando",
-        "desc": "",
+        "desc": "Templo del siglo IX famoso por sus ~3.000 arces en otoño y por la estatua del Buda Amida que mira hacia atrás por encima del hombro.",
         "lat": 35.0148543,
         "lon": 135.7941588
       },
       {
         "name": "Nanzen-ji",
-        "desc": "",
+        "desc": "Uno de los templos zen más importantes de Japón, con un imponente portal de entrada y jardines de piedra al pie de las montañas de Higashiyama.",
         "lat": 35.0114138,
         "lon": 135.7944841
       },
@@ -797,25 +797,25 @@
       },
       {
         "name": "Don Quijote Dotonbori Midosuji",
-        "desc": "",
+        "desc": "Gran tienda de descuento abierta 24h, reconocible por la noria amarilla en su fachada — de todo, desde souvenirs a electrónica.",
         "lat": 34.669254,
         "lon": 135.499904
       },
       {
         "name": "Sennichimae",
-        "desc": "zona de compras",
+        "desc": "Calle comercial de 150 m cerca de Namba, especializada en menaje de cocina, cuchillos y artículos de hostelería desde hace más de 130 años.",
         "lat": 34.6673782,
         "lon": 135.5045713
       },
       {
         "name": "Ebisu Bashi-Suji",
-        "desc": "calle comercial",
+        "desc": "Calle comercial de 370 m que conecta el puente Ebisu (símbolo de Minami) con los grandes almacenes de Shinsaibashi.",
         "lat": 34.6670129,
         "lon": 135.5013801
       },
       {
         "name": "Hozenji Yokocho",
-        "desc": "calle comercial",
+        "desc": "Callejón empedrado de dos tramos de 80 m con restaurantes y bares tradicionales, y farolillos encendidos por la noche.",
         "lat": 34.6681187,
         "lon": 135.5026104
       },
@@ -827,7 +827,7 @@
       },
       {
         "name": "America-mura",
-        "desc": "calle estilo americano",
+        "desc": "Barrio de moda y cultura joven desde los años 70, con ropa vintage americana, tiendas de skate y ambiente urbano.",
         "lat": 34.6719318,
         "lon": 135.4988498
       },
@@ -845,7 +845,7 @@
       },
       {
         "name": "Tower Slider (Tsutenkaku)",
-        "desc": "",
+        "desc": "Torre símbolo de Osaka (108 m) con mirador a 91 m y la estatua de Billiken, que da suerte si le frotas la planta de los pies; incluye un tobogán interior.",
         "lat": 34.652455,
         "lon": 135.5064993
       },
@@ -868,43 +868,43 @@
     "places": [
       {
         "name": "Hiroshima",
-        "desc": "",
+        "desc": "Capital de la prefectura, reconstruida tras la bomba atómica de 1945 — hoy es un símbolo mundial de paz.",
         "lat": 34.3852894,
         "lon": 132.4553055
       },
       {
         "name": "Parque Memorial de la Paz de Hiroshima",
-        "desc": "",
+        "desc": "Parque de 120.000 m² dedicado a las víctimas de la bomba atómica de 1945, junto a la Cúpula Genbaku. Patrimonio Unesco.",
         "lat": 34.3926867,
         "lon": 132.4522012
       },
       {
         "name": "Castillo de Hiroshima",
-        "desc": "",
+        "desc": "Castillo de llanura de 1589, destruido por la bomba atómica y reconstruido en 1958 — hoy es un museo de historia de la ciudad.",
         "lat": 34.4027456,
         "lon": 132.4591055
       },
       {
         "name": "Okonomimura",
-        "desc": "comer aquí, okonomiyaki",
+        "desc": "Edificio de tres plantas con 25 restaurantes dedicados solo al okonomiyaki al estilo Hiroshima, por capas y con fideos yakisoba.",
         "lat": 34.3914342,
         "lon": 132.4619014
       },
       {
         "name": "Hondori Shopping Street",
-        "desc": "",
+        "desc": "La arcada comercial más grande de la región, con más de 200 tiendas en 580 m — aquí está Okonomimura.",
         "lat": 34.3935158,
         "lon": 132.4573627
       },
       {
         "name": "Jardín Shukkeien",
-        "desc": "",
+        "desc": "Jardín paisajístico de 1620 inspirado en el Lago del Oeste de Hangzhou, con un estanque central y puentes.",
         "lat": 34.4004834,
         "lon": 132.4677207
       },
       {
         "name": "Miyahima",
-        "desc": "",
+        "desc": "Isla sagrada sintoísta, considerada una de las tres vistas más bellas de Japón por su torii flotante.",
         "lat": 34.2732114,
         "lon": 132.3052488
       },
@@ -922,31 +922,31 @@
       },
       {
         "name": "Santuario Itsukushima",
-        "desc": "",
+        "desc": "Santuario del siglo VI construido sobre el agua, famoso por su gran torii flotante — con la marea alta parece suspendido sobre el mar.",
         "lat": 34.2959896,
         "lon": 132.3198285
       },
       {
         "name": "Santuario Toyokuni (Senjokaku)",
-        "desc": "",
+        "desc": "Salón del tamaño de 1.000 tatamis, encargado en 1587 por Toyotomi Hideyoshi y nunca terminado — sin techo interior ni entrada principal.",
         "lat": 34.2973206,
         "lon": 132.3202787
       },
       {
         "name": "Parque Momijidani",
-        "desc": "",
+        "desc": "Valle a los pies del Monte Misen con unos 700 arces, uno de los mejores lugares de la región para ver el otoño.",
         "lat": 34.2942053,
         "lon": 132.324065
       },
       {
         "name": "Teleférico de Miyajima",
-        "desc": "",
+        "desc": "Teleférico de dos tramos (~1,6 km) que sube desde Momijidani hasta cerca de la cima del Monte Misen.",
         "lat": 34.2932587,
         "lon": 132.3267509
       },
       {
         "name": "Monte Misen",
-        "desc": "funicular",
+        "desc": "La montaña más alta de Miyajima (535 m), con vistas al Mar Interior de Seto desde la cima, accesible en teleférico y un tramo final a pie.",
         "lat": 34.2795127,
         "lon": 132.3198084
       }
@@ -1442,7 +1442,7 @@
       },
       {
         "name": "Calle Comercial Nakamise",
-        "desc": "beef yakisoba – beef tender noodles",
+        "desc": "Calle comercial de 250 m entre la Puerta Kaminarimon y el Sensō-ji, con cerca de 90 puestos centenarios de dulces, abanicos y recuerdos.",
         "lat": 35.7118413,
         "lon": 139.7964542
       },
