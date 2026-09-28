@@ -4,25 +4,25 @@
     "places": [
       {
         "name": "Haneda airport",
-        "desc": "HND-TOKYO 28OCT WED12:50",
+        "desc": "Aeropuerto internacional en la bahía de Tokio, con conexión directa a Asakusa en metro.",
         "lat": 35.5482964,
         "lon": 139.7779951
       },
       {
         "name": "Hotel Tokyo",
-        "desc": "5 noches de alojamiento y desayuno en HOTEL TOBU LEVANT (TOKYO) Twin Room Skytree View",
+        "desc": "5 noches de alojamiento y desayuno en el Hotel Tobu Levant (Tokio), habitación doble con vistas al Skytree.",
         "lat": 35.6972128,
         "lon": 139.810939
       },
       {
         "name": "Yanaka",
-        "desc": "lentitud y tradición, shopping tradicional y artesano",
+        "desc": "Barrio tranquilo de casas bajas, templos y comercios artesanales tradicionales.",
         "lat": 35.7250389,
         "lon": 139.7690417
       },
       {
         "name": "Shibamata",
-        "desc": "barrio tradicional típico, ambiente noventero 0 turístico. mucha comida callejera",
+        "desc": "Barrio tradicional con ambiente de posguerra, poco turístico, con mucha comida callejera.",
         "lat": 35.7559398,
         "lon": 139.8777675
       },
@@ -46,13 +46,13 @@
       },
       {
         "name": "Chōfu",
-        "desc": "ppal zona verde de tokio, ambiente tradicional.",
+        "desc": "Principal zona verde del oeste de Tokio, con ambiente tradicional.",
         "lat": 35.6506111,
         "lon": 139.5407215
       },
       {
         "name": "Jardín Botánico Jindaiji",
-        "desc": "\"jardín del retiro\" de tokyo",
+        "desc": "El \"jardín del retiro\" de Tokio, junto al templo Jindai-ji.",
         "lat": 35.6712808,
         "lon": 139.5483481
       },
@@ -64,7 +64,7 @@
       },
       {
         "name": "Adashino Nenbutsuji Temple",
-        "desc": "3€ pero mucho más tranquilo.",
+        "desc": "Templo con miles de pequeñas estatuas de piedra de Buda, agrupadas en memoria de las almas sin descendientes que las honraran.",
         "lat": 35.0269596,
         "lon": 135.6656131
       },
@@ -76,7 +76,7 @@
       },
       {
         "name": "Sensō-ji",
-        "desc": "calle comercial Nakamise Dori",
+        "desc": "El templo budista más antiguo de Tokio, fundado en el año 645, con la icónica Puerta del Trueno (Kaminarimon) y su gran linterna roja.",
         "lat": 35.7147651,
         "lon": 139.7966553
       },
@@ -88,37 +88,37 @@
       },
       {
         "name": "Hoppy Street",
-        "desc": "Izakayas en los que pedir hoppy. japo tardicional",
+        "desc": "Callejón de izakayas tradicionales, famoso por el hoppy, una bebida con sabor a cerveza y poca graduación.",
         "lat": 35.7125724,
         "lon": 139.794291
       },
       {
         "name": "Kuramae",
-        "desc": "brooklyn de tokio, artesanía y tranquilidad, tiendas pequeñas de todo.",
+        "desc": "Barrio conocido como el \"Brooklyn de Tokio\": tiendas pequeñas de artesanía y ambiente tranquilo.",
         "lat": 35.7021284,
         "lon": 139.7920494
       },
       {
         "name": "Centro de Información Turística y Cultural de Asakusa",
-        "desc": "vistas desde oficina de turismo gratis",
+        "desc": "Oficina de turismo con un mirador gratuito en una de sus plantas superiores, con vistas sobre Asakusa y el Skytree.",
         "lat": 35.7107074,
         "lon": 139.7965461
       },
       {
         "name": "TAITO Station Akihabara",
-        "desc": "gaming arcade viral famosísimo, de los más grandes del mundo",
+        "desc": "Sala recreativa viral, una de las más grandes del mundo, famosa por sus máquinas de peluches (UFO catcher).",
         "lat": 35.700244,
         "lon": 139.771697
       },
       {
         "name": "Calle Comercial Shin-Nakamise",
-        "desc": "Galería comercial Shin-Nakamise en Asakusa subway station",
+        "desc": "Galería comercial cubierta que conecta con la estación de metro de Asakusa, alternativa menos concurrida a Nakamise-dori.",
         "lat": 35.7121273,
         "lon": 139.7944908
       },
       {
         "name": "Puente Azuma",
-        "desc": "Cruzar puente Azuma desde parque sumida",
+        "desc": "Puente rojo sobre el río Sumida que conecta Asakusa con el barrio de Sumida, a los pies del Skytree.",
         "lat": 35.710155,
         "lon": 139.79885
       },
@@ -130,7 +130,7 @@
       },
       {
         "name": "Akihabara",
-        "desc": "mucha tienda y de segunda mano",
+        "desc": "Barrio de electrónica, videojuegos, manga y tiendas de segunda mano.",
         "lat": 35.7022589,
         "lon": 139.7744733
       },
@@ -142,13 +142,13 @@
       },
       {
         "name": "Museo Nacional de Tokio",
-        "desc": "Colección de arte y artefactos históricos de Japón.",
+        "desc": "El museo más antiguo, grande e importante de Japón, con la galería Honkan (arte japonés tradicional por orden cronológico), armaduras samurái, la galería Tōyōkan y jardines alrededor.",
         "lat": 35.7188351,
         "lon": 139.7765215
       },
       {
         "name": "Ueno Zoo",
-        "desc": "Horario 9:30 - 17:00, cierra los lunes",
+        "desc": "El zoológico más antiguo de Japón, abierto en 1882 dentro del Parque de Ueno.",
         "lat": 35.7160153,
         "lon": 139.772882
       },
@@ -166,7 +166,7 @@
       },
       {
         "name": "Yamanote Line",
-        "desc": "línea circular ppal de tokio",
+        "desc": "La línea circular principal de Tokio, que conecta las estaciones más importantes de la ciudad.",
         "lat": 35.6713581,
         "lon": 139.7596327
       },
@@ -184,7 +184,7 @@
       },
       {
         "name": "Shibuya Nonbei Yokocho",
-        "desc": "callejón con bares y comercios, japos borrachos",
+        "desc": "Callejón estrecho de pequeños bares tradicionales, animado por las noches.",
         "lat": 35.6599499,
         "lon": 139.701533
       },
@@ -196,25 +196,25 @@
       },
       {
         "name": "SUSHI Gompachi Nishi-Azabu",
-        "desc": "posible restaurante top, reservar",
+        "desc": "Restaurante de sushi de alta gama en Nishi-Azabu — conviene reservar.",
         "lat": 35.6602253,
         "lon": 139.7235128
       },
       {
         "name": "Dogenzaka",
-        "desc": "avenidas y áreas comerciales más famosas del barrio de Shibuya",
+        "desc": "Una de las avenidas comerciales más conocidas del barrio de Shibuya.",
         "lat": 35.6581518,
         "lon": 139.6981574
       },
       {
         "name": "Calle Takeshita",
-        "desc": "emblemática calle peatonal de unos 350 a 400 metros. moda, domingos mediodía más frikis",
+        "desc": "Calle peatonal de unos 350-400 m, emblemática por sus tiendas de moda juvenil.",
         "lat": 35.6710335,
         "lon": 139.7051821
       },
       {
         "name": "Omote-Sando Avenue",
-        "desc": "calle comercial paralela a Takeshita Dori (Kiddy Land tienda de muñecos, oriental bazar)",
+        "desc": "Calle comercial paralela a Takeshita-dori, con tiendas como Kiddy Land (muñecos) y bazares orientales.",
         "lat": 35.6677001,
         "lon": 139.7072283
       },
@@ -238,13 +238,13 @@
       },
       {
         "name": "Mirador del Gobierno Metropolitano de Tokio",
-        "desc": "Park Hyatt, famoso por la película Lost in Translation,Tocho y su mirador gratuito",
+        "desc": "Rascacielos de la administración metropolitana de Tokio (Tochō), con un mirador gratuito en la planta 45.",
         "lat": 35.689733,
         "lon": 139.6916563
       },
       {
         "name": "Park Hyatt Tokyo",
-        "desc": "famoso por la película Lost in Translation, mirador gratuito",
+        "desc": "Hotel de lujo donde se rodó la película \"Lost in Translation\" (2003).",
         "lat": 35.6862131,
         "lon": 139.6904828
       },
@@ -256,25 +256,25 @@
       },
       {
         "name": "Tokyu Kabukicho Tower",
-        "desc": "tokyo kabukicho tower, restaurantes y maquinas dentro",
+        "desc": "Torre de ocio en Kabukichō con restaurantes, cines, salas de conciertos y máquinas recreativas.",
         "lat": 35.6957513,
         "lon": 139.7005894
       },
       {
         "name": "Okubo",
-        "desc": "barrio coreano",
+        "desc": "El Koreatown de Tokio: comida callejera coreana, cafeterías con dulces, cosmética y ropa coreana, productos de K-pop y mercados de productos frescos.",
         "lat": 35.703991,
         "lon": 139.7051782
       },
       {
         "name": "Shinjuku Ni-chōme",
-        "desc": "zona LGTB",
+        "desc": "El principal barrio LGTBI de Tokio, con la mayor concentración de bares gay de Asia.",
         "lat": 35.6897887,
         "lon": 139.7083697
       },
       {
         "name": "Omoide Yokochō",
-        "desc": "pequeños restaurantes, yakitori",
+        "desc": "Callejón de posguerra con pequeños puestos de yakitori, apenas para unos pocos comensales cada uno.",
         "lat": 35.6927037,
         "lon": 139.6995778
       },
@@ -304,7 +304,7 @@
       },
       {
         "name": "Komachi Street",
-        "desc": "calle comercial, Curry bread croqueta",
+        "desc": "Calle comercial que lleva de la estación de Kamakura al santuario Tsurugaoka Hachiman-gū, con tiendas y puestos de comida callejera.",
         "lat": 35.3242776,
         "lon": 139.553733
       },
@@ -328,13 +328,13 @@
       },
       {
         "name": "Teleférico de Hakone",
-        "desc": "se puede ver el Fuji",
+        "desc": "Tramo de teleférico entre Sōunzan y Owakudani, con vistas al Fuji si el día está despejado.",
         "lat": 35.2444656,
         "lon": 139.0198459
       },
       {
         "name": "Owakudani",
-        "desc": "zona volcánica, azufres, típicos huevos negros",
+        "desc": "Valle volcánico activo con fumarolas de azufre, célebre por sus huevos cocidos en aguas termales (kuro-tamago).",
         "lat": 35.2429781,
         "lon": 139.0216292
       },
@@ -351,25 +351,25 @@
     "places": [
       {
         "name": "Hotel Kanazawa",
-        "desc": "1 noche de alojamiento y desayuno en HOTEL TOKYU STAY KANAZAWA (KANAZAWA) Moderate Double Room",
+        "desc": "1 noche de alojamiento y desayuno en el Hotel Tokyu Stay Kanazawa, habitación doble moderate.",
         "lat": 36.567514,
         "lon": 136.6539198
       },
       {
         "name": "Shirakawa",
-        "desc": "Con una mañana tenéis suficiente, no cometáis el error de ir todo el día... Nosotros con 4 horas nos valió",
+        "desc": "Pueblo de casas tradicionales gasshō-zukuri (tejados a dos aguas muy inclinados), Patrimonio Unesco, en el valle del río Shogawa.",
         "lat": 36.2710289,
         "lon": 136.8985744
       },
       {
         "name": "Hotel Takayama",
-        "desc": "2 noches de alojamiento y desayuno en HOTEL HIDA TAKAYAMA GREEN (TAKAYAMA) Japanese Style Room",
+        "desc": "2 noches de alojamiento y desayuno en el Hotel Hida Takayama Green, habitación de estilo japonés.",
         "lat": 36.1373669,
         "lon": 137.2480352
       },
       {
         "name": "Estación de Kanazawa",
-        "desc": "hay un tori muy chulo cerca",
+        "desc": "Una de las estaciones más bonitas de Japón, con la puerta de madera Tsuzumi-mon y la cúpula acristalada Motenashi a la salida.",
         "lat": 36.5775481,
         "lon": 136.6496669
       },
@@ -410,13 +410,13 @@
       },
       {
         "name": "Nakatsugawa Station",
-        "desc": "buses a Nagome",
+        "desc": "Estación de tren desde donde salen los buses hacia Magome-juku.",
         "lat": 35.5004945,
         "lon": 137.5031352
       },
       {
         "name": "Magome-juku",
-        "desc": "Pueblo rústico en una ruta postal de la era feudal. Yoshimura Soba, para cenar",
+        "desc": "Antiguo pueblo de postas de la ruta Nakasendō, con casas de madera y vistas al valle que conservan el ambiente de la era feudal.",
         "lat": 35.5315174,
         "lon": 137.5717516
       }
@@ -427,7 +427,7 @@
     "places": [
       {
         "name": "Hotel Kyoto",
-        "desc": "4 noches de alojamiento y desayuno en HOTEL RESOL SHIJO MUROMACHI (KYOTO) Hollywood Twin Room",
+        "desc": "4 noches de alojamiento y desayuno en el Hotel Resol Shijo Muromachi (Kioto), habitación doble Hollywood.",
         "lat": 35.0006295,
         "lon": 135.7578639
       },
@@ -445,7 +445,7 @@
       },
       {
         "name": "Sanjusangendomawari",
-        "desc": "1001 estatuas de Kannon, la diosa buda de la misericordia, todas hechas a mano de madera y cubiertas con hojas de oro, guardadas en el interior del salón de madera más largo de Japón",
+        "desc": "Salón de madera más largo de Japón, con 1.001 estatuas de Kannon (diosa budista de la misericordia) talladas a mano y cubiertas de pan de oro.",
         "lat": 34.9882626,
         "lon": 135.7728336
       },
@@ -463,7 +463,7 @@
       },
       {
         "name": "Arashiyama Nakaoshitacho",
-        "desc": "bambú,Tenryuji temple,Iwatayama Monkey park",
+        "desc": "Zona comercial de Arashiyama, de paso entre el bosque de bambú y el Monkey Park, con tiendas y puestos de comida.",
         "lat": 35.0102696,
         "lon": 135.6784141
       },
@@ -481,13 +481,13 @@
       },
       {
         "name": "Arashiyama Monkey Park Iwatayama",
-        "desc": "vistas panorámicas de ciudad",
+        "desc": "Parque en la cima de una colina con macacos japoneses en libertad y vistas panorámicas de Kioto.",
         "lat": 35.011395,
         "lon": 135.6766245
       },
       {
         "name": "Taishogun Shopping Street - Ichijo Yokai Street",
-        "desc": "calle de los monstruos, algo curioso pero no importante",
+        "desc": "Calle temática dedicada a los yōkai (monstruos y espíritus del folclore japonés), con tiendas curiosas.",
         "lat": 35.0261546,
         "lon": 135.7339724
       },
@@ -517,37 +517,37 @@
       },
       {
         "name": "Templo Hokan-ji (Pagoda Yasaka)",
-        "desc": "y calles de alrededor, foto cojonuda de noche",
+        "desc": "Pagoda de cinco pisos del siglo VII, uno de los símbolos fotográficos más reconocibles de Higashiyama.",
         "lat": 34.9985591,
         "lon": 135.7791783
       },
       {
         "name": "Kiyomizu-dera",
-        "desc": "Ir a primera hora, antes de la llegada de los grupos. Casas tradicionales de madera que albergan numerosas tiendas de souvenirs y cafeterías",
+        "desc": "Templo budista del siglo VIII, famoso por su gran escenario de madera construido sin clavos, con vistas sobre Kioto. Patrimonio Unesco.",
         "lat": 34.9946662,
         "lon": 135.784661
       },
       {
         "name": "Sannenzaka",
-        "desc": "recorrer antes o después de visitar el Templo de Kiyomizudera (antes, tiendas cerradas, después ya abiertas y con mucha gente; mucho más vacío a las 19-19.30)",
+        "desc": "Callejuela empedrada de tiendas y casas tradicionales que baja desde Kiyomizu-dera, una de las calles históricas mejor conservadas de Kioto.",
         "lat": 34.9966644,
         "lon": 135.781008
       },
       {
         "name": "Ninenzaka",
-        "desc": "recorrer antes o después de visitar el Templo de Kiyomizudera (antes, tiendas cerradas, después ya abiertas y con mucha gente; mucho más vacío a las 19-19.30)",
+        "desc": "Continuación de Sannenzaka, otra calle empedrada tradicional camino a Kiyomizu-dera, con tiendas de artesanía y dulces.",
         "lat": 34.9983989,
         "lon": 135.7808431
       },
       {
         "name": "Koyasu-no-to Pagoda",
-        "desc": "caminar por este sendero para mejores vistas",
+        "desc": "Pequeña pagoda de tres pisos en la ladera junto a Kiyomizu-dera, dedicada a la protección del parto.",
         "lat": 34.9929197,
         "lon": 135.7849612
       },
       {
         "name": "Gion",
-        "desc": "barrio de las casas de té, donde trabajan geishas y maikos.<br><br>hay freetour en español (https://www.civitatis.com/es/kioto/free-tour-barrio-gion/?aid=1051)",
+        "desc": "Barrio de las casas de té donde trabajan geishas y maiko.",
         "lat": 35.0037816,
         "lon": 135.777245
       },
@@ -565,13 +565,13 @@
       },
       {
         "name": "Miyakawa-cho Dori",
-        "desc": "calle recomendada, más apartada y con menos turistas normalmente",
+        "desc": "Calle de casas de té más apartada y tranquila que Hanamikoji, con menos turistas.",
         "lat": 35.0006393,
         "lon": 135.7712131
       },
       {
         "name": "Hanamikoji Street",
-        "desc": "pasear entre el río Kamo y la calle Hanamiko-ji",
+        "desc": "Tramo peatonal entre el río Kamo y Hanamikoji-dori, con ambiente tradicional de Gion.",
         "lat": 35.0014922,
         "lon": 135.7746403
       },
@@ -637,7 +637,7 @@
       },
       {
         "name": "Santuario Otoyo",
-        "desc": "Pequeño santuario famoso por sus estatuas guardianas de ratones (en vez de los habituales zorros o leones), junto al Camino del Filósofo.",
+        "desc": "Pequeño santuario famoso por sus estatuas guardianas de ratones y zorros (en vez de los habituales leones), junto al Camino del Filósofo — muy fotogénico.",
         "lat": 35.0182042,
         "lon": 135.7964378
       },
@@ -679,19 +679,19 @@
       },
       {
         "name": "Monumentos de piedra y encantos de Pontocho",
-        "desc": "bares, ohmi beef (Wagyu). zona tradicional, casas de té y restaurantes.<br>al atardecer y de noche tienen los farolillos encendidos, si vamos sobre las 22 habrá mucha menos gente porque los restaurantes ya están cerrados",
+        "desc": "Callejón tradicional de Pontochō junto al río Kamo, con casas de té, restaurantes y bares — famoso por su wagyu (ohmi beef) y sus farolillos de piedra.",
         "lat": 35.0039339,
         "lon": 135.7710439
       },
       {
         "name": "Daigo-ji",
-        "desc": "Perteneciente a la secta Shingon del budismo, este templo en entorno natural con jardines, estanques y más de 80 edificios entre los que destaca el salón principal y una pagoda de cinco pisos, considerada la estructura de madera más antigua de la ciudad de Kioto.<br><br>ver Sala Bentendo.<br><br>Unesco, must see Kioto.",
+        "desc": "Templo de la secta budista Shingon con más de 80 edificios entre jardines y estanques; su pagoda de cinco pisos es la estructura de madera más antigua de Kioto. Patrimonio Unesco.",
         "lat": 34.9511172,
         "lon": 135.8193543
       },
       {
         "name": "Byōdō-in",
-        "desc": "Unesco, must see Kioto.",
+        "desc": "Templo del siglo XI, Patrimonio Unesco, cuyo pabellón Fénix (Hōō-dō) aparece en la moneda de 10 yenes.",
         "lat": 34.8892908,
         "lon": 135.8076783
       },
@@ -703,7 +703,7 @@
       },
       {
         "name": "Parque de Nara",
-        "desc": "ciervos mansos",
+        "desc": "Parque con más de mil ciervos sika que viven en libertad y se dejan acariciar y alimentar.",
         "lat": 34.685047,
         "lon": 135.843012
       },
@@ -749,49 +749,49 @@
     "places": [
       {
         "name": "Hotel Osaka",
-        "desc": "3 noches de alojamiento y desayuno en HOTEL KEIHAN TENMABASHI EKIMAE (OSAKA) Double Room",
+        "desc": "3 noches de alojamiento y desayuno en el Hotel Keihan Tenmabashi Ekimae (Osaka), habitación doble.",
         "lat": 34.6896197,
         "lon": 135.5162672
       },
       {
         "name": "Universal Studios Japan",
-        "desc": "Recomendado ir entre semana y pase express para 4 atracciones. Tiene app. planificar las atracciones que queremos Entrada normal 48€, express 101€ el más caro para 4 atracciones.",
+        "desc": "Parque temático de Universal Pictures en Osaka, con zonas de Harry Potter, Super Nintendo World y Mario.",
         "lat": 34.6656768,
         "lon": 135.4323185
       },
       {
         "name": "Aeropuerto Internacional de Kansai",
-        "desc": "12/11/2026 OSAKA KANSAI 23.20 – SINGAPUR 05.00 (+1)",
+        "desc": "Aeropuerto internacional construido sobre una isla artificial en la bahía de Osaka.",
         "lat": 34.4319994,
         "lon": 135.2366019
       },
       {
         "name": "Castillo Osaka",
-        "desc": "9h a 17h, tiene ascensor con vistas, interesante exterior, interior no mucho",
+        "desc": "Castillo de 1583 construido por Toyotomi Hideyoshi, reconstruido en hormigón en 1931; el torreón alberga un museo con ascensor y mirador.",
         "lat": 34.6872571,
         "lon": 135.5258546
       },
       {
         "name": "Umeda Sky Building (osaka)",
-        "desc": "10h a 22:30h, Rascacielos (puesta de sol)",
+        "desc": "Rascacielos gemelo unido por un mirador circular flotante en la azotea, con vistas de 360° especialmente atractivas al atardecer.",
         "lat": 34.7052872,
         "lon": 135.4896527
       },
       {
         "name": "Takimikoji",
-        "desc": "callejón para cenar: <br>takoyaki (buñuelos rellenos de pulpo), okonomiyaki (pizza japonesa), kushiage (brochetas japonesas)",
+        "desc": "Callejón gastronómico junto al Umeda Sky Building, con takoyaki, okonomiyaki y kushiage.",
         "lat": 34.7047075,
         "lon": 135.490637
       },
       {
         "name": "Sumiyoshi Taisha",
-        "desc": "santuario sintoista de los más antiguos e importantes de japón. Torii de piedra, puente, camino de lámparas",
+        "desc": "Uno de los santuarios sintoístas más antiguos e importantes de Japón, con un torii de piedra, un puente arqueado y un camino de linternas.",
         "lat": 34.6123945,
         "lon": 135.4937612
       },
       {
         "name": "Dōtonbori",
-        "desc": "barrio de ocio. Mejor de noche, restaurantes: Houzenji Sanpei y el Mizuno. Bordear el Canal Dotonbori hasta la tienda Don Quijote, que tiene una noria en su fachada",
+        "desc": "El barrio de ocio y neones más icónico de Osaka, a orillas del canal homónimo — mejor de noche, cuando se encienden los carteles luminosos.",
         "lat": 34.6687234,
         "lon": 135.5012971
       },
@@ -821,7 +821,7 @@
       },
       {
         "name": "Shinsaibashisuji",
-        "desc": "calle cubierta, tienda daiso (todo a 100 más famoso de japón)",
+        "desc": "Galería comercial cubierta de más de 600 m con cientos de tiendas — aquí está el Daiso más famoso de Japón (todo a 100 yenes).",
         "lat": 34.6724248,
         "lon": 135.5010362
       },
@@ -833,13 +833,13 @@
       },
       {
         "name": "Kuromon Market",
-        "desc": "lunes a sábado de 8h a 18:00h, sushi o sashimi",
+        "desc": "Mercado cubierto de casi 600 m con más de 150 puestos de pescado, marisco y fruta — el \"paladar de Osaka\".",
         "lat": 34.6662746,
         "lon": 135.5070359
       },
       {
         "name": "Nipponbashi",
-        "desc": "Barrio electrónico y de las tiendas de manga como Akihabara",
+        "desc": "Barrio de tiendas de electrónica, manga y anime, el \"Akihabara de Osaka\".",
         "lat": 34.6590233,
         "lon": 135.5057497
       },
@@ -851,13 +851,13 @@
       },
       {
         "name": "Magic Cafe & Bar Shinsekai",
-        "desc": "zona que rodea la torre Tsutenkaku, Restaurante y ocio, fachadas con figuras y carteles.",
+        "desc": "Bar-restaurante en Shinsekai, el barrio retro alrededor de la torre Tsutenkaku, con fachadas llenas de figuras y carteles antiguos.",
         "lat": 34.6504792,
         "lon": 135.5065119
       },
       {
         "name": "Templo Katsuo-ji",
-        "desc": "recomendado en otoño, llegar muy temprano. Templo budista al norte de la ciudad",
+        "desc": "Templo budista al norte de Osaka, recomendado en otoño — conviene llegar muy temprano.",
         "lat": 34.8657752,
         "lon": 135.491087
       }
@@ -910,13 +910,13 @@
       },
       {
         "name": "Calle Comercial Miyajima Omotesando",
-        "desc": "18:00 horas casi todas las tiendas cierran",
+        "desc": "Calle comercial de Miyajima camino al santuario, con tiendas de recuerdos, momiji manju (pastelitos de arce) y anago (anguila) a la parrilla.",
         "lat": 34.2989747,
         "lon": 132.3218356
       },
       {
         "name": "Torii Flotante del Santuario Itsukushima",
-        "desc": "18:00 horas casi todas las tiendas cierran",
+        "desc": "Torii bermellón de 16,6 m, símbolo de Miyajima — con la marea alta (~250 cm) parece flotar sobre el mar.",
         "lat": 34.2958505,
         "lon": 132.3199913
       },
@@ -1274,7 +1274,7 @@
       },
       {
         "name": "Shinjuku Sushi Hatsume",
-        "desc": "Sushi top",
+        "desc": "Restaurante de sushi bien valorado en Shinjuku.",
         "lat": 35.6940502,
         "lon": 139.6980158
       },
@@ -1322,7 +1322,7 @@
       },
       {
         "name": "Gyukatsu Motomura Coredo Muromachi Branch",
-        "desc": "restaurante de tonkatsu en Shibuya",
+        "desc": "Restaurante especializado en gyūkatsu (tonkatsu de ternera empanada), cerca de Coredo Muromachi.",
         "lat": 35.6867856,
         "lon": 139.7750904
       },
@@ -1358,7 +1358,7 @@
       },
       {
         "name": "Fukutaro",
-        "desc": "restaurante de okonomiyaki",
+        "desc": "Restaurante de okonomiyaki en el barrio de Dōtonbori.",
         "lat": 34.6655916,
         "lon": 135.504538
       },
@@ -1382,25 +1382,25 @@
       },
       {
         "name": "Yakiniku Dining Kinoe",
-        "desc": "restaurante de carne donde te lo haces tú, la carne está brutal y os recomiendo que probéis la lengua",
+        "desc": "Restaurante de yakiniku (barbacoa coreano-japonesa) para asar la carne en la mesa.",
         "lat": 35.0123503,
         "lon": 135.7641867
       },
       {
         "name": "Sushitetsu",
-        "desc": "sitio de sushi donde destacan sus nigiris y relación calidad-precio muy bueno",
+        "desc": "Restaurante de sushi con buenos nigiris y una relación calidad-precio muy buena.",
         "lat": 35.0082234,
         "lon": 135.7712893
       },
       {
         "name": "Tai Sushi",
-        "desc": "MUST de sushi, sitio tradicional genuino",
+        "desc": "Restaurante de sushi tradicional y genuino.",
         "lat": 35.004262,
         "lon": 135.7697601
       },
       {
         "name": "Men-ya Inoichi Hanare",
-        "desc": "sitio de ramen que 100% tenéis que ir, además venden camisetas del restaurante que están muy chulas por 20-30€",
+        "desc": "Restaurante de ramen en el centro de Kioto.",
         "lat": 34.9999817,
         "lon": 135.763261
       },
@@ -1448,7 +1448,7 @@
       },
       {
         "name": "Tempura Endo Yasaka (West)",
-        "desc": "recomendado tempura top",
+        "desc": "Restaurante de tempura bien valorado, cerca de Yasaka.",
         "lat": 34.9988523,
         "lon": 135.7736073
       }
