@@ -532,10 +532,10 @@
   </div>
 
   <div class="tabs" id="modeTabs">
-    <button class="tab-btn active" id="dayTabBtn" data-mode="itinerary" title="Ver el día actual · toca de nuevo para ver todos los días">Itinerario</button>
-    <button class="tab-btn" data-mode="shopping">Shopping</button>
-    <button class="tab-btn" data-mode="food">Comer</button>
-    <button class="tab-btn" data-mode="extras">Extra &amp; alternativas</button>
+    <button class="tab-btn active" id="dayTabBtn" data-mode="itinerary" title="Ver el día actual · toca de nuevo para ver todos los días">🗓️ Itinerario</button>
+    <button class="tab-btn" data-mode="shopping">🛍️ Shopping</button>
+    <button class="tab-btn" data-mode="food">🍽️ Comer</button>
+    <button class="tab-btn" data-mode="extras">🧭 Extra &amp; alternativas</button>
     <button class="tab-btn" data-mode="takkyubin">🧳 Takkyubin</button>
     <button class="theme-toggle" id="themeToggle" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema claro/oscuro"></button>
   </div>
@@ -695,7 +695,7 @@ function renderDayTabLabel() {
   if (currentMode !== 'itinerary' || dayPickerOpen) {
     btn.className = 'tab-btn' + (currentMode === 'itinerary' ? ' active' : '');
     btn.style.removeProperty('--chip-color');
-    btn.textContent = 'Itinerario';
+    btn.textContent = '🗓️ Itinerario';
   } else {
     const d = TRIP.days[currentDayIdx];
     const slug = CITY_SLUG[d.city] || '';
@@ -703,8 +703,8 @@ function renderDayTabLabel() {
     btn.className = 'tab-btn active has-day city-' + slug;
     btn.style.setProperty('--chip-color', 'var(--city-color)');
     btn.textContent = d.altLabel
-      ? `${weekday} ${day} ${month} · Opción ${d.altLabel}`
-      : `Día ${dayNumberOnly(currentDayIdx)} · ${day} ${month}`;
+      ? `🗓️ ${weekday} ${day} ${month} · Opción ${d.altLabel}`
+      : `🗓️ Día ${dayNumberOnly(currentDayIdx)} · ${day} ${month}`;
   }
 }
 
