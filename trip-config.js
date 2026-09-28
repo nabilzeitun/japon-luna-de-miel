@@ -205,9 +205,9 @@ const days = [
   {
     date: '2026-11-02', city: 'Tokio', locationLabel: 'Kanazawa', title: 'Tokyo → Kanazawa',
     kind: 'travel', dayStartTime: '07:30',
-    travelNote: 'Tokio tiene mucho más que ver que Kanazawa, así que aprovechamos la mañana antes del Shinkansen. Hokuriku "Kagayaki" Tokio → Kanazawa (~2h30, asiento reservado recomendado). Dejad el equipaje facturado o en consigna antes de salir del hotel.',
+    travelNote: 'Tokio tiene mucho más que ver que Kanazawa, así que aprovechamos la mañana antes del Shinkansen. Hokuriku "Kagayaki" Tokio → Kanazawa (~2h30, asiento reservado recomendado). Antes de salir del hotel, entregad la maleta grande en recepción para enviarla por takkyubin directa al hotel de Kioto (llegada programada para el 5 nov) — así hacéis Kanazawa, Shirakawa-go y Takayama solo con la mochila.',
     stops: [
-      { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno rápido en el hotel (o saltadlo si vais a comer en Toyosu).', transit: 'Metro Yurikamome/Toei Oedo a Toyosu, ~25-30 min.', transitMin: 30 },
+      { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno rápido en el hotel (o saltadlo si vais a comer en Toyosu). Entregad la maleta grande en recepción para el takkyubin a Kioto antes de salir.', transit: 'Metro Yurikamome/Toei Oedo a Toyosu, ~25-30 min.', transitMin: 30 },
       {
         name: 'Toyosu Senkyaku Banrai', kind: 'visit', durOverride: 45, optional: true,
         note: 'Opcional — solo si salís al amanecer, os quita tiempo para el Palacio Imperial. Alternativa: ir directamente a la Estación de Tokio para llegar antes a Kanazawa — la mejor opción si ya habéis hecho las compras que queríais.',
@@ -223,7 +223,7 @@ const days = [
         note: 'Vedla antes de seguir — están justo a la salida.',
       },
       { name: 'Tsuzumi-mon Gate', kind: 'visit', durOverride: 10, transit: 'Bus turístico Kanazawa Loop Bus, ~10 min hasta la parada más cercana al hotel — o ~20 min andando.', transitMin: 10 },
-      { name: 'Hotel Kanazawa', kind: 'info', note: 'Check-in en el Hotel Tokyu Stay Kanazawa — dejáis las maletas para seguir tranquilos el resto del día.', transit: '5 min andando al mercado.', transitMin: 5 },
+      { name: 'Hotel Kanazawa', kind: 'info', note: 'Check-in en el Hotel Tokyu Stay Kanazawa. Lleváis solo la mochila — la maleta grande va directa a Kioto, enviada desde Tokio.', transit: '5 min andando al mercado.', transitMin: 5 },
       { name: 'Mercado Omicho', kind: 'meal', mealType: 'lunch', durOverride: 45 },
       { name: 'Nagamachi', kind: 'visit', durOverride: 60 },
       { name: 'Kenrokuen', kind: 'visit', durOverride: 100, note: 'En temporada de momiji (otoño), todo rojo.' },
@@ -238,7 +238,7 @@ const days = [
     kind: 'travel', dayStartTime: '07:00',
     travelNote: 'Salida del hotel con maletas ~08:00. Bus Hokutetsu Kanazawa → Shirakawa-go (75-85 min) y después bus Nohi Shirakawa-go → Takayama (~50 min). Reservad plaza online con antelación (Hokutetsu / Nohi Bus), se llenan sobre todo en temporada de otoño.',
     stops: [
-      { name: 'Hotel Kanazawa', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel, con maletas listas para el check-out.', transit: '10 min andando a la terminal de autobuses + Bus Hokutetsu Kanazawa → Shirakawa-go (75-85 min).', transitMin: 90 },
+      { name: 'Hotel Kanazawa', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel — solo la mochila, check-out rápido.', transit: '10 min andando a la terminal de autobuses + Bus Hokutetsu Kanazawa → Shirakawa-go (75-85 min).', transitMin: 90 },
       { name: 'Shirakawa', kind: 'visit', durOverride: 5, note: '4 horas es más que suficiente para verlo.' },
       { name: 'Mirador Shiroyama', kind: 'visit', durOverride: 25, transit: 'Shuttle Shiroyama Line hasta el mirador (ida, ¥200), ~5 min.', transitMin: 8 },
       { name: 'Casa Museo Wada', kind: 'visit', durOverride: 30 },
@@ -246,7 +246,7 @@ const days = [
       { name: 'Templo Myozenji y Santuario Shirakawa Hachiman', kind: 'visit', durOverride: 25 },
       { name: 'Puente Colgante Deai', kind: 'visit', durOverride: 10 },
       { name: 'Las Tres Casas de Shirakawago', kind: 'visit', durOverride: 15, note: 'La foto más famosa de Shirakawago.', transit: 'Bus Nohi Shirakawa-go → Takayama, ~50 min.', transitMin: 50 },
-      { name: 'Hotel Takayama', kind: 'info', note: 'Check-in en el Hotel Hida Takayama Green, con las maletas.' },
+      { name: 'Hotel Takayama', kind: 'info', note: 'Check-in en el Hotel Hida Takayama Green.' },
       { name: 'Takayama Old Town', kind: 'visit', durOverride: 75, note: 'Cenar carne Hida wagyu en Hidagyu Maruaki o Ajikura Tengoku (buñuelos, donburi o nigiri de Hida wagyu).' },
       { name: 'Hotel Takayama', kind: 'info' },
     ],
@@ -255,7 +255,7 @@ const days = [
     date: '2026-11-04', city: 'Kanazawa-Takayama', locationLabel: 'Takayama', title: 'Takayama: casco antiguo y museos',
     kind: 'city', dayStartTime: '07:00',
     stops: [
-      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. Entregad hoy las maletas grandes en recepción para el envío por takkyubin a Kioto — el trayecto tarda 1 día, así que llegarían tarde si se envían mañana. Quedaos solo con una bolsa de mano para hoy, esta noche y el viaje de mañana.' },
+      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.' },
       { name: 'Asaichi', kind: 'visit', durOverride: 45, note: 'Mercados matinales junto al río — cierran sobre el mediodía, por eso van primero. Buen sitio para comprar un saru-bobo.' },
       { name: 'Takayama Jinya', kind: 'visit', durOverride: 35, note: 'Entrada: 440 yenes.' },
       { name: 'Santuario Sakurayama Hachimangu', kind: 'visit', durOverride: 25 },
@@ -284,10 +284,10 @@ const days = [
     altNote: 'Elegid <b>9A (Magome-juku)</b> o <b>9B (directo)</b> — 9A añade ~2h de trenes/bus para ver el pueblo postal de Magome-juku de camino; 9B llega a Kioto sobre el mediodía con toda la tarde libre para más turismo.',
     travelNote: 'Limited Express "Hida" Takayama → Nagoya (~2h20) + JR línea Chūō a Nakatsugawa (~50 min) + bus a Magome-juku (~30 min); a la vuelta, bus a Nakatsugawa (~30 min) + JR línea Chūō a Nagoya (~50 min) + Shinkansen Tōkaidō a Kioto (~35-45 min). No hay bus directo Takayama-Nakatsugawa, hay que bajar hasta Nagoya y volver a subir en la línea JR Chūō.',
     stops: [
-      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. Viajáis solo con la bolsa de mano — las maletas grandes ya van camino de Kioto, enviadas ayer por takkyubin.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + JR línea Chūō a Nakatsugawa (~50 min).', transitMin: 200 },
+      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. Seguís viajando solo con la mochila.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + JR línea Chūō a Nakatsugawa (~50 min).', transitMin: 200 },
       { name: 'Nakatsugawa Station', kind: 'visit', durOverride: 10, transit: 'Bus local Nakatsugawa → Magome-juku, ~30 min.', transitMin: 30 },
       { name: 'Magome-juku', kind: 'visit', durOverride: 90, note: 'Comer soba en Yoshimura Soba.', transit: 'Bus de vuelta a Nakatsugawa (~30 min) + JR línea Chūō a Nagoya (~50 min) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 125 },
-      { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el Hotel Resol Shijo Muromachi — las maletas grandes, enviadas ayer por takkyubin desde Takayama, ya deberían estar esperando.' },
+      { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el Hotel Resol Shijo Muromachi — la maleta grande, enviada por takkyubin desde Tokio el 2 nov, ya debería estar esperando.' },
     ],
   },
   {
@@ -297,7 +297,7 @@ const days = [
     altNote: 'Elegid <b>9B (directo)</b> o <b>9A (Magome-juku)</b> — 9B llega a Kioto sobre el mediodía con toda la tarde libre para más turismo; 9A añade ~2h de trenes/bus para ver el pueblo postal de Magome-juku de camino.',
     travelNote: 'Limited Express "Hida" Takayama → Nagoya (~2h20) + Shinkansen Tōkaidō Nagoya → Kioto (~35-45 min), sin desvíos — el tramo más rápido posible. Llegada a Kioto sobre las 11:00, con toda la tarde libre: Higashi Hongan-ji y Nishi Hongan-ji nada más llegar, luego el Parque del Palacio Imperial de Kioto (con el tour guiado gratuito del Gosho a las 14:00) y por último el Castillo Nijō antes de cenar.',
     stops: [
-      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. Viajáis solo con la bolsa de mano — las maletas grandes ya van camino de Kioto, enviadas ayer por takkyubin.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 200 },
+      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. Seguís viajando solo con la mochila.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 200 },
       { name: 'Templo Higashi Hongan-ji', kind: 'visit', durOverride: 30, note: 'Justo enfrente de la estación — ideal para visitarlo nada más llegar.' },
       { name: 'Men-ya Inoichi Hanare', kind: 'meal', mealType: 'lunch', durOverride: 45, note: 'Muy recomendado, incluso venden camisetas del restaurante. Quizá sea un poco pronto para comer — valorad sobre la marcha según el tiempo que llevéis, pero sin apurar demasiado: lo prioritario es no llegar tarde al tour reservado del Gosho a las 14:00.' },
       { name: 'Templo Nishi Hongan-ji', kind: 'visit', durOverride: 22, transit: 'Metro Karasuma Line Kyoto → Imadegawa (~11 min) + 5 min andando a la Puerta Seishomon — o ~65 min andando desde aquí.', transitMin: 20 },
@@ -307,7 +307,7 @@ const days = [
       { name: 'Munakata Shrine', kind: 'visit', durOverride: 15 },
       { name: 'Santuario Itsukushima (interior del Parque del Palacio Imperial de Kioto)', kind: 'visit', durOverride: 15, transit: 'Metro Tozai Line Marutamachi → Nijōjō-mae (~10 min) + 5 min andando al castillo — o ~20 min andando directo.', transitMin: 15 },
       { name: 'Castillo Nijō', kind: 'visit', durOverride: 75, mealAfter: 'dinner' },
-      { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el Hotel Resol Shijo Muromachi — las maletas grandes, enviadas ayer por takkyubin desde Takayama, ya deberían estar esperando.' },
+      { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el Hotel Resol Shijo Muromachi — la maleta grande, enviada por takkyubin desde Tokio el 2 nov, ya debería estar esperando.' },
     ],
   },
   // ---------------- KIOTO ----------------
