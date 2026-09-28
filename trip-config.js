@@ -12,6 +12,13 @@
 // Lugares que NO estaban en el KMZ pero pidió el usuario explícitamente (destinos "ancla" confirmados
 // por los vuelos/reservas). Coordenadas aproximadas a partir de conocimiento general del lugar.
 const manualPlaces = [
+  // Recordatorios de takkyubin — paradas virtuales (duración 0, kind:'info') en la ubicación del hotel correspondiente.
+  { name: 'Takkyubin: avisar al hotel (envío a Kioto)', desc: 'Preguntad en recepción si el hotel ofrece servicio de takkyubin, para confirmarlo cuanto antes.', lat: 35.6972128, lon: 139.810939 },
+  { name: 'Takkyubin: preparar bolsa pequeña (envío a Kioto)', desc: 'Preparad esta noche lo que necesitéis para los próximos 3 días (Kanazawa, Shirakawa-go, Takayama) en la mochila o bolsa de viaje.', lat: 35.6972128, lon: 139.810939 },
+  { name: 'Takkyubin: entregar maleta (envío a Kioto)', desc: 'Entregad la maleta grande en recepción para el envío por takkyubin.', lat: 35.6972128, lon: 139.810939 },
+  { name: 'Takkyubin: avisar al hotel (envío a Osaka)', desc: 'Preguntad en recepción si el hotel ofrece servicio de takkyubin, para confirmarlo cuanto antes.', lat: 35.0006295, lon: 135.7578639 },
+  { name: 'Takkyubin: preparar bolsa pequeña (envío a Osaka)', desc: 'Preparad esta noche lo que necesitéis para mañana (Nara y el traslado a Osaka) en la mochila o bolsa de viaje.', lat: 35.0006295, lon: 135.7578639 },
+  { name: 'Takkyubin: entregar maleta (envío a Osaka)', desc: 'Entregad la maleta grande en recepción para el envío por takkyubin.', lat: 35.0006295, lon: 135.7578639 },
   { name: 'Shibuya Sky', desc: 'Mirador al aire libre en lo alto del Shibuya Scramble Square, justo encima de la estación — vistas de 360° sobre el cruce de Shibuya.', lat: 35.6590, lon: 139.7016 },
   {
     name: 'Shugakuin Imperial Villa',
@@ -87,7 +94,8 @@ const days = [
     kind: 'city', dayStartTime: '12:50',
     stops: [
       { name: 'Haneda airport', kind: 'info', note: 'Vuelo de llegada: HND-TOKYO, miércoles 28 oct 12:50.', transit: 'Keikyu Airport Line + Toei Asakusa Line (servicio directo, sin trasbordo) Haneda → Asakusa, ~45 min.', transitMin: 45 },
-      { name: 'Hotel Tokyo', kind: 'info', note: 'Dejar las maletas en el Hotel Tobu Levant — el check-in suele ser a partir de las 15:00, puede que solo os guarden el equipaje hasta la noche.', transit: 'Metro Toei Asakusa Line Oshiage → Asakusa, 1 parada (~5 min) — o ~30 min andando.', transitMin: 12 },
+      { name: 'Hotel Tokyo', kind: 'info', note: 'Dejar las maletas en el Hotel Tobu Levant — el check-in suele ser a partir de las 15:00, puede que solo os guarden el equipaje hasta la noche.' },
+      { name: 'Takkyubin: avisar al hotel (envío a Kioto)', kind: 'info', note: 'Necesitaréis el servicio el 2 nov, destino Hotel Resol Shijo Muromachi (Kioto), entrega prevista el 5 nov.', transit: 'Metro Toei Asakusa Line Oshiage → Asakusa, 1 parada (~5 min) — o ~30 min andando.', transitMin: 12 },
       { name: 'Kuramae', kind: 'visit', transit: 'Toei Asakusa Line Kuramae → Asakusa, 1 parada (~3 min).', transitMin: 10 },
       { name: 'Asakusa', kind: 'visit' },
       { name: 'Sensō-ji', kind: 'visit' },
@@ -200,6 +208,7 @@ const days = [
       { name: 'Ginza', kind: 'visit', durOverride: 75, note: 'Buen rato para callejear sin rumbo por las bocacalles.' },
       { name: 'Ginza Six', kind: 'visit', durOverride: 80, mealAfter: 'dinner', transit: 'Metro Toei Asakusa Line Higashi-Ginza → Asakusa, ~15 min — o ~90 min andando.', transitMin: 20 },
       { name: 'Hotel Tokyo', kind: 'info' },
+      { name: 'Takkyubin: preparar bolsa pequeña (envío a Kioto)', kind: 'info', note: 'Mañana (2 nov) se entrega la maleta grande en el hotel para el takkyubin a Kioto.' },
     ],
   },
   {
@@ -207,7 +216,8 @@ const days = [
     kind: 'travel', dayStartTime: '07:30',
     travelNote: 'Tokio tiene mucho más que ver que Kanazawa, así que aprovechamos la mañana antes del Shinkansen. Hokuriku "Kagayaki" Tokio → Kanazawa (~2h30, asiento reservado recomendado). Antes de salir del hotel, entregad la maleta grande en recepción para enviarla por takkyubin directa al hotel de Kioto (llegada programada para el 5 nov) — así hacéis Kanazawa, Shirakawa-go y Takayama solo con la mochila.',
     stops: [
-      { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno rápido en el hotel (o saltadlo si vais a comer en Toyosu). Entregad la maleta grande en recepción para el takkyubin a Kioto antes de salir.', transit: 'Metro Yurikamome/Toei Oedo a Toyosu, ~25-30 min.', transitMin: 30 },
+      { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno rápido en el hotel (o saltadlo si vais a comer en Toyosu).' },
+      { name: 'Takkyubin: entregar maleta (envío a Kioto)', kind: 'info', note: 'Destino: Hotel Resol Shijo Muromachi, Kioto. Entrega prevista: 5 nov.', transit: 'Metro Yurikamome/Toei Oedo a Toyosu, ~25-30 min.', transitMin: 30 },
       {
         name: 'Toyosu Senkyaku Banrai', kind: 'visit', durOverride: 45, optional: true,
         note: 'Opcional — solo si salís al amanecer, os quita tiempo para el Palacio Imperial. Alternativa: ir directamente a la Estación de Tokio para llegar antes a Kanazawa — la mejor opción si ya habéis hecho las compras que queríais.',
@@ -288,6 +298,7 @@ const days = [
       { name: 'Nakatsugawa Station', kind: 'visit', durOverride: 10, transit: 'Bus local Nakatsugawa → Magome-juku, ~30 min.', transitMin: 30 },
       { name: 'Magome-juku', kind: 'visit', durOverride: 90, note: 'Comer soba en Yoshimura Soba.', transit: 'Bus de vuelta a Nakatsugawa (~30 min) + JR línea Chūō a Nagoya (~50 min) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 125 },
       { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el Hotel Resol Shijo Muromachi — la maleta grande, enviada por takkyubin desde Tokio el 2 nov, ya debería estar esperando.' },
+      { name: 'Takkyubin: avisar al hotel (envío a Osaka)', kind: 'info', note: 'Necesitaréis el servicio el 8 nov, destino Hotel Keihan Tenmabashi Ekimae (Osaka), entrega prevista el 9 nov.' },
     ],
   },
   {
@@ -308,6 +319,7 @@ const days = [
       { name: 'Santuario Itsukushima (interior del Parque del Palacio Imperial de Kioto)', kind: 'visit', durOverride: 15, transit: 'Metro Tozai Line Marutamachi → Nijōjō-mae (~10 min) + 5 min andando al castillo — o ~20 min andando directo.', transitMin: 15 },
       { name: 'Castillo Nijō', kind: 'visit', durOverride: 75, mealAfter: 'dinner' },
       { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el Hotel Resol Shijo Muromachi — la maleta grande, enviada por takkyubin desde Tokio el 2 nov, ya debería estar esperando.' },
+      { name: 'Takkyubin: avisar al hotel (envío a Osaka)', kind: 'info', note: 'Necesitaréis el servicio el 8 nov, destino Hotel Keihan Tenmabashi Ekimae (Osaka), entrega prevista el 9 nov.' },
     ],
   },
   // ---------------- KIOTO ----------------
@@ -349,6 +361,7 @@ const days = [
       { name: 'Adashino Nenbutsuji Temple', kind: 'visit', durOverride: 70, transit: 'JR Sagano Line Saga-Arashiyama → Kioto Station (~15-20 min) + bus/metro al hotel (~10 min).', transitMin: 30 },
       { name: 'Hotel Kyoto', kind: 'info' },
       { name: 'Sushitetsu', kind: 'meal', mealType: 'dinner', durOverride: 60, note: 'Sugerencia para cenar, cerca del hotel — cambiadlo si preferís otra cosa.' },
+      { name: 'Takkyubin: preparar bolsa pequeña (envío a Osaka)', kind: 'info', note: 'Mañana (8 nov) se entrega la maleta grande en el hotel para el takkyubin a Osaka.' },
     ],
   },
   {
@@ -356,7 +369,8 @@ const days = [
     kind: 'city', dayStartTime: '06:45',
     travelNote: 'Fushimi Inari y Sanjusangen-dō están al sur (cerca de la estación de Kioto); Ginkaku-ji y el Camino del Filósofo están al norte.',
     stops: [
-      { name: 'Hotel Kyoto', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno temprano en el hotel (o para llevar) — Fushimi Inari conviene cogerlo nada más abrir. Entregad hoy las maletas grandes en recepción para el envío por takkyubin a Osaka — el trayecto tarda 1 día, así que llegarían tarde si se envían mañana. Quedaos solo con una bolsa de mano para hoy, esta noche y el viaje de mañana.', transit: 'JR Nara Line Kioto/Tōfukuji → Inari, ~5-10 min (+ 10-15 min hasta la estación desde el hotel).', transitMin: 20 },
+      { name: 'Hotel Kyoto', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno temprano en el hotel (o para llevar) — Fushimi Inari conviene cogerlo nada más abrir.' },
+      { name: 'Takkyubin: entregar maleta (envío a Osaka)', kind: 'info', note: 'Destino: Hotel Keihan Tenmabashi Ekimae, Osaka. Entrega prevista: 9 nov.', transit: 'JR Nara Line Kioto/Tōfukuji → Inari, ~5-10 min (+ 10-15 min hasta la estación desde el hotel).', transitMin: 20 },
       { name: 'Fushimi Inari-taisha', kind: 'visit', durOverride: 180, note: 'Ir muy temprano. Subida completa 2-3h; con llegar al mirador Yotsutsuji (~1h ida y vuelta) ya merece la pena.', transit: 'JR Nara Line Inari → Kioto (~5 min) + JR/bus a Sanjūsangen-dō (~10 min), o taxi directo (~15 min).', transitMin: 20 },
       { name: 'Sanjusangendomawari', kind: 'visit', durOverride: 108, mealAfter: 'lunch', transit: 'Bus o taxi hasta Heian Jingū, ~15 min.', transitMin: 15 },
       { name: 'Heian Jingū', kind: 'visit', durOverride: 30, note: 'El jardín trasero (de pago) es un buen contraste tranquilo antes de seguir al Camino del Filósofo.', transit: '15 min andando o en bus a Ginkaku-ji.', transitMin: 15 },

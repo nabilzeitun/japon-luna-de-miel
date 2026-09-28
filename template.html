@@ -606,6 +606,7 @@ function walkLabel(meters, walkMin) {
   return `trayecto de ${fmtDist(meters)} — tren / bus / coche`;
 }
 function infoIcon(name) {
+  if (/takkyubin/i.test(name)) return '🧳';
   if (/aeropuerto|airport/i.test(name)) return '✈️';
   if (/^hotel/i.test(name)) return '🏨';
   return '📍';
