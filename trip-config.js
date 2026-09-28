@@ -371,7 +371,7 @@ const days = [
   },
   {
     date: '2026-11-09', city: 'Kioto', locationLabel: 'Kyoto', title: 'Daigo-ji, Uji y Nara → Osaka',
-    kind: 'travel', dayStartTime: '07:30',
+    kind: 'travel', dayStartTime: '08:05',
     travelNote: 'Las maletas grandes ya van camino de Osaka por takkyubin (enviadas ayer) — hoy viajáis solo con la bolsa de mano. Desvío a Daigo-ji (metro Tozai Line) antes de coger la JR Nara Line hacia el sur — añade ~45 min de trenes respecto a ir directos, pero de camino hacia Nara igualmente se para en Uji (Byōdō-in). Por la tarde, Kintetsu Nara Line directo hasta Osaka-Namba (~35-40 min) — no hace falta volver a Kioto.',
     stops: [
       { name: 'Hotel Kyoto', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. Solo lleváis la bolsa de mano — las maletas grandes ya van camino de Osaka.', transit: 'Metro Tozai Line (vía Karasuma-Oike) a Daigo, ~25 min en total.', transitMin: 25 },
@@ -383,7 +383,7 @@ const days = [
       {
         name: 'Byōdō-in', kind: 'visit', durOverride: 40,
         note: 'El pabellón Phoenix (Hōō-dō) es el edificio que aparece en la moneda de 10 yenes.',
-        transit: 'JR Nara Line Uji → JR Nara (~25 min) + bus Nara Kotsu hasta el parque (~10-15 min). Para llegar conviene JR Nara: es el único tren directo desde Uji; la estación Kintetsu-Nara (más cercana al parque) se usa para irse.', transitMin: 40,
+        transit: 'JR Nara Line Uji → JR Nara (~25 min, el único tren directo desde Uji) + bus Nara Kotsu al parque (~10-15 min). Para el regreso a Osaka usaréis la estación Kintetsu-Nara, más cerca del parque.', transitMin: 40,
       },
       { name: 'Parque de Nara', kind: 'visit', durOverride: 15 },
       { name: 'Tōdai-ji', kind: 'visit', durOverride: 45 },
@@ -403,8 +403,31 @@ const days = [
   },
   // ---------------- OSAKA ----------------
   {
-    date: '2026-11-10', city: 'Osaka', locationLabel: 'Osaka', title: 'Excursión a Hiroshima y Miyajima',
+    date: '2026-11-10', city: 'Osaka', locationLabel: 'Osaka', title: 'Castillo, Shinsaibashi, Dōtonbori y Umeda Sky',
+    kind: 'city', dayStartTime: '08:00',
+    travelNote: 'Día completo en Osaka, sin prisas — primera mañana entera en la ciudad tras el viaje de ayer, mejor con calma que con una excursión larga fuera.',
+    stops: [
+      { name: 'Hotel Osaka', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.' },
+      { name: 'Castillo Osaka', kind: 'visit', durOverride: 75, transit: 'Metro Tanimachi Line Osakajōkōen → Tanimachi 9-chōme (~10 min) + 5 min andando a Kuromon Market.', transitMin: 20 },
+      { name: 'Kuromon Market', kind: 'visit', durOverride: 45, mealAfter: 'lunch' },
+      { name: 'Shinsaibashisuji', kind: 'visit', durOverride: 30 },
+      { name: 'America-mura', kind: 'visit', durOverride: 30 },
+      { name: 'Sennichimae', kind: 'visit', durOverride: 20 },
+      { name: 'Ebisu Bashi-Suji', kind: 'visit', durOverride: 20 },
+      { name: 'Dōtonbori', kind: 'visit', durOverride: 60 },
+      { name: 'Don Quijote Dotonbori Midosuji', kind: 'visit', durOverride: 20 },
+      { name: 'Hozenji Yokocho', kind: 'visit', durOverride: 20 },
+      { name: 'Nipponbashi', kind: 'visit', durOverride: 30, transit: 'Metro Midosuji Line Namba → Umeda, ~10 min.', transitMin: 10 },
+      { name: 'Umeda Sky Building (osaka)', kind: 'visit', durOverride: 45 },
+      { name: 'Takimikoji', kind: 'meal', mealType: 'dinner', durOverride: 30, optional: true, note: 'Opcional — callejón para cenar (takoyaki, okonomiyaki, kushiage), justo al lado del Umeda Sky Building.' },
+      { name: 'Hotel Osaka', kind: 'info' },
+    ],
+  },
+  {
+    date: '2026-11-11', city: 'Osaka', locationLabel: 'Osaka', title: 'Excursión a Hiroshima y Miyajima',
     kind: 'daytrip', dayStartTime: '06:00',
+    optional: true, altGroup: 'day11', altLabel: 'A',
+    altNote: 'Elegid <b>11A (Hiroshima y Miyajima)</b> o <b>11B (Universal Studios)</b> — decidimos no ir finalmente a Universal, así que 11A es el plan real; 11B se deja tal cual por si cambiáis de idea.',
     travelNote: 'Salida muy temprano: Shinkansen Sanyo (Nozomi/Sakura) Shin-Osaka → Hiroshima, ~1h20-1h35. Es un día largo — salir con el primer tren que podáis y volved directos al hotel a descansar.',
     stops: [
       { name: 'Hotel Osaka', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno rápido o para llevar — a esta hora muchos hoteles aún no lo sirven, confirmad el horario la noche anterior.', transit: 'Metro a Shin-Osaka (~15-20 min) + Shinkansen Sanyo a Hiroshima (~1h20-1h35).', transitMin: 110 },
@@ -425,33 +448,10 @@ const days = [
     ],
   },
   {
-    date: '2026-11-11', city: 'Osaka', locationLabel: 'Osaka', title: 'Castillo, Shinsaibashi, Dōtonbori y Umeda Sky',
-    kind: 'city', dayStartTime: '08:00',
-    optional: true, altGroup: 'day11', altLabel: 'A',
-    altNote: 'Elegid <b>11A (Osaka con calma)</b> o <b>11B (Universal Studios)</b> — decidimos no ir finalmente a Universal, así que 11A es el plan real; 11B se deja tal cual por si cambiáis de idea.',
-    travelNote: 'Día completo en Osaka, sin prisas — el objetivo es repartir mejor lo que antes iba todo apretado en el último día, para llegar al aeropuerto el 12 nov con margen de sobra.',
-    stops: [
-      { name: 'Hotel Osaka', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.' },
-      { name: 'Castillo Osaka', kind: 'visit', durOverride: 75, transit: 'Metro Tanimachi Line Osakajōkōen → Tanimachi 9-chōme (~10 min) + 5 min andando a Kuromon Market.', transitMin: 20 },
-      { name: 'Kuromon Market', kind: 'visit', durOverride: 45, mealAfter: 'lunch' },
-      { name: 'Shinsaibashisuji', kind: 'visit', durOverride: 30 },
-      { name: 'America-mura', kind: 'visit', durOverride: 30 },
-      { name: 'Sennichimae', kind: 'visit', durOverride: 20 },
-      { name: 'Ebisu Bashi-Suji', kind: 'visit', durOverride: 20 },
-      { name: 'Dōtonbori', kind: 'visit', durOverride: 60 },
-      { name: 'Don Quijote Dotonbori Midosuji', kind: 'visit', durOverride: 20 },
-      { name: 'Hozenji Yokocho', kind: 'visit', durOverride: 20 },
-      { name: 'Nipponbashi', kind: 'visit', durOverride: 30, transit: 'Metro Midosuji Line Namba → Umeda, ~10 min.', transitMin: 10 },
-      { name: 'Umeda Sky Building (osaka)', kind: 'visit', durOverride: 45 },
-      { name: 'Takimikoji', kind: 'meal', mealType: 'dinner', durOverride: 30, optional: true, note: 'Opcional — callejón para cenar (takoyaki, okonomiyaki, kushiage), justo al lado del Umeda Sky Building.' },
-      { name: 'Hotel Osaka', kind: 'info' },
-    ],
-  },
-  {
     date: '2026-11-11', city: 'Osaka', locationLabel: 'Osaka', title: 'Universal Studios Japan',
     kind: 'daytrip', dayStartTime: '08:00',
     optional: true, altGroup: 'day11', altLabel: 'B',
-    altNote: 'Elegid <b>11B (Universal Studios)</b> o <b>11A (Osaka con calma)</b> — decidimos no ir finalmente a Universal, así que este día se queda como alternativa por si cambiáis de idea; el plan real es 11A.',
+    altNote: 'Elegid <b>11B (Universal Studios)</b> o <b>11A (Hiroshima y Miyajima)</b> — decidimos no ir finalmente a Universal, así que este día se queda como alternativa por si cambiáis de idea; el plan real es 11A.',
     travelNote: 'JR Kanjo Line o Nankai/metro directo Namba/Osaka → Universal City (~20-25 min). Recomendado ir entre semana con pase express para 4 atracciones — planificad las atracciones en la app antes de entrar.',
     stops: [
       { name: 'Hotel Osaka', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'JR Osaka Loop Line Temmabashi/Osaka → Nishikujo (~15 min) + JR Yumesaki Line a Universal City (~5 min).', transitMin: 25 },
@@ -462,7 +462,7 @@ const days = [
   {
     date: '2026-11-12', city: 'Osaka', locationLabel: 'Osaka', title: 'Shinsekai → Aeropuerto',
     kind: 'city', dayStartTime: '09:00',
-    travelNote: 'Vuelo OSAKA KANSAI 23:20 → Singapur 05:00 (+1) — día deliberadamente ligero (el resto de Osaka ya se ve con calma el 11 nov): una mañana en Shinsekai y toda la tarde libre en el hotel (maletas, descanso, última compra) antes de salir hacia el aeropuerto sobre las 19:30-20:00, con margen de sobra para el Tax Free y el control de pasaportes.',
+    travelNote: 'Vuelo OSAKA KANSAI 23:20 → Singapur 05:00 (+1) — día deliberadamente ligero (el resto de Osaka ya se ve con calma el 10 nov): una mañana en Shinsekai y toda la tarde libre en el hotel (maletas, descanso, última compra) antes de salir hacia el aeropuerto sobre las 19:30-20:00, con margen de sobra para el Tax Free y el control de pasaportes.',
     stops: [
       { name: 'Hotel Osaka', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'Metro Tanimachi/Midosuji hasta Dōbutsuen-mae (Shinsekai), ~20-25 min.', transitMin: 25 },
       { name: 'Tower Slider (Tsutenkaku)', kind: 'visit', durOverride: 30 },
