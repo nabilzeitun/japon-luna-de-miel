@@ -490,6 +490,50 @@ const days = [
   },
 ];
 
+// Envíos de takkyubin (maleta grande) — toda la info necesaria para gestionarlo en recepción del hotel de origen.
+const takkyubin = [
+  {
+    title: 'Envío 1: Tokio → Kioto',
+    note: 'Así se hacen Kanazawa, Shirakawa-go y Takayama (2-5 nov) solo con la mochila.',
+    origin: {
+      label: 'Entregar el',
+      date: '2 nov 2026',
+      hotel: 'Hotel Tobu Levant Tokyo',
+      address: '1-2-2 Kinshi, Sumida-ku, Tokio 130-0013',
+      addressJp: '〒130-0013 東京都墨田区錦糸1-2-2',
+      phone: '+81 3-5611-5511',
+    },
+    destination: {
+      label: 'Entrega prevista el',
+      date: '5 nov 2026',
+      hotel: 'Hotel Resol Kyoto Shijo Muromachi',
+      address: '554 Sanno-cho, Muromachi-dori Takatsuji-agaru, Shimogyo-ku, Kioto 600-8424',
+      addressJp: '〒600-8424 京都府京都市下京区室町通高辻上ル山王町554',
+      phone: '+81 75-365-9269',
+    },
+  },
+  {
+    title: 'Envío 2: Kioto → Osaka',
+    note: 'Así se hace la excursión a Nara y el traslado a Osaka (9 nov) sin cargar con la maleta grande.',
+    origin: {
+      label: 'Entregar el',
+      date: '8 nov 2026',
+      hotel: 'Hotel Resol Kyoto Shijo Muromachi',
+      address: '554 Sanno-cho, Muromachi-dori Takatsuji-agaru, Shimogyo-ku, Kioto 600-8424',
+      addressJp: '〒600-8424 京都府京都市下京区室町通高辻上ル山王町554',
+      phone: '+81 75-365-9269',
+    },
+    destination: {
+      label: 'Entrega prevista el',
+      date: '9 nov 2026',
+      hotel: 'Hotel Keihan Tenmabashi Ekimae',
+      address: '2-13 Tenmabashikyomachi, Chuo-ku, Osaka 540-0032',
+      addressJp: '〒540-0032 大阪府大阪市中央区天満橋京町2-13',
+      phone: '+81 6-6946-0321',
+    },
+  },
+];
+
 // Lugares del KMZ que no se han metido en ningún día (opcionales / por si sobra tiempo)
 const extras = {
   Tokio: ['Chōfu', 'Jardín Botánico Jindaiji', '大正寺 山門(竜宮門)', 'Shibamata', 'Shibamata Taishakuten', 'Yamanote Line', 'SUSHI Gompachi Nishi-Azabu', 'Mount Fuji Fujinomiya 5th Station', 'Tokyo Skytree'],
@@ -512,4 +556,4 @@ const altDayTrips = [
   },
 ];
 
-module.exports = { CITY_COLORS, days, extras, altDayTrips, manualPlaces, manualFood };
+module.exports = { CITY_COLORS, days, extras, altDayTrips, manualPlaces, manualFood, takkyubin };

@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { CITY_COLORS, days, extras, altDayTrips, manualPlaces, manualFood } = require('./trip-config.js');
+const { CITY_COLORS, days, extras, altDayTrips, manualPlaces, manualFood, takkyubin } = require('./trip-config.js');
 
 const parsed = JSON.parse(fs.readFileSync(path.join(__dirname, 'japon_kmz', 'parsed.json'), 'utf-8'));
 
@@ -292,6 +292,7 @@ const trip = {
   altDayTrips: builtAlt,
   shopping,
   food,
+  takkyubin,
 };
 
 fs.writeFileSync(path.join(__dirname, 'trip.json'), JSON.stringify(trip), 'utf-8');
