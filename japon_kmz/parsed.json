@@ -696,10 +696,10 @@
         "lon": 135.8076783
       },
       {
-        "name": "Nara",
-        "desc": "comer un yomogi mochi",
-        "lat": 34.685109,
-        "lon": 135.8048019
+        "name": "Nakatanidō",
+        "desc": "Famosa tienda de mochi: golpean el mochi de yomogi (artemisa) a una velocidad de récord mundial, delante de todos, cada ~30 min. Solo efectivo, ~130 yenes la pieza.",
+        "lat": 34.6813,
+        "lon": 135.8277
       },
       {
         "name": "Parque de Nara",
@@ -709,13 +709,13 @@
       },
       {
         "name": "Tōdai-ji",
-        "desc": "",
+        "desc": "Templo que alberga el Gran Buda (Daibutsu) de bronce, de ~15 m, dentro de una de las mayores construcciones de madera del mundo. Patrimonio Unesco.",
         "lat": 34.6889851,
         "lon": 135.8398158
       },
       {
         "name": "Santuario Kasuga Taisha",
-        "desc": "",
+        "desc": "Santuario sintoísta del siglo VIII, famoso por sus miles de linternas de piedra y bronce que se encienden en festivales. Patrimonio Unesco.",
         "lat": 34.6815454,
         "lon": 135.8484719
       }
