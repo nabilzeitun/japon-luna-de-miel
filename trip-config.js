@@ -484,7 +484,7 @@ const days = [
       { name: 'Hotel Osaka', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'Metro Tanimachi/Midosuji hasta Dōbutsuen-mae (Shinsekai), ~20-25 min — o ~70 min andando.', transitMin: 25 },
       { name: 'Tower Slider (Tsutenkaku)', kind: 'visit', durOverride: 130, note: 'Con calma: mirador, la bajada en el tobogán y un paseo por Janjan Yokocho.' },
       { name: 'Magic Cafe & Bar Shinsekai', kind: 'meal', mealType: 'lunch', durOverride: 45, transit: 'Metro Midosuji/Tanimachi de vuelta al hotel, ~20-25 min — o ~75 min andando.', transitMin: 25 },
-      { name: 'Hotel Osaka', kind: 'visit', durOverride: 300, note: 'Tarde libre — maletas con calma, descanso, alguna compra de última hora. Salid hacia el aeropuerto sobre las 19:30-20:00.', transit: 'Dos opciones al aeropuerto: Nankai "Rapi:t" desde Namba (~35-40 min, no cubierto por el JR Pass, ~1.500¥) o Haruka desde Shin-Osaka/Osaka/Tennoji (~45-50 min, gratis si tenéis el JR Pass — si no, ~2.500-3.000¥).', transitMin: 55 },
+      { name: 'Hotel Osaka', kind: 'visit', durOverride: 300, note: 'Tarde libre — maletas con calma, descanso, alguna compra de última hora. Salid hacia el aeropuerto sobre las 19:30-20:00.', transit: 'Metro a Shin-Osaka/Osaka/Tennoji (~15-20 min) + Haruka a Kansai Airport (~45-50 min) — gratis con el JR Pass, reservad plaza con antelación.', transitMin: 65 },
       { name: 'Aeropuerto Internacional de Kansai', kind: 'info', note: 'Vuelo de vuelta: Osaka Kansai → Singapur, 12 nov 23:20 → 05:00 (+1).' },
     ],
   },
