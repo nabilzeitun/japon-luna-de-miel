@@ -72,9 +72,9 @@ const manualPlaces = [
   { name: 'Teramachi', desc: 'Paseo por el barrio de templos en la ladera este, junto al parque Shiroyama (antiguo castillo de Takayama).', lat: 36.1400, lon: 137.2565 },
   { name: 'Parque Shiroyama', desc: 'Antiguo enclave del castillo de Takayama, hoy parque y mirador sobre la ciudad.', lat: 36.1373, lon: 137.2580 },
   // Free tours reservados con la agencia — no estaban en el KMZ.
-  { name: 'Free tour por Asakusa', desc: 'Recorrido guiado en español (2h) por el barrio más tradicional de Tokio: Kaminarimon, la calle Nakamise, Sensō-ji y el entorno del Puente Azuma, con historia y anécdotas locales.<br>Punto de encuentro: Estación de Asakusa.<br>Reservado: 28 oct, 15:00.', lat: 35.7115, lon: 139.7966 },
-  { name: 'Free tour por Fushimi Inari-Taisha', desc: 'Recorrido guiado en español (1h45) por la puerta principal y los primeros tramos de torii del santuario, con la historia y los secretos de uno de los lugares más fotografiados de Japón.<br>Punto de encuentro: puerta principal de Fushimi Inari-Taisha.<br>Reservado: 7 nov, 08:30.', lat: 34.9671, lon: 135.7727 },
-  { name: 'Free tour por Dotonbori y Namba', desc: 'Recorrido guiado en español (2h30) por Shinsaibashi, America-mura y el canal de Dotonbori, con historias del barrio y parada en el templo Hozenji.<br>Punto de encuentro: Starbucks Coffee Shinsaibashi BIG STEP.<br>Reservado: 10 nov, 16:30.', lat: 34.6745, lon: 135.5010 },
+  { name: 'Free tour por Asakusa', desc: 'Recorrido guiado en español (2h) por el barrio más tradicional de Tokio: Kaminarimon, la calle Nakamise, Sensō-ji y el entorno del Puente Azuma, con historia y anécdotas locales.<br>Punto de encuentro: frente a la comisaría de policía de Asakusa (Asakusa Police Station Hanakawado Police Box) — 1 Chome-2-1 Hanakawado, Taito City, Tokyo 111-0033.<br>Llegad con 15 min de antelación.<br>Reservado: 28 oct, 15:00.', lat: 35.7127, lon: 139.7965 },
+  { name: 'Free tour por Fushimi Inari-Taisha', desc: 'Recorrido guiado en español (1h45) por la puerta principal y los primeros tramos de torii del santuario, con la historia y los secretos de uno de los lugares más fotografiados de Japón.<br>Punto de encuentro: puerta principal de Fushimi Inari-Taisha (Great Torii), frente a la estación JR Inari — 深草薮之内町68番地, Fushimi Ward, Kioto.<br>Reconoceréis al guía por la bandera azul con un panda (Japandas).<br>Llegad con 15 min de antelación.<br>Reservado: 7 nov, 08:30.', lat: 34.9671, lon: 135.7727 },
+  { name: 'Free tour por Dotonbori y Namba', desc: 'Recorrido guiado en español (2h30) por Shinsaibashi, America-mura y el canal de Dotonbori, con historias del barrio y parada en el templo Hozenji.<br>Punto de encuentro: Starbucks Coffee Shinsaibashi BIG STEP — 1 Chome-6-14 BIG STEP, Nishishinsaibashi, Chuo Ward, Osaka 542-0086.<br>Reconoceréis al guía por la bandera blanca con las siglas JDM y un perro shiba en un descapotable rojo.<br>Llegad con 10-15 min de antelación.<br>Reservado: 10 nov, 16:30.', lat: 34.6745, lon: 135.5010 },
 ];
 
 // Comida sugerida en Takayama que no estaba en la capa "comer en japon" del KMZ.
@@ -100,8 +100,8 @@ const days = [
       { name: 'Haneda airport', kind: 'info', note: 'Vuelo de llegada: HND-TOKYO, miércoles 28 oct 12:50.', transit: 'Keikyu Airport Line + Toei Asakusa Line (servicio directo, sin trasbordo) Haneda → Asakusa, ~45 min.', transitMin: 45 },
       { name: 'Hotel Tokyo', kind: 'info', note: 'Dejar las maletas en el Hotel Tobu Levant — el check-in suele ser a partir de las 15:00, puede que solo os guarden el equipaje hasta la noche.' },
       { name: 'Takkyubin: avisar al hotel (envío a Kioto)', kind: 'info', note: 'Necesitaréis el servicio el 2 nov, destino Hotel Resol Shijo Muromachi (Kioto), entrega prevista el 5 nov.', transit: 'Metro Toei Asakusa Line Oshiage → Asakusa, 1 parada (~5 min) — o ~30 min andando.', transitMin: 12 },
-      { name: 'Kuramae', kind: 'visit', transit: 'Toei Asakusa Line Kuramae → Asakusa, 1 parada (~3 min).', transitMin: 10 },
-      { name: 'Free tour por Asakusa', kind: 'visit', durOverride: 120, note: 'Tour reservado a las 15:00 — punto de encuentro en la Estación de Asakusa.' },
+      { name: 'Kuramae', kind: 'visit', durOverride: 17, transit: 'Toei Asakusa Line Kuramae → Asakusa, 1 parada (~3 min).', transitMin: 10 },
+      { name: 'Free tour por Asakusa', kind: 'visit', durOverride: 120, note: 'Tour reservado a las 15:00 — llegad 15 min antes frente a la comisaría de Asakusa (Hanakawado Police Box), junto a Kaminarimon.' },
       { name: 'Asakusa', kind: 'visit' },
       { name: 'Sensō-ji', kind: 'visit' },
       { name: 'Calle Comercial Nakamise', kind: 'visit' },
@@ -355,7 +355,7 @@ const days = [
     travelNote: 'Fushimi Inari y Sanjusangen-dō están al sur (cerca de la estación de Kioto); Ginkaku-ji y el Camino del Filósofo están al norte. El JR Kansai-Hiroshima Pass se activa mañana (8 nov), así que hoy los saltos en JR Nara Line se pagan aparte (importe pequeño).',
     stops: [
       { name: 'Hotel Kyoto', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno con calma en el hotel — el tour guiado es a las 08:30, no hace falta correr.', transit: 'JR Nara Line Kioto/Tōfukuji → Inari, ~5-10 min (+ 10-15 min hasta la estación desde el hotel, con margen de sobra) — hoy no cubierto por el JR Pass (se activa mañana).', transitMin: 45 },
-      { name: 'Free tour por Fushimi Inari-Taisha', kind: 'visit', durOverride: 105, note: 'Tour reservado a las 08:30 — punto de encuentro en la puerta principal del santuario.' },
+      { name: 'Free tour por Fushimi Inari-Taisha', kind: 'visit', durOverride: 105, note: 'Tour reservado a las 08:30 — llegad 15 min antes a la puerta principal (Great Torii), frente a la estación JR Inari. Guía con bandera azul y panda (Japandas).' },
       { name: 'Fushimi Inari-taisha', kind: 'visit', durOverride: 60, note: 'Tras el tour guiado, subida libre hasta el mirador Yotsutsuji (~1h ida y vuelta) si os apetece seguir.', transit: 'JR Nara Line Inari → Kioto (~5 min) + JR/bus a Sanjūsangen-dō (~10 min), o taxi directo (~15 min).', transitMin: 20 },
       { name: 'Sanjusangendomawari', kind: 'visit', durOverride: 108, mealAfter: 'lunch', transit: 'Bus o taxi hasta Heian Jingū, ~15 min.', transitMin: 15 },
       { name: 'Heian Jingū', kind: 'visit', durOverride: 30, note: 'El jardín trasero (de pago) es un buen contraste tranquilo antes de seguir al Camino del Filósofo.', transit: '15 min andando o en bus a Ginkaku-ji.', transitMin: 15 },
@@ -437,7 +437,7 @@ const days = [
       { name: 'America-mura', kind: 'visit', durOverride: 30 },
       { name: 'Sennichimae', kind: 'visit', durOverride: 20 },
       { name: 'Ebisu Bashi-Suji', kind: 'visit', durOverride: 20 },
-      { name: 'Free tour por Dotonbori y Namba', kind: 'visit', durOverride: 150, note: 'Tour reservado a las 16:30 — punto de encuentro en el Starbucks Coffee Shinsaibashi BIG STEP (volved sobre vuestros pasos, está a 5 min).' },
+      { name: 'Free tour por Dotonbori y Namba', kind: 'visit', durOverride: 150, note: 'Tour reservado a las 16:30 — llegad 10-15 min antes al Starbucks Shinsaibashi BIG STEP (volved sobre vuestros pasos, está a 5 min). Guía con bandera blanca "JDM" y un shiba en descapotable rojo.' },
       { name: 'Dōtonbori', kind: 'visit', durOverride: 60, note: 'Restaurantes recomendados: Houzenji Sanpei y Mizuno. Podéis seguir el canal hasta la tienda Don Quijote, reconocible por la noria en su fachada.' },
       { name: 'Don Quijote Dotonbori Midosuji', kind: 'visit', durOverride: 20 },
       { name: 'Hozenji Yokocho', kind: 'visit', durOverride: 20 },
