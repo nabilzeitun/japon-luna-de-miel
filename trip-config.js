@@ -233,7 +233,7 @@ const days = [
         name: 'Estación de Kanazawa', kind: 'visit', durOverride: 15,
         note: 'Vedla antes de seguir — están justo a la salida.',
       },
-      { name: 'Tsuzumi-mon Gate', kind: 'visit', durOverride: 10, transit: 'Bus turístico Kanazawa Loop Bus, ~10 min hasta la parada más cercana al hotel — o ~20 min andando.', transitMin: 10 },
+      { name: 'Tsuzumi-mon Gate', kind: 'visit', durOverride: 10, transit: 'Bus turístico Kanazawa Loop Bus (cada 15 min, ¥220/trayecto) desde la parada nº7 de la estación, ~10 min hasta la más cercana al hotel — o ~20 min andando.', transitMin: 10 },
       { name: 'Hotel Kanazawa', kind: 'info', note: 'Check-in en el Hotel Tokyu Stay Kanazawa. Lleváis solo la mochila — la maleta grande va directa a Kioto, enviada desde Tokio.', transit: '5 min andando al mercado.', transitMin: 5 },
       { name: 'Mercado Omicho', kind: 'meal', mealType: 'lunch', durOverride: 45 },
       { name: 'Nagamachi', kind: 'visit', durOverride: 60 },
