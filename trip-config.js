@@ -134,6 +134,7 @@ const days = [
   {
     date: '2026-10-30', city: 'Tokio', locationLabel: 'Tokyo', title: 'Shibuya, Shinjuku, Kabukichō y Okubo',
     kind: 'city', dayStartTime: '07:00',
+    travelNote: 'Día largo — encadena 4 barrios (Harajuku, Shibuya, Shinjuku, Kabukichō) con Okubo como colofón opcional. Id marcando el ritmo vosotros: Dogenzaka, Park Hyatt Tokyo, Tokyu Kabukicho Tower y Okubo están señalados como opcionales — saltáoslos sin remordimientos si vais llegando cansados, el núcleo del día (Meiji, Shibuya Crossing/Sky, mirador de Shinjuku, Omoide Yokochō, Kabukichō) no los necesita.',
     stops: [
       { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'Metro Hanzomon Line Oshiage → Omotesando (~25 min) + 5 min andando a Meiji Jingū.', transitMin: 30 },
       { name: 'Santuario Meiji', kind: 'visit', durOverride: 45 },
@@ -144,15 +145,15 @@ const days = [
       { name: 'Hachiko Statue', kind: 'visit', durOverride: 10 },
       { name: 'Shibuya Sky', kind: 'visit', durOverride: 60, mealAfter: 'lunch', note: 'Reservad hora con antelación online — se agotan franjas los fines de semana.' },
       { name: 'Calle Central de Shibuya', kind: 'visit', note: 'Si os sobran ~20 min: BRAND OFF Shibuya está aquí mismo y MEGA Don Quijote a 3 min — vintage y outlet turístico.' },
-      { name: 'Dogenzaka', kind: 'visit' },
+      { name: 'Dogenzaka', kind: 'visit', optional: true, note: 'Opcional — cuesta de bares y locales nocturnos de Shibuya, saltadla sin problema si vais justos de tiempo o energía.' },
       { name: 'Shibuya Nonbei Yokocho', kind: 'visit', transit: 'JR Yamanote Line Shibuya → Shinjuku, ~7 min.', transitMin: 15 },
       { name: 'Shinjuku', kind: 'visit', durOverride: 0 },
       { name: 'Mirador del Gobierno Metropolitano de Tokio', kind: 'visit', durOverride: 40 },
-      { name: 'Park Hyatt Tokyo', kind: 'visit', durOverride: 15, note: 'A 5 min andando del mirador.' },
+      { name: 'Park Hyatt Tokyo', kind: 'visit', durOverride: 15, optional: true, note: 'Opcional — A 5 min andando del mirador. Solo merece un desvío si os interesa el hotel de "Lost in Translation"; si no, seguid directos a Omoide Yokochō.' },
       { name: 'Omoide Yokochō', kind: 'visit', durOverride: 60 },
       { name: 'Shinjuku Ni-chōme', kind: 'visit', durOverride: 30 },
       { name: 'Kabukichō', kind: 'visit' },
-      { name: 'Tokyu Kabukicho Tower', kind: 'visit', mealAfter: 'dinner', transit: 'JR Yamanote/Sōbu Line Shinjuku → Shin-Ōkubo, ~5 min.', transitMin: 12 },
+      { name: 'Tokyu Kabukicho Tower', kind: 'visit', optional: true, note: 'Opcional — complejo de ocio y restaurantes; si ya habéis visto Kabukichō por fuera, os lo podéis saltar sin perderos gran cosa.', mealAfter: 'dinner', transit: 'JR Yamanote/Sōbu Line Shinjuku → Shin-Ōkubo, ~5 min.', transitMin: 12 },
       {
         name: 'Okubo', kind: 'visit', durOverride: 45, optional: true,
         note: 'Opcional, dejadlo para el final del día si os queda tiempo y energía.',
