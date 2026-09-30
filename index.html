@@ -478,8 +478,10 @@
   .tk-col .tk-hotel { font-weight: 600; font-size: 13.5px; margin-bottom: 4px; }
   .tk-col .tk-addr { font-size: 12px; color: var(--ink-soft); margin-bottom: 2px; word-break: break-word; }
   .tk-col .tk-addr-jp { font-size: 12px; color: var(--ink-soft); margin-bottom: 6px; word-break: break-word; }
-  .tk-col .tk-phone { font-size: 12.5px; }
+  .tk-col .tk-phone { font-size: 12.5px; margin-bottom: 6px; }
   .tk-col .tk-phone a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--line); }
+  .tk-col .tk-maps { font-size: 12.5px; }
+  .tk-col .tk-maps a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--line); }
 
   /* shopping / food list */
   .flat-list { display: flex; flex-direction: column; gap: 8px; }
@@ -1029,7 +1031,9 @@ function renderTakkyubin() {
   let html = `<div style="max-width:780px">`;
   html += `<h2 class="display" style="font-size:19px; margin-bottom:4px;">🧳 Envíos de takkyubin</h2>
   <p style="color:var(--ink-soft); font-size:13px; margin-bottom:20px;">Toda la información de origen y destino en un sitio, lista para enseñar o dictar en recepción del hotel de origen.</p>`;
-  const col = (c) => `
+  const col = (c) => {
+    const mapsQuery = encodeURIComponent(`${c.hotel} ${c.address}`);
+    return `
     <div class="tk-col">
       <div class="tk-label">${c.label}</div>
       <div class="tk-date">${c.date}</div>
@@ -1037,7 +1041,9 @@ function renderTakkyubin() {
       <div class="tk-addr">${c.address}</div>
       <div class="tk-addr-jp">${c.addressJp}</div>
       <div class="tk-phone">☎ <a href="tel:${c.phone.replace(/[^+\d]/g, '')}">${c.phone}</a></div>
+      <div class="tk-maps"><a href="https://www.google.com/maps/search/?api=1&query=${mapsQuery}" target="_blank" rel="noopener">📍 Ver en Google Maps</a></div>
     </div>`;
+  };
   TRIP.takkyubin.forEach(tk => {
     html += `<div class="tk-card">
       <h3>${tk.title}</h3>
