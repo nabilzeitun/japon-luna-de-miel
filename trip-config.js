@@ -112,6 +112,7 @@ const days = [
   {
     date: '2026-10-29', city: 'Tokio', locationLabel: 'Tokyo', title: 'Ueno, Yanaka y Akihabara',
     kind: 'city', dayStartTime: '07:30',
+    travelNote: 'Día largo con mucho contenido distinto (no hay duplicados que quitar). El Zoo de Ueno, el Jardín Rikugien y TAITO Station Akihabara están marcados como opcionales — saltároslos sin remordimientos si vais cansados, el núcleo del día (Museo Nacional, Ameyoko, Yanaka, Akihabara) no los necesita.',
     stops: [
       { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.', transit: 'Metro Toei Asakusa Oshiage → Asakusa (~5 min) + Ginza Line Asakusa → Ueno (~5 min) — o ~70 min andando.', transitMin: 20 },
       { name: 'Parque de Ueno', kind: 'visit' },
@@ -125,9 +126,9 @@ const days = [
       },
       { name: 'Ameyoko market', kind: 'visit', durOverride: 55, mealAfter: 'lunch', transit: 'JR/Keisei Ueno → Nippori (~5 min) + 10 min andando a Yanaka.', transitMin: 15 },
       { name: 'Yanaka', kind: 'visit', durOverride: 95, note: 'Callejeo tranquilo de casas bajas y templos — dedicadle tiempo sin prisa, es de los rincones con más encanto de Tokio.', transit: 'JR Yamanote/Keihin-Tōhoku Nippori → Komagome (~10 min) + 7 min andando a Rikugien.', transitMin: 17 },
-      { name: 'Jardín Rikugien', kind: 'visit', durOverride: 60, transit: 'JR Yamanote Line Komagome → Akihabara, ~15 min.', transitMin: 15 },
+      { name: 'Jardín Rikugien', kind: 'visit', durOverride: 60, optional: true, note: 'Opcional — precioso, pero un desvío en un día ya largo; saltadlo sin problema si vais cansados de Yanaka.', transit: 'JR Yamanote Line Komagome → Akihabara, ~15 min.', transitMin: 15 },
       { name: 'Akihabara', kind: 'visit', durOverride: 75 },
-      { name: 'TAITO Station Akihabara', kind: 'visit', durOverride: 55, mealAfter: 'dinner', transit: 'Metro Hanzomon Line directo Akihabara → Oshiage, ~10 min — o ~60 min andando.', transitMin: 15 },
+      { name: 'TAITO Station Akihabara', kind: 'visit', durOverride: 55, optional: true, note: 'Opcional — sala recreativa divertida, pero prescindible si ya vais tarde; cenar y volver al hotel es buena alternativa.', mealAfter: 'dinner', transit: 'Metro Hanzomon Line directo Akihabara → Oshiage, ~10 min — o ~60 min andando.', transitMin: 15 },
       { name: 'Hotel Tokyo', kind: 'info' },
     ],
   },
