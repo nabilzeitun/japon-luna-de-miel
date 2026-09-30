@@ -214,21 +214,23 @@
     color: #fff; background: var(--chip-color, var(--accent));
     min-width: 30px; height: 30px; padding: 0 6px; border-radius: 999px; flex-shrink: 0;
   }
-  .day-chip .meta { min-width: 0; }
-  .day-chip .date { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .04em; }
+  .day-chip .meta {
+    display: flex; flex-direction: column; align-items: flex-end;
+    flex-shrink: 0; margin-left: auto; padding-left: 10px; text-align: right;
+  }
+  .day-chip .date { font-size: 10.5px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; }
   .today-tag {
     font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
     background: var(--accent); color: #fff; border-radius: 5px; padding: 1px 5px; margin-left: 4px;
   }
   .day-chip .title {
-    font-size: 12.5px; font-weight: 500;
-    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
-    overflow: hidden;
+    flex: 1 1 auto; min-width: 0;
+    font-size: 14.5px; font-weight: 600;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .day-chip .ring { margin-left: 8px; flex-shrink: 0; color: var(--good); font-size: 17px; font-weight: 700; }
   .day-chip .day-loc {
-    margin-left: auto; flex-shrink: 0; padding-left: 10px;
-    font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .04em;
+    font-size: 10.5px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .04em;
     white-space: nowrap;
   }
   .day-chip.complete { opacity: .6; }
@@ -597,13 +599,13 @@ function computeDayLabels(days) {
 const DAY_LABELS = computeDayLabels(TRIP.days);
 // El número puro (sin la letra de opción), para mostrarlo separado de "Opción A/B".
 function dayNumberOnly(i) { return DAY_LABELS[i].replace(/[A-Z]+$/, ''); }
-// Para la insignia circular: "1º".."16º" en días sueltos, "4-A"/"4-B" en días con alternativa
+// Para la insignia circular: "1º".."16º" en días sueltos, "4º-A"/"4º-B" en días con alternativa
 // — así no se confunde nunca con el número del día del mes (28, 29, 30...).
 function dayBadgeLabel(i) {
   const m = DAY_LABELS[i].match(/^(\d+)([A-Z]*)$/);
   if (!m) return DAY_LABELS[i];
   const [, num, letter] = m;
-  return letter ? `${num}-${letter}` : `${num}º`;
+  return letter ? `${num}º-${letter}` : `${num}º`;
 }
 
 const CITY_SLUG = {
@@ -750,11 +752,11 @@ function renderDayPicker() {
     const optFlag = d.altLabel ? `Opción ${d.altLabel}` : (d.optional ? 'opc.' : '');
     btn.innerHTML = `
       <span class="num tabular">${dayBadgeLabel(i)}</span>
+      <span class="title">${d.title}</span>
       <span class="meta">
         <span class="date tabular">${day} ${month} · ${weekday}${optFlag ? ` · <span class="opt-flag">${optFlag}</span>` : ''}${i === todayIdx ? ' <span class="today-tag">Hoy</span>' : ''}</span>
-        <span class="title">${d.title}</span>
+        <span class="day-loc">${d.locationLabel || d.city}</span>
       </span>
-      <span class="day-loc">${d.locationLabel || d.city}</span>
       ${complete ? '<span class="ring">✓</span>' : ''}
     `;
     btn.addEventListener('click', () => jumpToDay(i));
