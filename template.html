@@ -413,6 +413,9 @@
   .walk-row span.label { padding-top: 2px; }
   .walk-row.has-transit { color: var(--indigo); font-weight: 500; }
   .walk-row.has-transit .stop-connector { background: var(--indigo); }
+  .walk-row.done, .walk-row.done.has-transit { color: var(--ink-faint); font-weight: 400; }
+  .walk-row.done .stop-connector { background: var(--line); }
+  .walk-row.done span.label { text-decoration: line-through; text-decoration-color: var(--line); }
 
   .suggest-block { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 18px; }
   .suggest-card {
@@ -908,7 +911,8 @@ function renderDayView() {
     </div>`;
     if (!isLast && s.toNextMeters) {
       const modeIcon = s.transit ? transitIcon(s.transit) : '🚶';
-      html += `<div class="walk-row${s.transit ? ' has-transit' : ''}">
+      const walkDone = done && isChecked(d.date, d.stops[i + 1].name);
+      html += `<div class="walk-row${s.transit ? ' has-transit' : ''}${walkDone ? ' done' : ''}">
         <div class="stop-time"></div>
         <div class="stop-connector-wrap"><div class="stop-connector"></div></div>
         <span class="label"><span class="mode-icon">${modeIcon}</span> ${s.transit || walkLabel(s.toNextMeters, s.toNextWalkMin)}</span>
