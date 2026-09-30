@@ -208,7 +208,12 @@
     background: var(--paper-sunk);
     box-shadow: inset 0 0 0 2px var(--chip-color, var(--accent));
   }
-  .day-chip .num { font-size: 19px; font-weight: 700; color: var(--chip-color, var(--accent)); min-width: 22px; }
+  .day-chip .num {
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; letter-spacing: -.02em;
+    color: #fff; background: var(--chip-color, var(--accent));
+    min-width: 30px; height: 30px; padding: 0 6px; border-radius: 999px; flex-shrink: 0;
+  }
   .day-chip .meta { min-width: 0; }
   .day-chip .date { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .04em; }
   .today-tag {
@@ -592,6 +597,14 @@ function computeDayLabels(days) {
 const DAY_LABELS = computeDayLabels(TRIP.days);
 // El número puro (sin la letra de opción), para mostrarlo separado de "Opción A/B".
 function dayNumberOnly(i) { return DAY_LABELS[i].replace(/[A-Z]+$/, ''); }
+// Para la insignia circular: "1º".."16º" en días sueltos, "4-A"/"4-B" en días con alternativa
+// — así no se confunde nunca con el número del día del mes (28, 29, 30...).
+function dayBadgeLabel(i) {
+  const m = DAY_LABELS[i].match(/^(\d+)([A-Z]*)$/);
+  if (!m) return DAY_LABELS[i];
+  const [, num, letter] = m;
+  return letter ? `${num}-${letter}` : `${num}º`;
+}
 
 const CITY_SLUG = {
   'Tokio': 'tokio',
@@ -736,7 +749,7 @@ function renderDayPicker() {
     btn.style.setProperty('--chip-color', complete ? 'var(--ink-faint)' : 'var(--city-color)');
     const optFlag = d.altLabel ? `Opción ${d.altLabel}` : (d.optional ? 'opc.' : '');
     btn.innerHTML = `
-      <span class="num tabular">${dayNumberOnly(i)}</span>
+      <span class="num tabular">${dayBadgeLabel(i)}</span>
       <span class="meta">
         <span class="date tabular">${day} ${month} · ${weekday}${optFlag ? ` · <span class="opt-flag">${optFlag}</span>` : ''}${i === todayIdx ? ' <span class="today-tag">Hoy</span>' : ''}</span>
         <span class="title">${d.title}</span>
