@@ -215,7 +215,7 @@
     min-width: 30px; height: 30px; padding: 0 6px; border-radius: 999px; flex-shrink: 0;
   }
   .day-chip .meta {
-    display: flex; flex-direction: column; align-items: flex-end;
+    display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 4px;
     flex-shrink: 0; margin-left: auto; padding-left: 10px; text-align: right;
   }
   .day-chip .date { font-size: 10.5px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; }
@@ -754,8 +754,7 @@ function renderDayPicker() {
       <span class="num tabular">${dayBadgeLabel(i)}</span>
       <span class="title">${d.title}</span>
       <span class="meta">
-        <span class="date tabular">${day} ${month} · ${weekday}${optFlag ? ` · <span class="opt-flag">${optFlag}</span>` : ''}${i === todayIdx ? ' <span class="today-tag">Hoy</span>' : ''}</span>
-        <span class="day-loc">${d.locationLabel || d.city}</span>
+        <span class="date tabular">${weekday} · ${day} ${month} · <span class="day-loc">${d.locationLabel || d.city}</span></span>${optFlag ? `<span class="opt-flag">${optFlag}</span>` : ''}${i === todayIdx ? '<span class="today-tag">Hoy</span>' : ''}
       </span>
       ${complete ? '<span class="ring">✓</span>' : ''}
     `;
