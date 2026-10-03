@@ -74,6 +74,7 @@ function resolveStop(stopCfg, cityFolder) {
     transitMin: stopCfg.transitMin != null ? stopCfg.transitMin : null,
     optional: !!stopCfg.optional,
     mealAfter: stopCfg.mealAfter || null,
+    checkinMin: stopCfg.checkinMin != null ? stopCfg.checkinMin : null,
   };
 }
 
@@ -165,7 +166,7 @@ const builtDays = days.map(d => {
   stops.forEach(s => {
     if (s.kind === 'info' && /^Hotel\s/.test(s.name) && !seenHotelCheckin.has(norm(s.name))) {
       seenHotelCheckin.add(norm(s.name));
-      s.duration = 30;
+      s.duration = s.checkinMin != null ? s.checkinMin : 30;
       s.note = s.note || 'Check-in y acomodarse en la habitación.';
     }
   });
