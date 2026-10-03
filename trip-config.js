@@ -102,6 +102,7 @@ const manualPlaces = [
     arrTime: '11/03/2026 14:20', to: 'Takayama Nohi Bus Center', toJp: '高山濃飛ﾊﾞｽｾﾝﾀｰ', toMap: 'https://maps.google.co.jp/maps?q=36.141933,137.251443&z=18',
     car: '01', seats: '1D / 1C', operator: 'Nohi Bus Co., Ltd.',
   }) },
+  { name: 'Takayama Nohi Bus Center', desc: 'Terminal de autobuses de Takayama, pegada a la estación JR — aquí os deja el bus desde Shirakawa-go.', lat: 36.141933, lon: 137.251443 },
 ];
 
 // Comida sugerida en Takayama que no estaba en la capa "comer en japon" del KMZ.
@@ -247,7 +248,7 @@ const days = [
     travelNote: 'Tokio tiene mucho más que ver que Kanazawa, así que aprovechamos la mañana antes del Shinkansen. Hokuriku "Kagayaki" Tokio → Kanazawa (~2h30, asiento reservado recomendado). Antes de salir del hotel, entregad la maleta grande en recepción para enviarla por takkyubin directa al hotel de Kioto (llegada programada para el 5 nov) — así hacéis Kanazawa, Shirakawa-go y Takayama solo con la mochila.',
     stops: [
       { name: 'Hotel Tokyo', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno rápido en el hotel (o saltadlo si vais a comer en Toyosu).' },
-      { name: 'Takkyubin: entregar maleta (envío a Kioto)', kind: 'info', note: 'Destino: Hotel Resol Shijo Muromachi, Kioto. Entrega prevista: 5 nov.', transit: 'Metro Yurikamome/Toei Oedo a Toyosu, ~25-30 min.', transitMin: 30 },
+      { name: 'Takkyubin: entregar maleta (envío a Kioto)', kind: 'info', note: 'Destino: Hotel Resol Shijo Muromachi, Kioto. Entrega prevista: 5 nov.', transit: 'Metro Yurikamome/Toei Oedo a Toyosu, ~25-30 min. Si vais directos a la Estación de Tokio (sin Toyosu): 5 min andando a Kinshichō + JR Sōbu Line (Rapid) hasta Tokio, ~10 min.', transitMin: 30 },
       {
         name: 'Toyosu Senkyaku Banrai', kind: 'visit', durOverride: 45, optional: true,
         note: 'Opcional — solo si salís al amanecer, os quita tiempo para el Palacio Imperial. Alternativa: ir directamente a la Estación de Tokio para llegar antes a Kanazawa — la mejor opción si ya habéis hecho las compras que queríais.',
@@ -288,6 +289,7 @@ const days = [
       { name: 'Puente Colgante Deai', kind: 'visit', durOverride: 10, optional: true, note: 'Opcional — es la entrada clásica al pueblo desde la terminal de autobuses, lo cruzaréis igualmente al ir o volver; no hace falta una parada aparte.' },
       { name: 'Las Tres Casas de Shirakawago', kind: 'visit', durOverride: 15, note: 'La foto más famosa de Shirakawago.', transit: '5 min andando a la terminal de autobuses; estad allí ~10 min antes de las 13:30.', transitMin: 12 },
       { name: 'Bus a Takayama · e-ticket', kind: 'info', note: 'Enseñad este billete al conductor al subir. Esta reserva solo se podía cancelar hasta las 11:30.', transit: 'Espera ~10 min en la parada + bus Nohi, sale 13:30 → Takayama Nohi Bus Center, llega 14:20 (50 min).', transitMin: 60 },
+      { name: 'Takayama Nohi Bus Center', kind: 'info', transit: '8 min andando (600 m) al hotel, a un paso de la estación.', transitMin: 10 },
       { name: 'Hotel Takayama', kind: 'info', note: 'Check-in en el Hotel Hida Takayama Green.' },
       { name: 'Takayama Old Town', kind: 'visit', durOverride: 75, note: 'Cenar carne Hida wagyu en Hidagyu Maruaki o Ajikura Tengoku (buñuelos, donburi o nigiri de Hida wagyu).' },
       { name: 'Hotel Takayama', kind: 'info' },
@@ -329,7 +331,7 @@ const days = [
     stops: [
       { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. Seguís viajando solo con la mochila.', transit: 'Camino a la estación (~10 min) + Limited Express "Hida" a Nagoya (~2h20) + JR línea Chūō a Nakatsugawa (~50 min).', transitMin: 200 },
       { name: 'Nakatsugawa Station', kind: 'visit', durOverride: 10, transit: 'Bus Kitaena Kotsu (línea Magome) Nakatsugawa → Magome, ~25 min, sin reserva. Frecuencia distinta entre semana y fin de semana — comprobad el horario del día en la web de Kitaena Kotsu cerca de la fecha.', transitMin: 30 },
-      { name: 'Magome-juku', kind: 'visit', durOverride: 130, note: 'Comer soba en Yoshimura Soba — con calma, es el único punto del día sin prisa por un tren después, aprovechad para pasear el pueblo sin reloj.', transit: 'Bus de vuelta a Nakatsugawa (~30 min) + JR línea Chūō a Nagoya (~50 min) + Shinkansen Tōkaidō a Kioto (~35-45 min).', transitMin: 125 },
+      { name: 'Magome-juku', kind: 'visit', durOverride: 130, note: 'Comer soba en Yoshimura Soba — con calma, es el único punto del día sin prisa por un tren después, aprovechad para pasear el pueblo sin reloj.', transit: 'Bus de vuelta a Nakatsugawa (~30 min) + JR línea Chūō a Nagoya (~50 min) + Shinkansen Tōkaidō a Kioto (~35-45 min) + metro Karasuma Line Kioto → Shijo (2 paradas, ~5 min) y ~8 min andando hasta el hotel.', transitMin: 145 },
       { name: 'Hotel Kyoto', kind: 'info', note: 'Check-in en el Hotel Resol Shijo Muromachi — la maleta grande, enviada por takkyubin desde Tokio el 2 nov, ya debería estar esperando.' },
       { name: 'Takkyubin: avisar al hotel (envío a Osaka)', kind: 'info', note: 'Necesitaréis el servicio el 8 nov, destino Hotel Keihan Tenmabashi Ekimae (Osaka), entrega prevista el 9 nov.' },
     ],
@@ -462,7 +464,7 @@ const days = [
       { name: 'Free tour por Dotonbori y Namba', kind: 'visit', durOverride: 150, note: 'El tour ya recorre Shinsaibashi, America-mura, el canal de Dōtonbori y el templo Hozenji — no hace falta volver a esos puntos por libre después. Restaurantes recomendados en la zona: Houzenji Sanpei y Mizuno.' },
       { name: 'Don Quijote Dotonbori Midosuji', kind: 'visit', durOverride: 20, note: 'Al final del canal, reconocible por la noria en su fachada — el tour pasa por aquí cerca, es la última parada de la zona antes de seguir camino.', transit: 'Metro Midosuji Line Namba → Umeda, ~10 min — o ~90 min andando.', transitMin: 10 },
       { name: 'Umeda Sky Building (osaka)', kind: 'visit', durOverride: 45, note: 'Horario 10:00-22:30.' },
-      { name: 'Takimikoji', kind: 'meal', mealType: 'dinner', durOverride: 30, optional: true, note: 'Opcional, justo al lado del Umeda Sky Building.' },
+      { name: 'Takimikoji', kind: 'meal', mealType: 'dinner', durOverride: 30, optional: true, note: 'Opcional, justo al lado del Umeda Sky Building.', transit: 'Metro Tanimachi Line Higashi-Umeda → Tenmabashi (~10 min, más ~10 min andando hasta Higashi-Umeda) — o ~40 min andando.', transitMin: 25 },
       { name: 'Hotel Osaka', kind: 'info' },
     ],
   },
