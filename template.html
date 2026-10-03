@@ -377,6 +377,17 @@
   }
   .stop-row.done .stop-body h3 { color: var(--ink-soft); text-decoration: line-through; text-decoration-color: var(--line); }
   .stop-desc { font-size: 13px; color: var(--ink-soft); }
+  .ticket {
+    margin-top: 6px; padding: 10px 12px; border: 1px dashed var(--ink-faint); border-radius: 10px;
+    background: var(--paper-raised); color: var(--ink); font-size: 14px; line-height: 1.45;
+  }
+  .ticket .tk-title { font-weight: 700; font-size: 13px; letter-spacing: .03em; margin-bottom: 6px; }
+  .ticket .tk-row { padding: 3px 0; border-top: 1px solid var(--line-soft); }
+  .ticket .tk-row:first-of-type { border-top: 0; }
+  .ticket .tk-k { display: block; font-size: 11px; color: var(--ink-faint); }
+  .ticket .tk-v { font-weight: 600; font-size: 15px; word-break: break-word; }
+  .ticket .tk-big { font-size: 20px; letter-spacing: .02em; }
+  .ticket a { color: var(--ink); border-bottom: 1px dotted var(--line); text-decoration: none; }
   .stop-row.done .stop-desc { color: var(--ink-faint); text-decoration: line-through; text-decoration-color: var(--line); }
   .stop-note {
     font-size: 12.5px; color: var(--tip-ink); margin-top: 4px;
@@ -651,6 +662,7 @@ function walkLabel(meters, walkMin) {
 }
 function infoIcon(name) {
   if (/takkyubin/i.test(name)) return '🧳';
+  if (/e-ticket/i.test(name)) return '🎫';
   if (/aeropuerto|airport/i.test(name)) return '✈️';
   if (/^hotel/i.test(name)) return '🏨';
   return '📍';

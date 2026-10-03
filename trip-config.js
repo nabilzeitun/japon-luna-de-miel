@@ -9,6 +9,20 @@
 // dayStartTime: hora aproximada (HH:MM) en la que arranca la primera parada del día — de ahí se calculan
 // en cascada las horas estimadas de llegada a cada parada siguiente.
 
+// Bloque HTML de un e-ticket de autobús, pensado para enseñárselo al conductor (texto grande, con japonés).
+const ticketRow = (k, v, big) => `<div class="tk-row"><span class="tk-k">${k}</span><span class="tk-v${big ? ' tk-big' : ''}">${v}</span></div>`;
+const busTicket = (t) => `<div class="ticket"><div class="tk-title">🎫 BILLETE ELECTRÓNICO · 購入済電子乗車票</div>`
+  + ticketRow('Reservation number · 予約番号', t.res, true)
+  + ticketRow('Name · お名前', t.name)
+  + ticketRow('Fare · ご購入金額', t.fare)
+  + ticketRow('Route · 路線', `高岡・富山・金沢ー白川郷・高山線<br>Takayama-Shirakawa-go/Kanazawa Line`)
+  + ticketRow('Passengers · 2名', 'Adult_Male (大人料金_男性) 1 person<br>Adult_Female (大人料金_女性) 1 person')
+  + ticketRow('Departure · 出発', `${t.depTime} (JST)<br>${t.from} (${t.fromJp})<br><a href="${t.fromMap}" target="_blank" rel="noopener">📍 Mapa</a>`)
+  + ticketRow('Arrival · 到着', `${t.arrTime} (JST)<br>${t.to} (${t.toJp})<br><a href="${t.toMap}" target="_blank" rel="noopener">📍 Mapa</a>`)
+  + ticketRow('Car No. · 車号 / Seat · 座席番号', `${t.car} · ${t.seats}`, true)
+  + ticketRow('Operating Company · 運行会社', t.operator)
+  + `</div>`;
+
 // Lugares que NO estaban en el KMZ pero pidió el usuario explícitamente (destinos "ancla" confirmados
 // por los vuelos/reservas). Coordenadas aproximadas a partir de conocimiento general del lugar.
 const manualPlaces = [
@@ -75,6 +89,19 @@ const manualPlaces = [
   { name: 'Free tour por Asakusa', desc: 'Recorrido guiado en español (2h) por el barrio más tradicional de Tokio: Kaminarimon, la calle Nakamise, Sensō-ji y el entorno del Puente Azuma, con historia y anécdotas locales.<br>Punto de encuentro: frente a la comisaría de policía de Asakusa (Asakusa Police Station Hanakawado Police Box) — 1 Chome-2-1 Hanakawado, Taito City, Tokyo 111-0033.<br>Llegad con 15 min de antelación.<br>Reservado: 28 oct, 15:00.', lat: 35.7127, lon: 139.7965 },
   { name: 'Free tour por Fushimi Inari-Taisha', desc: 'Recorrido guiado en español (1h45) que empieza en la puerta principal con una introducción histórica del santuario, dedicado a Inari (arroz, fertilidad y zorros/kitsune, sus mensajeros). Pasa por la Sala de Oraciones (Haiden), el emblemático sendero de las mil puertas torii (quién las dona y por qué), un desvío al Santuario Interior —menos concurrido, con leyendas locales sobre los kitsune— y varios santuarios intermedios, hasta terminar con vistas del santuario en plena naturaleza en el Santuario Shirahata.<br>Punto de encuentro: puerta principal de Fushimi Inari-Taisha (Great Torii), frente a la estación JR Inari — 深草薮之内町68番地, Fushimi Ward, Kioto.<br>Reconoceréis al guía por la bandera azul con un panda (Japandas).<br>Llegad con 15 min de antelación.<br>Reservado: 7 nov, 08:30.', lat: 34.9671, lon: 135.7727 },
   { name: 'Free tour por Dotonbori y Namba', desc: 'Recorrido guiado en español (2h30) por Shinsaibashi, America-mura y el canal de Dotonbori, con historias del barrio y parada en el templo Hozenji.<br>Punto de encuentro: Starbucks Coffee Shinsaibashi BIG STEP — 1 Chome-6-14 BIG STEP, Nishishinsaibashi, Chuo Ward, Osaka 542-0086.<br>Reconoceréis al guía por la bandera blanca con las siglas JDM y un perro shiba en un descapotable rojo.<br>Llegad con 10-15 min de antelación.<br>Reservado: 10 nov, 16:30.', lat: 34.6745, lon: 135.5010 },
+  // E-tickets de los buses del 3 nov (japanbusonline.com), tal cual el correo de confirmación.
+  { name: 'Bus a Shirakawa-go · e-ticket', lat: 36.5782720227044, lon: 136.64648877466, desc: busTicket({
+    res: '10032053821', name: 'Nabil Zeitun Eguino', fare: 'JPY 5,600',
+    depTime: '11/03/2026 08:40', from: 'Kanazawa Sta. West Exit Bus Stop No.4', fromJp: '金沢駅西口4番乗り場', fromMap: 'https://maps.google.co.jp/maps?q=36.5782720227044,136.64648877466&z=18',
+    arrTime: '11/03/2026 10:05', to: 'Shirakawa-go (Ogimachi)', toJp: '白川郷(荻町)', toMap: 'https://maps.google.co.jp/maps?q=36.261918,136.906737&z=18',
+    car: '01', seats: '03D / 06B', operator: 'Hokuriku Rail Road Co., Ltd.',
+  }) },
+  { name: 'Bus a Takayama · e-ticket', lat: 36.261918, lon: 136.906737, desc: busTicket({
+    res: '10032054591', name: 'Nabil Zeitun Eguino', fare: 'JPY 5,600',
+    depTime: '11/03/2026 13:30', from: 'Shirakawa-go (Ogimachi)', fromJp: '白川郷(荻町)', fromMap: 'https://maps.google.co.jp/maps?q=36.261918,136.906737&z=18',
+    arrTime: '11/03/2026 14:20', to: 'Takayama Nohi Bus Center', toJp: '高山濃飛ﾊﾞｽｾﾝﾀｰ', toMap: 'https://maps.google.co.jp/maps?q=36.141933,137.251443&z=18',
+    car: '01', seats: '1D / 1C', operator: 'Nohi Bus Co., Ltd.',
+  }) },
 ];
 
 // Comida sugerida en Takayama que no estaba en la capa "comer en japon" del KMZ.
@@ -249,16 +276,18 @@ const days = [
   {
     date: '2026-11-03', city: 'Kanazawa-Takayama', locationLabel: 'Shirakawa-go', title: 'Kanazawa → Shirakawa-go → Takayama',
     kind: 'travel', dayStartTime: '07:50',
-    travelNote: 'Ida RESERVADA: bus Hokutetsu/Nohi Kanazawa Sta. salida oeste, parada nº4 (sale 08:40) → Shirakawa-go Ogimachi (llega 10:05). Reserva nº 10032053821, coche 01, asientos 03D y 06B, ¥5.600 los dos — llevad el e-ticket del correo de confirmación en el móvil. Vuelta RESERVADA: bus Nohi Shirakawa-go Ogimachi (sale 13:30) → Takayama Nohi Bus Center (llega 14:20). Reserva nº 10032054591, coche 01, asientos 1D y 1C, ¥5.600 los dos (solo se puede cancelar hasta las 11:30 de ese día). Os quedan unas 3h20 en el pueblo, justas pero suficientes: Puente Deai y el templo Myozenji están marcados como opcionales por si os queréis quedar con calma en lo importante.',
+    travelNote: 'Ida y vuelta RESERVADAS (¥11.200 los dos tramos): Kanazawa 08:40 → Shirakawa-go 10:05 y Shirakawa-go 13:30 → Takayama 14:20. Los billetes electrónicos completos están en los pasos "e-ticket" de abajo, listos para enseñar al conductor; llevad también los correos de confirmación en el móvil. Os quedan unas 3h20 en el pueblo, justas pero suficientes: Puente Deai y el templo Myozenji están marcados como opcionales por si os queréis quedar con calma en lo importante.',
     stops: [
-      { name: 'Hotel Kanazawa', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel — solo la mochila, check-out rápido.', transit: '10 min andando a la terminal (Kanazawa Sta. West Exit, parada nº4), estando allí ~10 min antes + Bus Hokutetsu/Nohi, sale 08:40 → Shirakawa-go (Ogimachi), llega 10:05.', transitMin: 105 },
+      { name: 'Hotel Kanazawa', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel — solo la mochila, check-out rápido.', transit: '10 min andando a la terminal (Kanazawa Sta. West Exit, parada nº4); estad allí ~10 min antes de las 08:40.', transitMin: 10 },
+      { name: 'Bus a Shirakawa-go · e-ticket', kind: 'info', note: 'Enseñad este billete al conductor al subir.', transit: 'Espera ~10 min en la parada + bus Hokutetsu, sale 08:40 → Shirakawa-go (Ogimachi), llega 10:05 (~1h25).', transitMin: 95 },
       { name: 'Shirakawa', kind: 'visit', durOverride: 5, note: 'El bus de vuelta sale a las 13:30 — tenéis unas 3h20 en el pueblo.' },
       { name: 'Mirador Shiroyama', kind: 'visit', durOverride: 25, transit: 'Shuttle Shiroyama Line hasta el mirador (ida, ¥200), ~5 min.', transitMin: 8 },
       { name: 'Casa Museo Wada', kind: 'visit', durOverride: 25 },
       { name: 'Kanda y Nagase', kind: 'visit', durOverride: 20 },
       { name: 'Templo Myozenji y Santuario Shirakawa Hachiman', kind: 'visit', durOverride: 20, optional: true, note: 'Opcional — si vais justos de tiempo, saltadlo; el bus de vuelta es a las 13:30.' },
       { name: 'Puente Colgante Deai', kind: 'visit', durOverride: 10, optional: true, note: 'Opcional — es la entrada clásica al pueblo desde la terminal de autobuses, lo cruzaréis igualmente al ir o volver; no hace falta una parada aparte.' },
-      { name: 'Las Tres Casas de Shirakawago', kind: 'visit', durOverride: 15, note: 'La foto más famosa de Shirakawago.', transit: '5 min andando a la terminal de autobuses, llegando ~10 min antes + Bus Nohi, sale 13:30 → Takayama, llega 14:20.', transitMin: 70 },
+      { name: 'Las Tres Casas de Shirakawago', kind: 'visit', durOverride: 15, note: 'La foto más famosa de Shirakawago.', transit: '5 min andando a la terminal de autobuses; estad allí ~10 min antes de las 13:30.', transitMin: 12 },
+      { name: 'Bus a Takayama · e-ticket', kind: 'info', note: 'Enseñad este billete al conductor al subir. Esta reserva solo se podía cancelar hasta las 11:30.', transit: 'Espera ~10 min en la parada + bus Nohi, sale 13:30 → Takayama Nohi Bus Center, llega 14:20 (50 min).', transitMin: 60 },
       { name: 'Hotel Takayama', kind: 'info', note: 'Check-in en el Hotel Hida Takayama Green.' },
       { name: 'Takayama Old Town', kind: 'visit', durOverride: 75, note: 'Cenar carne Hida wagyu en Hidagyu Maruaki o Ajikura Tengoku (buñuelos, donburi o nigiri de Hida wagyu).' },
       { name: 'Hotel Takayama', kind: 'info' },
