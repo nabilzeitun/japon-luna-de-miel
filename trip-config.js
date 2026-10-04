@@ -91,15 +91,20 @@ const manualPlaces = [
   { name: 'Free tour por Fushimi Inari-Taisha', desc: 'Recorrido guiado en español (1h45) que empieza en la puerta principal con una introducción histórica del santuario, dedicado a Inari (arroz, fertilidad y zorros/kitsune, sus mensajeros). Pasa por la Sala de Oraciones (Haiden), el emblemático sendero de las mil puertas torii (quién las dona y por qué), un desvío al Santuario Interior —menos concurrido, con leyendas locales sobre los kitsune— y varios santuarios intermedios, hasta terminar con vistas del santuario en plena naturaleza en el Santuario Shirahata.<br>Punto de encuentro: puerta principal de Fushimi Inari-Taisha (Great Torii), frente a la estación JR Inari — 深草薮之内町68番地, Fushimi Ward, Kioto.<br>Reconoceréis al guía por la bandera azul con un panda (Japandas).<br>Llegad con 15 min de antelación.<br>Reservado: 7 nov, 08:30.', lat: 34.9671, lon: 135.7727 },
   { name: 'Free tour por Dotonbori y Namba', desc: 'Recorrido guiado en español (2h30) por Shinsaibashi, America-mura y el canal de Dotonbori, con historias del barrio y parada en el templo Hozenji.<br>Punto de encuentro: Starbucks Coffee Shinsaibashi BIG STEP — 1 Chome-6-14 BIG STEP, Nishishinsaibashi, Chuo Ward, Osaka 542-0086.<br>Reconoceréis al guía por la bandera blanca con las siglas JDM y un perro shiba en un descapotable rojo.<br>Llegad con 10-15 min de antelación.<br>Reservado: 10 nov, 16:30.', lat: 34.6745, lon: 135.5010 },
   // E-tickets de los buses del 3 nov (japanbusonline.com), tal cual el correo de confirmación.
-  { name: 'Romancecar a Hakone · e-ticket', lat: 35.6909, lon: 139.6999, desc: '<div class="ticket"><div class="tk-title">🎫 BILLETE ELECTRÓNICO · ロマンスカー</div>'
+  { name: 'Romancecar a Hakone · e-ticket', lat: 35.6909, lon: 139.6999, desc: '<div class="ticket"><div class="tk-title">🎫 RECIBO DE COMPRA · ロマンスカー特急券</div>'
     + ticketRow('Booking number', '00037', true)
-    + ticketRow('Train', 'Hakone 33 (EXE6) · Romancecar')
-    + ticketRow('Departure', 'Sat 31 Oct 2026 · 08:20 Shinjuku (新宿)')
-    + ticketRow('Arrival', '09:52 Hakone-Yumoto (箱根湯本)')
-    + ticketRow('Seats', 'Carriage 3 · 7C y 7D', true)
-    + ticketRow('Importe', '2.300 yen (los dos)')
-    + ticketRow('Cómo entrar', 'Enseñad esta reserva en el móvil, desde «Confirm booking» en web-odakyu.com/e-romancecar, con la tarjeta usada en el pago. Cancelable hasta la salida del tren (¥100 de comisión).')
-    + ticketRow('Importante', 'Es solo el suplemento del Romancecar: para subir necesitáis ADEMÁS el Hakone Freepass (o billete normal Shinjuku–Odawara).')
+    + ticketRow('Boarding date', 'Sat, Oct 31, 2026')
+    + ticketRow('Train name', 'Hakone 33 (EXE6) · Limited Express Romancecar')
+    + ticketRow('Time', '08:20 Shinjuku (新宿) → 09:52 Hakone-Yumoto (箱根湯本)', true)
+    + ticketRow('Travelers · Seat type', 'Adults: 2 · Standard seat')
+    + ticketRow('Carriage no. / Seat no.', '03 · 7D, 7C', true)
+    + ticketRow('Amount (incl. 10% tax)', '2,300 yen')
+    + ticketRow('Payment date and time', 'Sun, Oct 04, 2026 21:12 (JST)')
+    + ticketRow('Credit card', '************4417 (la tarjeta del pago: hay que llevarla al subir)')
+    + ticketRow('Issuing company', 'Odakyu Electric Railway Co., Ltd. (Registration No.: T1011001005060)')
+    + ticketRow('Contact', 'Odakyu Sightseeing Service Center · TEL +81-3-5909-0211 (8:00–16:00)')
+    + ticketRow('Cómo entrar', 'Enseñad la reserva en el móvil desde «Confirm booking» en web-odakyu.com/e-romancecar, junto con la tarjeta usada en el pago. Se puede subir sin canjear nada en taquilla. Cancelable hasta la salida del tren (¥100 de comisión).')
+    + ticketRow('Importante', 'A separate ticket/Freepass is needed when boarding the train. Es solo el suplemento del Romancecar: para subir necesitáis ADEMÁS el Hakone Freepass (o billete normal Shinjuku–Odawara).')
     + '</div>' },
   { name: 'Bus a Shirakawa-go · e-ticket', lat: 36.5782720227044, lon: 136.64648877466, desc: busTicket({
     res: '10032053821', name: 'Nabil Zeitun Eguino', fare: 'JPY 5,600',
