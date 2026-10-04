@@ -103,7 +103,7 @@ const manualPlaces = [
     + ticketRow('Credit card', '************4417 (la tarjeta del pago: hay que llevarla al subir)')
     + ticketRow('Issuing company', 'Odakyu Electric Railway Co., Ltd. (Registration No.: T1011001005060)')
     + ticketRow('Contact', 'Odakyu Sightseeing Service Center · TEL +81-3-5909-0211 (8:00–16:00)')
-    + ticketRow('Cómo entrar', 'Enseñad la reserva en el móvil desde «Confirm booking» en web-odakyu.com/e-romancecar, junto con la tarjeta usada en el pago. Se puede subir sin canjear nada en taquilla. Cancelable hasta la salida del tren (¥100 de comisión).')
+    + ticketRow('Cómo entrar', 'Enseñad la reserva en el móvil, junto con la tarjeta usada en el pago: abrid el enlace de abajo y pulsad «Confirm booking».<br><a href="https://www.web-odakyu.com/e-romancecar/" target="_blank" rel="noopener">🎫 Abrir e-Romancecar · Confirm booking</a> Se puede subir sin canjear nada en taquilla. Cancelable hasta la salida del tren (¥100 de comisión).')
     + ticketRow('Importante', 'A separate ticket/Freepass is needed when boarding the train. Es solo el suplemento del Romancecar: para subir necesitáis ADEMÁS el Hakone Freepass (o billete normal Shinjuku–Odawara).')
     + '</div>' },
   { name: 'Bus a Shirakawa-go · e-ticket', lat: 36.5782720227044, lon: 136.64648877466, desc: busTicket({
