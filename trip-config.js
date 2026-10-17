@@ -344,7 +344,7 @@ const days = [
       { name: 'Las Tres Casas de Shirakawago', kind: 'visit', durOverride: 15, note: 'La foto más famosa de Shirakawago.', transit: '5 min andando a la terminal de autobuses; estad allí ~10 min antes de las 13:30.', transitMin: 12 },
       { name: 'Bus a Takayama · e-ticket', kind: 'info', note: 'Enseñad este billete al conductor al subir. Esta reserva solo se podía cancelar hasta las 11:30.', transit: 'Espera ~10 min en la parada + bus Nohi, sale 13:30 → Takayama Nohi Bus Center, llega 14:20 (50 min).', transitMin: 60 },
       { name: 'Takayama Nohi Bus Center', kind: 'info', transit: '8 min andando (600 m) al hotel, a un paso de la estación.', transitMin: 10 },
-      { name: 'Hotel Takayama', kind: 'info', note: 'Check-in en el Hotel Hida Takayama Green.' },
+      { name: 'Hotel Takayama', kind: 'info', note: 'Check-in en el Hotel Hida Takayama Green. <b>RECORDATORIO:</b> al hacer el check-in, confirmad en recepción que el desayuno se sirve a las <b>07:00</b> el jueves 5 nov (hay que coger el Hida de las 08:00 en la estación, a 8 min andando); si no lo sirven tan temprano, pedid un desayuno para llevar.' },
       { name: 'Takayama Old Town', kind: 'visit', durOverride: 75, note: 'Cenar carne Hida wagyu en Hidagyu Maruaki o Ajikura Tengoku (buñuelos, donburi o nigiri de Hida wagyu).' },
       { name: 'Hotel Takayama', kind: 'info' },
     ],
