@@ -345,7 +345,7 @@ const days = [
     kind: 'city', dayStartTime: '07:00',
     travelNote: 'Día con muchos museos pequeños del mismo estilo (casas de mercaderes del periodo Edo) — Yoshijima-ke, Fujii Bijutsu Mingeikan, Hirata Kinenkan e Hida Minzoku Kokokan están marcados como opcionales, ya que Kusakabe Mingeikan por sí solo ya cubre bien ese tipo de visita. Sumados a Hida no Sato (ya opcional), tenéis mucho margen para ir a vuestro ritmo sin perder lo esencial: Takayama Jinya, Sanmachi Suji, Teramachi, Parque Shiroyama y el Shōwa-kan.',
     stops: [
-      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel.' },
+      { name: 'Hotel Takayama', kind: 'meal', mealType: 'breakfast', durOverride: 30, note: 'Desayuno en el hotel. <b>Antes de salir, comprobad los billetes de mañana (Hida 4 + Nozomi 245):</b> si los recogisteis el 2 nov en Kanazawa, solo asegurad que los lleváis; si NO, pasad hoy por la estación de Takayama (8 min andando) para sacarlos — mañana a las 08:00 no hay margen.' },
       { name: 'Asaichi', kind: 'visit', durOverride: 45, note: 'Mercados matinales junto al río — cierran sobre el mediodía, por eso van primero. Buen sitio para comprar un saru-bobo.' },
       { name: 'Takayama Jinya', kind: 'visit', durOverride: 35, note: 'Entrada: 440 yenes.' },
       { name: 'Santuario Sakurayama Hachimangu', kind: 'visit', durOverride: 25 },
@@ -364,7 +364,7 @@ const days = [
         note: 'Opcional — réplica de pueblo con casas gasshō-zukuri; si ya habéis visto Shirakawa-go en persona, os la podéis saltar.',
         transit: 'Bus Sarubobo de vuelta hacia el centro, parada cercana al hotel, ~10 min.', transitMin: 12,
       },
-      { name: 'Hotel Takayama', kind: 'info', mealAfter: 'dinner' },
+      { name: 'Hotel Takayama', kind: 'info', mealAfter: 'dinner', note: '<b>RECORDATORIO — billetes del 5 nov:</b> comprobad esta noche que los dos billetes en papel (Hida 4 de las 08:00 y Nozomi 245) están en la mochila. Si faltan, no tendréis tiempo de sacarlos mañana: la ventanilla y la máquina de la estación de Takayama no son el plan para las 07:45. Preparad también la mochila y la salida: desayuno a las 07:00, estación a las 07:30.' },
     ],
   },
   {
