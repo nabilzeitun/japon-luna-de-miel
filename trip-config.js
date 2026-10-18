@@ -216,9 +216,9 @@ const days = [
     kind: 'flight', noMap: true,
     travelNote: 'Vuelos de Air China ya comprados: no hay que comprar nada más. Las horas son las de cada aeropuerto (hora local).',
     stops: [
-      { name: 'Aeropuerto de Madrid-Barajas (MAD)', kind: 'info', note: '✈ <b>CA908</b> Madrid → Pekín, martes 27 oct, salida <b>12:20</b>. Llegad con 3 horas de margen para facturar (hacia las 09:20). Llegada a Pekín a primera hora del 28 oct (la hora exacta no consta en la reserva).', transit: '✈ Vuelo CA908 Madrid → Pekín (Air China).' },
-      { name: 'Aeropuerto de Pekín Capital (PEK)', kind: 'info', note: 'Escala de pocas horas en Pekín. ✈ <b>CA181</b> Pekín → Tokio (Haneda), miércoles 28 oct, salida <b>08:45</b>, llegada <b>12:50</b> (hora de Japón).', transit: '✈ Vuelo CA181 Pekín → Tokio Haneda (Air China).' },
-      { name: 'Haneda airport', kind: 'info', note: 'Llegada a Tokio a las 12:50: el siguiente día (28 oct) empieza aquí.' },
+      { name: 'Aeropuerto de Madrid-Barajas (MAD)', kind: 'info', note: '✈ <b>CA908</b> (Boeing 787-9, Air China) Madrid, Terminal 1 → Pekín, Terminal 3: martes 27 oct, salida <b>12:20</b>, llegada <b>28 oct 06:20</b> (11 h de vuelo). Llegad con 3 horas de margen para facturar (hacia las 09:20). Clase Turista, 2 piezas de equipaje por adulto.', transit: '✈ Vuelo CA908 Madrid → Pekín (Air China).' },
+      { name: 'Aeropuerto de Pekín Capital (PEK)', kind: 'info', note: 'Escala de <b>2h25</b> en Pekín (Terminal 3, sin cambio de terminal). Vuestro vuelo original CA925 del 28 oct se canceló y os han pasado al <b>CA181</b> (Airbus A330-300, Air China): Pekín, Terminal 3 → Tokio-Haneda, Terminal 3, miércoles 28 oct, salida <b>08:45</b>, llegada <b>12:50</b> (hora de Japón; 3 h 05 de vuelo, con desayuno). Clase Turista, 2 piezas de equipaje por adulto.', transit: '✈ Vuelo CA181 Pekín → Tokio Haneda (Air China).' },
+      { name: 'Haneda airport', kind: 'info', note: 'Llegada a Haneda (Terminal 3) a las 12:50: el día 1 (28 oct) empieza aquí.' },
     ],
   },
   // ---------------- TOKIO ----------------
