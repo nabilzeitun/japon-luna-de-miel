@@ -202,6 +202,9 @@ const builtDays = days.map(d => {
 
   return {
     date: d.date,
+    dateEnd: d.dateEnd || null,
+    dayZero: !!d.dayZero,
+    noMap: !!d.noMap,
     city: d.city,
     cityColor: CITY_COLORS[d.city] || '#666',
     locationLabel: d.locationLabel || d.city,

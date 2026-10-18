@@ -25,6 +25,7 @@ function computeBbox(stops) {
 
 async function main() {
   for (const d of trip.days) {
+    if (d.noMap) { d.mapImage = null; continue; }
     const bbox = computeBbox(d.stops);
     if (!bbox) { d.mapImage = null; continue; }
     const zoom = chooseZoom(bbox.minLon, bbox.minLat, bbox.maxLon, bbox.maxLat, W, H, 17, 4);

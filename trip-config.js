@@ -127,6 +127,11 @@ const manualPlaces = [
     + ticketRow('Margen', 'Llegada al aeropuerto a las 19:59: unas 3h20 antes del vuelo de las 23:20, para el trámite del tax-free.')
     + ticketRow('Ayuda', '<a href="https://www.westjr.co.jp/global/en/howto/train-reservation/receive/" target="_blank" rel="noopener">📍 Estaciones donde recoger</a><br><a href="https://www.westjr.co.jp/travel-information/en/tickets-passes/" target="_blank" rel="noopener">🔁 Ver o cambiar la reserva</a><br><a href="https://global.trafficinfo.westjr.co.jp/en/" target="_blank" rel="noopener">🚦 Estado del servicio de trenes</a>')
     + '</div>' },
+  { name: 'Aeropuerto de Madrid-Barajas (MAD)', desc: 'Aeropuerto Adolfo Suárez Madrid-Barajas.', lat: 40.4936, lon: -3.5668 },
+  { name: 'Aeropuerto de Pekín Capital (PEK)', desc: 'Aeropuerto Internacional de Pekín Capital, escala hacia Tokio.', lat: 40.0799, lon: 116.6031 },
+  { name: 'Aeropuerto de Singapur Changi (SIN)', desc: 'Aeropuerto de Singapur Changi, escala hacia Maldivas.', lat: 1.3644, lon: 103.9915 },
+  { name: 'Aeropuerto Internacional de Malé (MLE)', desc: 'Aeropuerto Internacional Velana, Malé (Maldivas).', lat: 4.1918, lon: 73.5290 },
+  { name: 'Aeropuerto de Estambul (IST)', desc: 'Aeropuerto de Estambul, escala de regreso a Madrid.', lat: 41.2619, lon: 28.7419 },
   { name: 'Entradas Shibuya Sky · e-ticket', lat: 35.6590, lon: 139.7016, desc: '<div class="ticket"><div class="tk-title">🎫 ENTRADAS · SHIBUYA SKY</div>'
     + ticketRow('Facility', 'SHIBUYA SKY (渋谷スカイ)', true)
     + ticketRow('Date and time', '2026/10/30 (Fri) · 12:00~12:19', true)
@@ -200,15 +205,28 @@ const CITY_COLORS = {
   'Kanazawa-Takayama': '#33475a',
   Kioto: '#8a6d1f',
   Osaka: '#6b5b95',
+  Vuelos: '#2f6f8f',
+  Maldivas: '#1f8a8a',
 };
 
 const days = [
+  // ---------------- VUELOS DE IDA ----------------
+  {
+    date: '2026-10-27', dateEnd: '2026-10-28', dayZero: true, city: 'Vuelos', locationLabel: 'Madrid → Pekín → Tokio', title: 'Vuelos de ida: Madrid → Pekín → Tokio',
+    kind: 'flight', noMap: true,
+    travelNote: 'Vuelos de Air China ya comprados: no hay que comprar nada más. Las horas son las de cada aeropuerto (hora local).',
+    stops: [
+      { name: 'Aeropuerto de Madrid-Barajas (MAD)', kind: 'info', note: '✈ <b>CA908</b> Madrid → Pekín, martes 27 oct, salida <b>12:20</b>. Llegad con 3 horas de margen para facturar (hacia las 09:20). Llegada a Pekín a primera hora del 28 oct (la hora exacta no consta en la reserva).', transit: '✈ Vuelo CA908 Madrid → Pekín (Air China).' },
+      { name: 'Aeropuerto de Pekín Capital (PEK)', kind: 'info', note: 'Escala de pocas horas en Pekín. ✈ <b>CA181</b> Pekín → Tokio (Haneda), miércoles 28 oct, salida <b>08:45</b>, llegada <b>12:50</b> (hora de Japón).', transit: '✈ Vuelo CA181 Pekín → Tokio Haneda (Air China).' },
+      { name: 'Haneda airport', kind: 'info', note: 'Llegada a Tokio a las 12:50: el siguiente día (28 oct) empieza aquí.' },
+    ],
+  },
   // ---------------- TOKIO ----------------
   {
     date: '2026-10-28', city: 'Tokio', locationLabel: 'Tokyo', title: 'Llegada, Asakusa y Sumida',
     kind: 'city', dayStartTime: '12:50',
     stops: [
-      { name: 'Haneda airport', kind: 'info', note: '✈ Vuelos de ida, ya comprados (no hay que comprar nada más): Air China CA908 Madrid → Pekín, martes 27 oct, 12:20; CA181 Pekín → Tokio (Haneda), miércoles 28 oct, 08:45 → 12:50. Llegada a Haneda: miércoles 28 oct 12:50.', transit: '🔴 Compra al momento (billete suelto o tarjeta IC): Keikyu Airport Line hasta Shinagawa + JR Yokosuka/Sōbu Line (Rapid) directo hasta Kinshichō, ~50 min en total (¥590), con 5 min andando hasta el hotel.', transitMin: 50 },
+      { name: 'Haneda airport', kind: 'info', note: 'Llegada a Haneda a las 12:50 (vuelo CA181 desde Pekín, ya comprado; los vuelos de ida están en el día 0, 27–28 oct).', transit: '🔴 Compra al momento (billete suelto o tarjeta IC): Keikyu Airport Line hasta Shinagawa + JR Yokosuka/Sōbu Line (Rapid) directo hasta Kinshichō, ~50 min en total (¥590), con 5 min andando hasta el hotel.', transitMin: 50 },
       { name: 'Hotel Tokyo', kind: 'info', checkinMin: 10, note: 'Dejar las maletas en el Hotel Tobu Levant (junto a la estación Kinshichō) — el check-in suele ser a partir de las 15:00, puede que solo os guarden el equipaje hasta la noche.' },
       { name: 'Takkyubin: avisar al hotel (envío a Kioto)', kind: 'info', note: 'Necesitaréis el servicio el 2 nov, destino Hotel Resol Shijo Muromachi (Kioto), entrega prevista el 5 nov.', transit: '🔴 Compra al momento (billete suelto o tarjeta IC): Bus Toei 都02 de Kinshichō a Kuramae (~22 min, ¥210, cada ~12 min) — o JR Chūō-Sōbu Line + Toei Asakusa Line, también ~22 min.', transitMin: 22 },
       { name: 'Kuramae', kind: 'visit', durOverride: 22, transit: '🔴 Compra al momento (billete suelto o tarjeta IC): Toei Asakusa Line Kuramae → Asakusa, 1 parada (~3 min).', transitMin: 10 },
@@ -608,7 +626,33 @@ const days = [
       { name: 'Magic Cafe & Bar Shinsekai', kind: 'meal', mealType: 'lunch', durOverride: 45, transit: '🔴 Compra al momento: Metro Midosuji/Tanimachi de vuelta al hotel, ~20-25 min — o ~75 min andando.', transitMin: 25 },
       { name: 'Hotel Osaka', kind: 'visit', durOverride: 195, note: 'Tarde libre — maletas con calma, descanso, alguna compra de última hora. Salid del hotel hacia las 18:20 con las maletas grandes (llegada al aeropuerto ~20:00, vuelo 23:20, para tener 3 horas de margen con el tax-free).', transit: '🔴 Compra al momento: Metro Tanimachi Line Tenmabashi → Tennoji, ~15 min (con maletas grandes, mejor con calma por los ascensores).', transitMin: 20 },
       { name: 'Haruka a Kansai Airport · e-ticket', kind: 'info', note: 'Tenéis ~40 min de margen en Tennoji antes del tren: tiempo para maletas, compras o comida.', transit: '🎫 Reservado (con el pase, sin coste): Haruka 51 (reservado con el JR Pass), Tennoji 19:20 → Kansai Airport 19:59, vagón 4, asientos 11-C y 11-D (junto a una puerta, para las maletas). Alternativa sin reserva: Nankai desde Namba, ~60 min (¥1.300, no cubierto).', transitMin: 79 },
-      { name: 'Aeropuerto Internacional de Kansai', kind: 'info', note: '✈ <b>Vuelos de salida de Japón a Maldivas, ya comprados (no hay que comprar nada más):</b> Singapore Airlines SQ623 Osaka Kansai (KIX) → Singapur Changi (SIN), 12 nov 23:20 → 13 nov 05:00; escala de 5h05 en Changi (la salida es desde la Terminal 2: comprobad en las pantallas si hay que cambiar de terminal); SQ432 Singapur (SIN) → Malé (MLE), viernes 13 nov 10:05 → 11:40. Clase Economy Standard, 30 kg de equipaje facturado por persona. Después, el vuelo doméstico y la lancha en Maldivas (por completar en la guía). <b>Vuelos de regreso a España, ya comprados (no hay que comprar nada más):</b> Turkish Airlines TK735 Malé (MLE) → Estambul (IST), 17 nov 21:55 → 18 nov 04:40; TK1857 Estambul (IST) → Madrid-Barajas (MAD), 18 nov 07:55 → 10:25 (llegada a la Terminal 1). Escala de 3h15 en Estambul. Economy Standard, 30 kg de equipaje facturado por persona.' },
+      { name: 'Aeropuerto Internacional de Kansai', kind: 'info', note: '✈ Vuelo <b>SQ623</b> Osaka Kansai → Singapur, 12 nov <b>23:20</b>. Sigue en el día 13 nov (Singapur → Malé).' },
+    ],
+  },
+  // ---------------- MALDIVAS Y REGRESO ----------------
+  {
+    date: '2026-11-13', city: 'Maldivas', locationLabel: 'Singapur → Malé', title: 'Osaka → Singapur → Malé',
+    kind: 'flight', noMap: true,
+    travelNote: 'Vuelos de Singapore Airlines ya comprados: no hay que comprar nada más. Economy Standard, 30 kg de equipaje facturado por persona. Las horas son las de cada aeropuerto (hora local). IMUGA de Maldivas: enviarlo el día antes, el 12 nov, solo en la web oficial.',
+    stops: [
+      { name: 'Aeropuerto de Singapur Changi (SIN)', kind: 'info', note: '✈ <b>SQ623</b> Osaka Kansai → Singapur, 12 nov 23:20 → <b>13 nov 05:00</b>. Escala de <b>5h05</b> en Changi. ✈ <b>SQ432</b> Singapur → Malé, viernes 13 nov, salida <b>10:05</b> desde la Terminal 2 (comprobad en las pantallas si hay que cambiar de terminal).', transit: '✈ Vuelo SQ432 Singapur → Malé (Singapore Airlines), 10:05 → 11:40.' },
+      { name: 'Aeropuerto Internacional de Malé (MLE)', kind: 'info', note: 'Llegada a Malé a las <b>11:40</b>, Terminal 1. Después, vuelo doméstico de unos 50 min y lancha de unos 8 min hasta el hotel (horas por completar).' },
+    ],
+  },
+  {
+    date: '2026-11-14', dateEnd: '2026-11-16', city: 'Maldivas', locationLabel: 'Maldivas', title: 'Maldivas: días en el hotel',
+    kind: 'rest',
+    travelNote: 'Días de descanso en Maldivas: sin planes ni lugares de interés en la guía.',
+    stops: [],
+  },
+  {
+    date: '2026-11-17', dateEnd: '2026-11-18', city: 'Maldivas', locationLabel: 'Malé → Estambul → Madrid', title: 'Vuelos de regreso: Malé → Estambul → Madrid',
+    kind: 'flight', noMap: true,
+    travelNote: 'Vuelos de Turkish Airlines ya comprados: no hay que comprar nada más. Economy Standard, 30 kg de equipaje facturado por persona. Las horas son las de cada aeropuerto (hora local).',
+    stops: [
+      { name: 'Aeropuerto Internacional de Malé (MLE)', kind: 'info', note: '✈ <b>TK735</b> Malé → Estambul, martes 17 nov, salida <b>21:55</b>, llegada <b>18 nov 04:40</b>.', transit: '✈ Vuelo TK735 Malé → Estambul (Turkish Airlines).' },
+      { name: 'Aeropuerto de Estambul (IST)', kind: 'info', note: 'Escala de <b>3h15</b>. ✈ <b>TK1857</b> Estambul → Madrid, miércoles 18 nov, salida <b>07:55</b>, llegada <b>10:25</b>.', transit: '✈ Vuelo TK1857 Estambul → Madrid (Turkish Airlines).' },
+      { name: 'Aeropuerto de Madrid-Barajas (MAD)', kind: 'info', note: 'Llegada a Madrid-Barajas a las 10:25, Terminal 1.' },
     ],
   },
 ];
