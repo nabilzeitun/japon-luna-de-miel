@@ -723,4 +723,22 @@ const altDayTrips = [
   },
 ];
 
-module.exports = { CITY_COLORS, days, extras, altDayTrips, manualPlaces, manualFood, takkyubin };
+
+// Equipaje permitido por vuelo (pestaña «Equipaje»). Cifras de guías de terceros: confirmar con cada aerolínea.
+const baggage = {
+  title: '🎒 Equipaje permitido por vuelo',
+  intro: 'Por persona. Las cifras salen de las reservas y de guías de terceros (no de las webs oficiales): conviene confirmarlas con cada aerolínea antes de volar.',
+  rows: [
+    { flights: 'CA908 · CA181', airline: 'Air China', route: 'Madrid → Pekín → Tokio (27–28 oct)', checked: '<b>2 bultos</b> (según la reserva), <b>23 kg</b> cada uno, <b>158 cm</b> (largo + ancho + alto) cada uno', cabin: '<b>1 bulto</b>, <b>5 kg</b>, <b>55 × 40 × 20 cm</b>', note: 'El máximo por pieza es 32 kg, pero la franquicia gratuita en Turista es de 23 kg por pieza (de 23 a 32 kg habría recargo).' },
+    { flights: 'SQ623 · SQ432', airline: 'Singapore Airlines', route: 'Osaka → Singapur → Malé (12–13 nov)', checked: '<b>30 kg en total</b> por persona (todos los bultos juntos), <b>158 cm</b> por bulto', cabin: '<b>1 bulto</b>, <b>7 kg</b>, suma <b>115 cm</b> (unos 56 × 36 × 23 cm). Artículo personal: unos 40 × 30 × 10 cm (dato poco fiable)', note: 'Es el cuello de botella de la salida de Japón: las compras cuentan para los 30 kg.' },
+    { flights: 'Vuelo doméstico', airline: 'Por confirmar', route: 'Malé → isla del hotel (13 nov)', checked: 'Normalmente <b>20 kg</b> en total, con recargo por kg de más', cabin: 'Normalmente <b>5 kg</b>', note: 'Es el límite más bajo del viaje. Confirmar el operador y su límite con el hotel; pedir que guarden en Malé el exceso si hace falta.' },
+    { flights: 'TK735 · TK1857', airline: 'Turkish Airlines', route: 'Malé → Estambul → Madrid (17–18 nov)', checked: '<b>30 kg en total</b> por persona, hasta <b>158 cm</b> por bulto', cabin: '<b>1 bulto</b>, <b>8 kg</b>, <b>55 × 40 × 23 cm</b> + artículo personal <b>4 kg</b>, <b>40 × 30 × 15 cm</b>', note: 'Las reservas dicen 30 kg por persona.' },
+  ],
+  tips: [
+    'Pesad las maletas con una báscula antes de cada vuelo, y medid la suma de largo + ancho + alto de cada una.',
+    'Para las compras de Japón, valorad enviarlas a casa por takkyubin o Japan Post si os pasáis de los 30 kg de Singapore Airlines.',
+    'El equipaje de mano más pequeño es el de Air China (5 kg): comprobad el peso de la mochila de mano a la ida.',
+  ],
+};
+
+module.exports = { CITY_COLORS, days, extras, altDayTrips, manualPlaces, manualFood, takkyubin, baggage };

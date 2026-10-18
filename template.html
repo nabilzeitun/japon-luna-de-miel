@@ -514,6 +514,20 @@
   .tk-col .tk-maps { font-size: 12.5px; }
   .tk-col .tk-maps a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--line); }
 
+  /* baggage view */
+  .bg-wrap { max-width: 980px; }
+  .bg-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--paper-raised); }
+  .bg-table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 13px; }
+  .bg-table th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .03em; color: var(--ink-faint); padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  .bg-table td { padding: 10px 12px; border-top: 1px solid var(--line-soft); vertical-align: top; line-height: 1.45; }
+  .bg-table tr:first-child td { border-top: 0; }
+  .bg-table .bg-flight { font-weight: 700; white-space: nowrap; }
+  .bg-table .bg-air { font-size: 12px; color: var(--ink-soft); font-weight: 400; }
+  .bg-table .bg-route { font-size: 12px; color: var(--ink-soft); }
+  .bg-table .bg-note { display: block; margin-top: 4px; font-size: 12px; color: var(--ink-soft); }
+  .bg-tips { margin: 14px 0 0 18px; font-size: 13px; color: var(--ink-soft); }
+  .bg-tips li { margin-bottom: 4px; }
+
   /* shopping / food list */
   .flat-list { display: flex; flex-direction: column; gap: 8px; }
   .flat-item {
@@ -572,6 +586,7 @@
     <button class="tab-btn" data-mode="food">🍽️ Comer</button>
     <button class="tab-btn" data-mode="extras">🧭 Extra &amp; alternativas</button>
     <button class="tab-btn" data-mode="takkyubin">🧳 Takkyubin</button>
+    <button class="tab-btn" data-mode="baggage">🎒 Equipaje</button>
     <button class="theme-toggle" id="themeToggle" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema claro/oscuro"></button>
   </div>
 
@@ -584,6 +599,7 @@
   <div id="viewFood" style="display:none"></div>
   <div id="viewExtras" style="display:none"></div>
   <div id="viewTakkyubin" style="display:none"></div>
+  <div id="viewBaggage" style="display:none"></div>
 
 </div>
 
@@ -1111,6 +1127,26 @@ function renderTakkyubin() {
   el.innerHTML = html;
 }
 
+// ---------- baggage view ----------
+function renderBaggage() {
+  const el = document.getElementById('viewBaggage');
+  const bg = TRIP.baggage;
+  if (!bg || !bg.rows || !bg.rows.length) { el.innerHTML = '<div class="empty-hint">Sin datos de equipaje.</div>'; return; }
+  let html = '<div class="bg-wrap">';
+  html += '<h2 class="display" style="font-size:19px; margin-bottom:4px;">' + bg.title + '</h2>';
+  html += '<p style="color:var(--ink-soft); font-size:13px; margin-bottom:16px;">' + bg.intro + '</p>';
+  html += '<div class="bg-scroll"><table class="bg-table"><thead><tr><th>Vuelo</th><th>Facturado</th><th>Cabina</th></tr></thead><tbody>';
+  bg.rows.forEach(r => {
+    html += '<tr><td><span class="bg-flight">' + r.flights + '</span><div class="bg-air">' + r.airline + '</div><div class="bg-route">' + r.route + '</div></td>'
+      + '<td>' + r.checked + (r.note ? '<span class="bg-note">' + r.note + '</span>' : '') + '</td>'
+      + '<td>' + r.cabin + '</td></tr>';
+  });
+  html += '</tbody></table></div>';
+  if (bg.tips && bg.tips.length) html += '<ul class="bg-tips">' + bg.tips.map(x => '<li>' + x + '</li>').join('') + '</ul>';
+  html += '</div>';
+  el.innerHTML = html;
+}
+
 // ---------- search ----------
 function buildSearchIndex() {
   const idx = [];
@@ -1156,6 +1192,7 @@ function setMode(mode) {
   document.getElementById('viewFood').style.display = mode === 'food' ? 'block' : 'none';
   document.getElementById('viewExtras').style.display = mode === 'extras' ? 'block' : 'none';
   document.getElementById('viewTakkyubin').style.display = mode === 'takkyubin' ? 'block' : 'none';
+  document.getElementById('viewBaggage').style.display = mode === 'baggage' ? 'block' : 'none';
 }
 
 function renderAll() {
@@ -1168,6 +1205,7 @@ function renderAll() {
   else if (currentMode === 'food') renderFlatView('viewFood', TRIP.food);
   else if (currentMode === 'extras') renderExtras();
   else if (currentMode === 'takkyubin') renderTakkyubin();
+  else if (currentMode === 'baggage') renderBaggage();
   renderDayTabLabel();
 }
 
